@@ -11,11 +11,23 @@ public class BankClient extends Thread {
     int[] uids;
     int iterationCount;
     BankServer bankServer;
+
+    /**
+     * Constructor for the BankCleint class
+     * @param uids List of UIDs for client usage
+     * @param iterationCount Number of iterations for transfer
+     * @param bankServer bankserver RMI object
+     */
     BankClient(int[] uids, int iterationCount, BankServer bankServer){
+
         this.uids = uids;
         this.iterationCount = iterationCount;
         this.bankServer=bankServer;
     }
+
+    /**
+     * Runs when start method is called on BankClient object
+     */
     public void run(){
 
         for (int i=0;i<iterationCount;i++){
@@ -83,8 +95,13 @@ public class BankClient extends Thread {
     }
 
 
-
-
+    /**
+     * Creates mentioned number of accounts
+     * @param numAccounts Total number of accounts
+     * @param bankServer BankServer RMI object
+     * @return List of UIDs of the accounts created
+     * @throws RemoteException When communication related exception occurs
+     */
     private static int[] createAccounts(int numAccounts, BankServer bankServer) throws RemoteException {
         int[] uids = new int[numAccounts];
         for (int i = 0; i < numAccounts; i++) {
@@ -102,6 +119,14 @@ public class BankClient extends Thread {
         return uids;
     }
 
+    /**
+     * Deposits mentioned amount in all accounts
+     * @param uids List of UIDs
+     * @param amount Amount to be deposited in all accounts
+     * @param numAccounts total number of accounts
+     * @param bankServer BankServer RMI object
+     * @throws RemoteException When communication related exception occurs
+     */
     private static void deposit(int[] uids, int amount, int numAccounts, BankServer bankServer) throws RemoteException {
         try {
             for (int i = 0; i < numAccounts; i++) {
@@ -120,6 +145,14 @@ public class BankClient extends Thread {
         }
     }
 
+    /**
+     * Calculates the totol sum of balance in all accounts after transfers are completed
+     * @param numAccounts Total number of accounts
+     * @param uids List of all UIDs
+     * @param bankServer BankServer RMO Object
+     * @return Sum of balance in all accounts
+     * @throws RemoteException When communication related exception occurs
+     */
     public static int getTotalBalance(int numAccounts, int[] uids,  BankServer bankServer) throws RemoteException {
         int total = 0;
         try {
@@ -141,7 +174,13 @@ public class BankClient extends Thread {
         return total;
     }
 
-    
+
+    /**
+     * Writes content to log file. Critical section because multiple threads access the function and only one thread
+     * should be able to write to the log file.
+     * @param fileName Name of the log file
+     * @param line Conent to be written to the file
+     */
     public synchronized static void writeToLog(String fileName, String line){
 //        synchronized (this){
             try {
@@ -160,6 +199,15 @@ public class BankClient extends Thread {
             }
 //        }
     }
+
+    /**
+     * Creates user mentioned number of client threads to perform transfers and returns them as a list
+     * @param uids List of all UIDs
+     * @param threadCount Threads transfering concurrenlty, input taken from user
+     * @param iterationCount Number of times each thread performs transfer function, input taken from user
+     * @param bankServer BankServer RMI Object
+     * @return List of threads that were created
+     */
     private static List<BankClient> transfer(int[] uids, int threadCount, int iterationCount, BankServer bankServer) {
         List<BankClient> clientList = new ArrayList<BankClient>();
         for (int i = 0; i < threadCount; i++) {
