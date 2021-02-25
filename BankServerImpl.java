@@ -7,10 +7,33 @@ import java.util.Hashtable;
 
 public class BankServerImpl implements BankServer {
   protected static Hashtable<Integer, Account> accounts;
-  public BankServerImpl (Socket s) throws RemoteException{
-    super()
+  private static int uuidCount = 0;
+  public BankServerImpl () throws RemoteException{
+    super();
   }
+  public int getNewUid(){
+    return ++uuidCount;
+  }
+  class Account{
+    public int uid;// unique Id for accounts - an integer sequence counter starting with 1
+    int balance = 0;
+    public Account(int uid){
+      this.uid=uid;
+    }
+    public int withdraw(int amount) {
 
+      this.balance = this.balance - amount;
+      return this.balance;
+
+    }
+    public int deposit(int amount){
+      this.balance = this.balance+amount;
+      return this.balance;
+    }
+    public int getBalance(){
+      return this.balance;
+    }
+  }
 //  public synchronized boolean transfer(int target, int source, int amount) throws InterruptedException {
 //    if(accounts.get(source).getBalance()<amount){
 //      //write to log file
@@ -53,9 +76,6 @@ public class BankServerImpl implements BankServer {
 //      System.out.println("Request type:" + requestType);
 //      switch (requestType) {
 //        case "createAccount": {
-//          accounts.forEach((k, v) -> {
-//            System.out.printf("Before %d-%d\n", k,v.getBalance());
-//          });
 //          int uid = ((CreateAccountRequest) request).getNewUid();
 //          Account account = new Account(uid);
 //          accounts.put(uid, account);
@@ -139,7 +159,23 @@ public class BankServerImpl implements BankServer {
 //    }
 //  }
 
-  public static void main (String args[]) throws IOException {
+  public int createAccount(){
+      int uid = getNewUid();
+      Account account = new Account(uid);
+      accounts.put(uid, account);
+      return uid;
+  }
+  public boolean deposit(int uid, int amount){
+    return false;
+  }
+  public int getBalance(int uid){
+    return 0;
+  }
+  public boolean transfer(int sourceUid, int targetUid, int amount){
+    return false;
+  }
+
+  public static void main (String args[]) throws Exception {
     if (System.getSecurityManager() == null) {
       System.setSecurityManager(new SecurityManager());
     }
