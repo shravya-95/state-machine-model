@@ -10,5 +10,6 @@ public class BankClient {
         System.setSecurityManager (new SecurityManager ());
         DateServer bankServer = (BankServer) Naming.lookup ("//" + args[0] + "/DateServer");
         //Same as before here
+
     }
 }
