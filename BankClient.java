@@ -25,6 +25,11 @@ public class BankClient {
         int balance = getTotalBalance(numAccounts, uids, bankServer);
         System.out.printf("In main balanace: %d \n", balance);
 
+        //5: tansfer
+        
+        //6: get balance
+        balance = getTotalBalance(numAccounts, uids, bankServer);
+        System.out.printf("In main balanace: %d \n", balance);
     }
     private static int[] createAccounts(int numAccounts, BankServer bankServer) throws RemoteException {
         int[] uids = new int[numAccounts];
