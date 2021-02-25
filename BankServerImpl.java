@@ -112,13 +112,16 @@ public class BankServerImpl implements BankServer {
   }
   public synchronized boolean transfer(int sourceUid, int targetUid, int amount){
 //    synchronized (this){
+      if(!accounts.containsKey(sourceUid)){
+        writeToLog("severLogfile.txt", "Accounts doesn't have key"+String.valueOf(sourceUid));
+      }
       if(accounts.get(sourceUid).getBalance()<amount){
         //write to log file
         return false;
       }
       accounts.get(sourceUid).withdraw(amount);
       accounts.get(targetUid).deposit(amount);
-      String msg = "Transferred %d from %d to %d";
+      String msg = "Transferred %d from %d to %d\n";
       System.out.printf(msg,amount,sourceUid,targetUid);
       notifyAll();
       return true;

@@ -26,7 +26,7 @@ public class BankClient extends Thread {
                 continue;
             }
             try {
-                boolean status = this.bankServer.transfer(rnd1,rnd2,10);
+                boolean status = this.bankServer.transfer(uids[rnd1],uids[rnd2],10);
             } catch (RemoteException e) {
                 e.printStackTrace();
             }
@@ -38,8 +38,8 @@ public class BankClient extends Thread {
 
 
     public static void main (String args[]) throws Exception {
-        if ( args.length != 2 ) {
-            throw new RuntimeException( "Syntax: java BankClient serverHostname severPortnumber" );
+        if ( args.length != 4 ) {
+            throw new RuntimeException( "Syntax: java BankClient serverHostname severPortnumber threadCount iterationCount" );
         }
         System.setSecurityManager (new SecurityManager ());
         BankServer bankServer = (BankServer) Naming.lookup ("//" + args[0] + ":"+ args[1]+"/BankServer");
@@ -111,6 +111,27 @@ public class BankClient extends Thread {
     }
 
     public static int getTotalBalance(int numAccounts, int[] uids,  BankServer bankServer) throws RemoteException {
+        int total = 0;
+        try {
+            for (int i = 0; i < numAccounts; i++) {
+                String logMsg = "";
+                String[] content = new String[3];
+                int balance = bankServer.getBalance(uids[i]);
+                total += balance;
+                System.out.println(total);
+                content[0]="getTotalBalance";
+                content[1]= "UID: "+ uids[i];
+                content[2]= "AccountBalance: "+ balance +", Total so far:"+total;
+                logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
+                writeToLog("clientLogfile.txt",logMsg);
+            }
+        }catch (IOException e){
+            e.printStackTrace ();
+        }
+        return total;
+    }
+
+    public static int getBalance(int numAccounts, int[] uids,  BankServer bankServer) throws RemoteException {
         int total = 0;
         try {
             for (int i = 0; i < numAccounts; i++) {

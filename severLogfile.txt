@@ -1,41 +1,8 @@
-Operation: createAccount | Inputs:  | Result: 1Operation: createAccount | Inputs:  | Result: 2Operation: createAccount | Inputs:  | Result: 3Operation: createAccount | Inputs:  | Result: 4Operation: createAccount | Inputs:  | Result: 5Operation: deposit | Inputs: 4,100 | Result: trueOperation: deposit | Inputs: 2,100 | Result: trueOperation: deposit | Inputs: 5,100 | Result: trueOperation: deposit | Inputs: 1,100 | Result: trueOperation: deposit | Inputs: 3,100 | Result: trueOperation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: transfer | Inputs: From:3, To:1, Amount:0 | Result: trueOperation: createAccount | Inputs:  | Result: 1Operation: createAccount | Inputs:  | Result: 2Operation: createAccount | Inputs:  | Result: 3Operation: createAccount | Inputs:  | Result: 4Operation: createAccount | Inputs:  | Result: 5Operation: deposit | Inputs: 1,100 | Result: trueOperation: deposit | Inputs: 4,100 | Result: trueOperation: deposit | Inputs: 2,100 | Result: trueOperation: deposit | Inputs: 3,100 | Result: trueOperation: deposit | Inputs: 5,100 | Result: trueOperation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: transfer | Inputs: From:2, To:4, Amount:0 | Result: trueOperation: createAccount | Inputs:  | Result: 1Operation: createAccount | Inputs:  | Result: 2Operation: createAccount | Inputs:  | Result: 3Operation: createAccount | Inputs:  | Result: 4Operation: createAccount | Inputs:  | Result: 5Operation: deposit | Inputs: 2,100 | Result: trueOperation: deposit | Inputs: 4,100 | Result: trueOperation: deposit | Inputs: 1,100 | Result: trueOperation: deposit | Inputs: 3,100 | Result: trueOperation: deposit | Inputs: 5,100 | Result: trueOperation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: transfer | Inputs: From:1, To:3, Amount:0 | Result: trueOperation: createAccount | Inputs:  | Result: 1Operation: createAccount | Inputs:  | Result: 2Operation: createAccount | Inputs:  | Result: 3Operation: createAccount | Inputs:  | Result: 4Operation: createAccount | Inputs:  | Result: 5Operation: deposit | Inputs: 2,100 | Result: trueOperation: deposit | Inputs: 3,100 | Result: trueOperation: deposit | Inputs: 1,100 | Result: trueOperation: deposit | Inputs: 4,100 | Result: trueOperation: deposit | Inputs: 5,100 | Result: trueOperation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: createAccount | Inputs:  | Result: 1Operation: createAccount | Inputs:  | Result: 2Operation: createAccount | Inputs:  | Result: 3Operation: createAccount | Inputs:  | Result: 4Operation: createAccount | Inputs:  | Result: 5Operation: deposit | Inputs: 3,100 | Result: trueOperation: deposit | Inputs: 5,100 | Result: trueOperation: deposit | Inputs: 4,100 | Result: trueOperation: deposit | Inputs: 2,100 | Result: trueOperation: deposit | Inputs: 1,100 | Result: trueOperation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 1 | Result: 100Operation: transfer | Inputs: From:4, To:1, Amount:0 | Result: trueOperation: createAccount | Inputs:  | Result: 1Operation: createAccount | Inputs:  | Result: 2Operation: createAccount | Inputs:  | Result: 3Operation: createAccount | Inputs:  | Result: 4Operation: createAccount | Inputs:  | Result: 5Operation: deposit | Inputs: 3,100 | Result: trueOperation: deposit | Inputs: 4,100 | Result: trueOperation: deposit | Inputs: 2,100 | Result: trueOperation: deposit | Inputs: 1,100 | Result: trueOperation: deposit | Inputs: 5,100 | Result: trueOperation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: createAccount | Inputs:  | Result: 1Operation: createAccount | Inputs:  | Result: 2Operation: createAccount | Inputs:  | Result: 3Operation: createAccount | Inputs:  | Result: 4Operation: createAccount | Inputs:  | Result: 5Operation: deposit | Inputs: 2,100 | Result: trueOperation: deposit | Inputs: 4,100 | Result: trueOperation: deposit | Inputs: 3,100 | Result: trueOperation: deposit | Inputs: 1,100 | Result: trueOperation: deposit | Inputs: 5,100 | Result: trueOperation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: transfer | Inputs: From:5, To:2, Amount:0 | Result: trueOperation: createAccount | Inputs:  | Result: 1Operation: createAccount | Inputs:  | Result: 2Operation: createAccount | Inputs:  | Result: 3Operation: createAccount | Inputs:  | Result: 4Operation: createAccount | Inputs:  | Result: 5Operation: deposit | Inputs: 1,100 | Result: trueOperation: deposit | Inputs: 4,100 | Result: trueOperation: deposit | Inputs: 3,100 | Result: trueOperation: deposit | Inputs: 2,100 | Result: trueOperation: deposit | Inputs: 5,100 | Result: trueOperation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 1 | Result: 100Operation: transfer | Inputs: From:4, To:1, Amount:0 | Result: trueOperation: createAccount | Inputs:  | Result: 1Operation: createAccount | Inputs:  | Result: 2Operation: createAccount | Inputs:  | Result: 3Operation: createAccount | Inputs:  | Result: 4Operation: createAccount | Inputs:  | Result: 5Operation: deposit | Inputs: 1,100 | Result: trueOperation: deposit | Inputs: 4,100 | Result: trueOperation: deposit | Inputs: 3,100 | Result: trueOperation: deposit | Inputs: 2,100 | Result: trueOperation: deposit | Inputs: 5,100 | Result: trueOperation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: transfer | Inputs: From:3, To:2, Amount:0 | Result: trueOperation: createAccount | Inputs:  | Result: 1Operation: createAccount | Inputs:  | Result: 2Operation: createAccount | Inputs:  | Result: 3Operation: createAccount | Inputs:  | Result: 4Operation: createAccount | Inputs:  | Result: 5Operation: deposit | Inputs: 2,100 | Result: trueOperation: deposit | Inputs: 4,100 | Result: trueOperation: deposit | Inputs: 1,100 | Result: trueOperation: deposit | Inputs: 3,100 | Result: trueOperation: deposit | Inputs: 5,100 | Result: trueOperation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: createAccount | Inputs:  | Result: 1Operation: createAccount | Inputs:  | Result: 2Operation: createAccount | Inputs:  | Result: 3Operation: createAccount | Inputs:  | Result: 4Operation: createAccount | Inputs:  | Result: 5Operation: getBalance | Inputs: 1 | Result: 100Operation: deposit | Inputs: 4,100 | Result: trueOperation: getBalance | Inputs: 2 | Result: 100Operation: deposit | Inputs: 3,100 | Result: trueOperation: deposit | Inputs: 5,100 | Result: trueOperation: deposit | Inputs: 2,100 | Result: trueOperation: deposit | Inputs: 1,100 | Result: trueOperation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: createAccount | Inputs:  | Result: 1Operation: createAccount | Inputs:  | Result: 2Operation: createAccount | Inputs:  | Result: 3Operation: createAccount | Inputs:  | Result: 4Operation: createAccount | Inputs:  | Result: 5Operation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: deposit | Inputs: 4,100 | Result: trueOperation: deposit | Inputs: 2,100 | Result: trueOperation: deposit | Inputs: 1,100 | Result: trueOperation: deposit | Inputs: 3,100 | Result: trueOperation: deposit | Inputs: 5,100 | Result: trueOperation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 1 | Result: 90Operation: getBalance | Inputs: 3 | Result: 110Operation: transfer | Inputs: From:1, To:3, Amount:10 | Result: trueOperation: createAccount | Inputs:  | Result: 1Operation: createAccount | Inputs:  | Result: 2Operation: createAccount | Inputs:  | Result: 3Operation: createAccount | Inputs:  | Result: 4Operation: createAccount | Inputs:  | Result: 5Operation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: deposit | Inputs: 3,100 | Result: trueOperation: deposit | Inputs: 4,100 | Result: trueOperation: deposit | Inputs: 2,100 | Result: trueOperation: deposit | Inputs: 1,100 | Result: trueOperation: deposit | Inputs: 5,100 | Result: trueOperation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 1 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 2 | Result: 100Operation: getBalance | Inputs: 5 | Result: 100Operation: getBalance | Inputs: 3 | Result: 100Operation: getBalance | Inputs: 4 | Result: 100Operation: getBalance | Inputs: 5 | Result: 110Operation: getBalance | Inputs: 4 | Result: 90Operation: getBalance | Inputs: 5 | Result: 110Operation: transfer | Inputs: From:4, To:5, Amount:10 | Result: trueOperation: createAccount | Inputs:  | Result: 6Operation: createAccount | Inputs:  | Result: 7Operation: createAccount | Inputs:  | Result: 8Operation: createAccount | Inputs:  | Result: 9Operation: createAccount | Inputs:  | Result: 10Operation: deposit | Inputs: 6,100 | Result: trueOperation: deposit | Inputs: 7,100 | Result: trueOperation: deposit | Inputs: 8,100 | Result: trueOperation: deposit | Inputs: 9,100 | Result: trueOperation: deposit | Inputs: 10,100 | Result: trueOperation: getBalance | Inputs: 6 | Result: 100Operation: getBalance | Inputs: 7 | Result: 100Operation: getBalance | Inputs: 8 | Result: 100Operation: getBalance | Inputs: 9 | Result: 100Operation: getBalance | Inputs: 10 | Result: 100Operation: getBalance | Inputs: 6 | Result: 100Operation: getBalance | Inputs: 9 | Result: 100Operation: getBalance | Inputs: 7 | Result: 100Operation: getBalance | Inputs: 6 | Result: 100Operation: getBalance | Inputs: 8 | Result: 100Operation: getBalance | Inputs: 9 | Result: 90Operation: transfer | Inputs: From:9, To:6, Amount:10 | Result: trueOperation: getBalance | Inputs: 10 | Result: 100Operation: getBalance | Inputs: 9 | Result: 90Operation: getBalance | Inputs: 6 | Result: 110Operation: createAccount | Inputs:  | Result: 1 
-Operation: deposit | Inputs: UID: 1,Amount:100 | Result: true 
-Operation: getBalance | Inputs: UID: 1 | Result: 100 
 Operation: createAccount | Inputs:  | Result: 1 
 Operation: createAccount | Inputs:  | Result: 2 
 Operation: createAccount | Inputs:  | Result: 3 
 Operation: createAccount | Inputs:  | Result: 4 
 Operation: createAccount | Inputs:  | Result: 5 
-Operation: createAccount | Inputs:  | Result: 1 
-Operation: createAccount | Inputs:  | Result: 2 
-Operation: createAccount | Inputs:  | Result: 3 
-Operation: createAccount | Inputs:  | Result: 4 
-Operation: createAccount | Inputs:  | Result: 5 
-Operation: deposit | Inputs: UID: 1,Amount:100 | Result: true 
-Operation: deposit | Inputs: UID: 2,Amount:100 | Result: true 
-Operation: deposit | Inputs: UID: 3,Amount:100 | Result: true 
-Operation: deposit | Inputs: UID: 4,Amount:100 | Result: true 
-Operation: deposit | Inputs: UID: 5,Amount:100 | Result: true 
-Operation: getBalance | Inputs: UID: 1 | Result: 100 
-Operation: getBalance | Inputs: UID: 2 | Result: 100 
-Operation: getBalance | Inputs: UID: 3 | Result: 100 
-Operation: getBalance | Inputs: UID: 4 | Result: 100 
-Operation: getBalance | Inputs: UID: 5 | Result: 100 
-Operation: createAccount | Inputs:  | Result: 1 
-Operation: createAccount | Inputs:  | Result: 2 
-Operation: createAccount | Inputs:  | Result: 3 
-Operation: createAccount | Inputs:  | Result: 4 
-Operation: createAccount | Inputs:  | Result: 5 
-Operation: deposit | Inputs: UID: 1,Amount:100 | Result: true 
-Operation: deposit | Inputs: UID: 2,Amount:100 | Result: true 
-Operation: deposit | Inputs: UID: 3,Amount:100 | Result: true 
-Operation: deposit | Inputs: UID: 4,Amount:100 | Result: true 
-Operation: deposit | Inputs: UID: 5,Amount:100 | Result: true 
-Operation: getBalance | Inputs: UID: 1 | Result: 100 
-Operation: getBalance | Inputs: UID: 2 | Result: 100 
-Operation: getBalance | Inputs: UID: 3 | Result: 100 
-Operation: getBalance | Inputs: UID: 4 | Result: 100 
-Operation: getBalance | Inputs: UID: 5 | Result: 100 
 Operation: createAccount | Inputs:  | Result: 6 
 Operation: createAccount | Inputs:  | Result: 7 
 Operation: createAccount | Inputs:  | Result: 8 
@@ -131,11 +98,11 @@ Operation: createAccount | Inputs:  | Result: 97
 Operation: createAccount | Inputs:  | Result: 98 
 Operation: createAccount | Inputs:  | Result: 99 
 Operation: createAccount | Inputs:  | Result: 100 
-Operation: createAccount | Inputs:  | Result: 101 
-Operation: createAccount | Inputs:  | Result: 102 
-Operation: createAccount | Inputs:  | Result: 103 
-Operation: createAccount | Inputs:  | Result: 104 
-Operation: createAccount | Inputs:  | Result: 105 
+Operation: deposit | Inputs: UID: 1,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 2,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 3,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 4,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 5,Amount:100 | Result: true 
 Operation: deposit | Inputs: UID: 6,Amount:100 | Result: true 
 Operation: deposit | Inputs: UID: 7,Amount:100 | Result: true 
 Operation: deposit | Inputs: UID: 8,Amount:100 | Result: true 
@@ -231,11 +198,11 @@ Operation: deposit | Inputs: UID: 97,Amount:100 | Result: true
 Operation: deposit | Inputs: UID: 98,Amount:100 | Result: true 
 Operation: deposit | Inputs: UID: 99,Amount:100 | Result: true 
 Operation: deposit | Inputs: UID: 100,Amount:100 | Result: true 
-Operation: deposit | Inputs: UID: 101,Amount:100 | Result: true 
-Operation: deposit | Inputs: UID: 102,Amount:100 | Result: true 
-Operation: deposit | Inputs: UID: 103,Amount:100 | Result: true 
-Operation: deposit | Inputs: UID: 104,Amount:100 | Result: true 
-Operation: deposit | Inputs: UID: 105,Amount:100 | Result: true 
+Operation: getBalance | Inputs: UID: 1 | Result: 100 
+Operation: getBalance | Inputs: UID: 2 | Result: 100 
+Operation: getBalance | Inputs: UID: 3 | Result: 100 
+Operation: getBalance | Inputs: UID: 4 | Result: 100 
+Operation: getBalance | Inputs: UID: 5 | Result: 100 
 Operation: getBalance | Inputs: UID: 6 | Result: 100 
 Operation: getBalance | Inputs: UID: 7 | Result: 100 
 Operation: getBalance | Inputs: UID: 8 | Result: 100 
@@ -331,8 +298,903 @@ Operation: getBalance | Inputs: UID: 97 | Result: 100
 Operation: getBalance | Inputs: UID: 98 | Result: 100 
 Operation: getBalance | Inputs: UID: 99 | Result: 100 
 Operation: getBalance | Inputs: UID: 100 | Result: 100 
-Operation: getBalance | Inputs: UID: 101 | Result: 100 
-Operation: getBalance | Inputs: UID: 102 | Result: 100 
-Operation: getBalance | Inputs: UID: 103 | Result: 100 
-Operation: getBalance | Inputs: UID: 104 | Result: 100 
-Operation: getBalance | Inputs: UID: 105 | Result: 100 
+Operation: getBalance | Inputs: UID: 1 | Result: 120 
+Operation: getBalance | Inputs: UID: 2 | Result: 90 
+Operation: getBalance | Inputs: UID: 3 | Result: 90 
+Operation: getBalance | Inputs: UID: 4 | Result: 110 
+Operation: getBalance | Inputs: UID: 5 | Result: 90 
+Operation: getBalance | Inputs: UID: 6 | Result: 80 
+Operation: getBalance | Inputs: UID: 7 | Result: 80 
+Operation: getBalance | Inputs: UID: 8 | Result: 110 
+Operation: getBalance | Inputs: UID: 9 | Result: 100 
+Operation: getBalance | Inputs: UID: 10 | Result: 110 
+Operation: getBalance | Inputs: UID: 11 | Result: 70 
+Operation: getBalance | Inputs: UID: 12 | Result: 110 
+Operation: getBalance | Inputs: UID: 13 | Result: 110 
+Operation: getBalance | Inputs: UID: 14 | Result: 110 
+Operation: getBalance | Inputs: UID: 15 | Result: 80 
+Operation: getBalance | Inputs: UID: 16 | Result: 110 
+Operation: getBalance | Inputs: UID: 17 | Result: 130 
+Operation: getBalance | Inputs: UID: 18 | Result: 100 
+Operation: getBalance | Inputs: UID: 19 | Result: 80 
+Operation: getBalance | Inputs: UID: 20 | Result: 110 
+Operation: getBalance | Inputs: UID: 21 | Result: 70 
+Operation: getBalance | Inputs: UID: 22 | Result: 90 
+Operation: getBalance | Inputs: UID: 23 | Result: 100 
+Operation: getBalance | Inputs: UID: 24 | Result: 100 
+Operation: getBalance | Inputs: UID: 25 | Result: 110 
+Operation: getBalance | Inputs: UID: 26 | Result: 100 
+Operation: getBalance | Inputs: UID: 27 | Result: 100 
+Operation: getBalance | Inputs: UID: 28 | Result: 100 
+Operation: getBalance | Inputs: UID: 29 | Result: 120 
+Operation: getBalance | Inputs: UID: 30 | Result: 100 
+Operation: getBalance | Inputs: UID: 31 | Result: 90 
+Operation: getBalance | Inputs: UID: 32 | Result: 100 
+Operation: getBalance | Inputs: UID: 33 | Result: 110 
+Operation: getBalance | Inputs: UID: 34 | Result: 120 
+Operation: getBalance | Inputs: UID: 35 | Result: 110 
+Operation: getBalance | Inputs: UID: 36 | Result: 90 
+Operation: getBalance | Inputs: UID: 37 | Result: 100 
+Operation: getBalance | Inputs: UID: 38 | Result: 90 
+Operation: getBalance | Inputs: UID: 39 | Result: 100 
+Operation: getBalance | Inputs: UID: 40 | Result: 110 
+Operation: getBalance | Inputs: UID: 41 | Result: 90 
+Operation: getBalance | Inputs: UID: 42 | Result: 110 
+Operation: getBalance | Inputs: UID: 43 | Result: 90 
+Operation: getBalance | Inputs: UID: 44 | Result: 100 
+Operation: getBalance | Inputs: UID: 45 | Result: 100 
+Operation: getBalance | Inputs: UID: 46 | Result: 80 
+Operation: getBalance | Inputs: UID: 47 | Result: 100 
+Operation: getBalance | Inputs: UID: 48 | Result: 90 
+Operation: getBalance | Inputs: UID: 49 | Result: 110 
+Operation: getBalance | Inputs: UID: 50 | Result: 80 
+Operation: getBalance | Inputs: UID: 51 | Result: 100 
+Operation: getBalance | Inputs: UID: 52 | Result: 90 
+Operation: getBalance | Inputs: UID: 53 | Result: 70 
+Operation: getBalance | Inputs: UID: 54 | Result: 80 
+Operation: getBalance | Inputs: UID: 55 | Result: 100 
+Operation: getBalance | Inputs: UID: 56 | Result: 100 
+Operation: getBalance | Inputs: UID: 57 | Result: 90 
+Operation: getBalance | Inputs: UID: 58 | Result: 100 
+Operation: getBalance | Inputs: UID: 59 | Result: 120 
+Operation: getBalance | Inputs: UID: 60 | Result: 100 
+Operation: getBalance | Inputs: UID: 61 | Result: 100 
+Operation: getBalance | Inputs: UID: 62 | Result: 130 
+Operation: getBalance | Inputs: UID: 63 | Result: 100 
+Operation: getBalance | Inputs: UID: 64 | Result: 120 
+Operation: getBalance | Inputs: UID: 65 | Result: 100 
+Operation: getBalance | Inputs: UID: 66 | Result: 120 
+Operation: getBalance | Inputs: UID: 67 | Result: 90 
+Operation: getBalance | Inputs: UID: 68 | Result: 100 
+Operation: getBalance | Inputs: UID: 69 | Result: 90 
+Operation: getBalance | Inputs: UID: 70 | Result: 110 
+Operation: getBalance | Inputs: UID: 71 | Result: 100 
+Operation: getBalance | Inputs: UID: 72 | Result: 100 
+Operation: getBalance | Inputs: UID: 73 | Result: 120 
+Operation: getBalance | Inputs: UID: 74 | Result: 90 
+Operation: getBalance | Inputs: UID: 75 | Result: 100 
+Operation: getBalance | Inputs: UID: 76 | Result: 100 
+Operation: getBalance | Inputs: UID: 77 | Result: 90 
+Operation: getBalance | Inputs: UID: 78 | Result: 100 
+Operation: getBalance | Inputs: UID: 79 | Result: 110 
+Operation: getBalance | Inputs: UID: 80 | Result: 110 
+Operation: getBalance | Inputs: UID: 81 | Result: 120 
+Operation: getBalance | Inputs: UID: 82 | Result: 110 
+Operation: getBalance | Inputs: UID: 83 | Result: 90 
+Operation: getBalance | Inputs: UID: 84 | Result: 110 
+Operation: getBalance | Inputs: UID: 85 | Result: 100 
+Operation: getBalance | Inputs: UID: 86 | Result: 80 
+Operation: getBalance | Inputs: UID: 87 | Result: 90 
+Operation: getBalance | Inputs: UID: 88 | Result: 100 
+Operation: getBalance | Inputs: UID: 89 | Result: 100 
+Operation: getBalance | Inputs: UID: 90 | Result: 100 
+Operation: getBalance | Inputs: UID: 91 | Result: 100 
+Operation: getBalance | Inputs: UID: 92 | Result: 90 
+Operation: getBalance | Inputs: UID: 93 | Result: 80 
+Operation: getBalance | Inputs: UID: 94 | Result: 100 
+Operation: getBalance | Inputs: UID: 95 | Result: 110 
+Operation: getBalance | Inputs: UID: 96 | Result: 90 
+Operation: getBalance | Inputs: UID: 97 | Result: 140 
+Operation: getBalance | Inputs: UID: 98 | Result: 70 
+Operation: getBalance | Inputs: UID: 99 | Result: 110 
+Operation: getBalance | Inputs: UID: 100 | Result: 100 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: createAccount | Inputs:  | Result: 21 
+Operation: createAccount | Inputs:  | Result: 22 
+Operation: createAccount | Inputs:  | Result: 23 
+Operation: createAccount | Inputs:  | Result: 24 
+Operation: createAccount | Inputs:  | Result: 25 
+Operation: createAccount | Inputs:  | Result: 26 
+Operation: createAccount | Inputs:  | Result: 27 
+Operation: createAccount | Inputs:  | Result: 28 
+Operation: createAccount | Inputs:  | Result: 29 
+Operation: createAccount | Inputs:  | Result: 30 
+Operation: createAccount | Inputs:  | Result: 31 
+Operation: createAccount | Inputs:  | Result: 32 
+Operation: createAccount | Inputs:  | Result: 33 
+Operation: createAccount | Inputs:  | Result: 34 
+Operation: createAccount | Inputs:  | Result: 35 
+Operation: createAccount | Inputs:  | Result: 36 
+Operation: createAccount | Inputs:  | Result: 37 
+Operation: createAccount | Inputs:  | Result: 38 
+Operation: createAccount | Inputs:  | Result: 39 
+Operation: createAccount | Inputs:  | Result: 40 
+Operation: createAccount | Inputs:  | Result: 41 
+Operation: createAccount | Inputs:  | Result: 42 
+Operation: createAccount | Inputs:  | Result: 43 
+Operation: createAccount | Inputs:  | Result: 44 
+Operation: createAccount | Inputs:  | Result: 45 
+Operation: createAccount | Inputs:  | Result: 46 
+Operation: createAccount | Inputs:  | Result: 47 
+Operation: createAccount | Inputs:  | Result: 48 
+Operation: createAccount | Inputs:  | Result: 49 
+Operation: createAccount | Inputs:  | Result: 50 
+Operation: createAccount | Inputs:  | Result: 51 
+Operation: createAccount | Inputs:  | Result: 52 
+Operation: createAccount | Inputs:  | Result: 53 
+Operation: createAccount | Inputs:  | Result: 54 
+Operation: createAccount | Inputs:  | Result: 55 
+Operation: createAccount | Inputs:  | Result: 56 
+Operation: createAccount | Inputs:  | Result: 57 
+Operation: createAccount | Inputs:  | Result: 58 
+Operation: createAccount | Inputs:  | Result: 59 
+Operation: createAccount | Inputs:  | Result: 60 
+Operation: createAccount | Inputs:  | Result: 61 
+Operation: createAccount | Inputs:  | Result: 62 
+Operation: createAccount | Inputs:  | Result: 63 
+Operation: createAccount | Inputs:  | Result: 64 
+Operation: createAccount | Inputs:  | Result: 65 
+Operation: createAccount | Inputs:  | Result: 66 
+Operation: createAccount | Inputs:  | Result: 67 
+Operation: createAccount | Inputs:  | Result: 68 
+Operation: createAccount | Inputs:  | Result: 69 
+Operation: createAccount | Inputs:  | Result: 70 
+Operation: createAccount | Inputs:  | Result: 71 
+Operation: createAccount | Inputs:  | Result: 72 
+Operation: createAccount | Inputs:  | Result: 73 
+Operation: createAccount | Inputs:  | Result: 74 
+Operation: createAccount | Inputs:  | Result: 75 
+Operation: createAccount | Inputs:  | Result: 76 
+Operation: createAccount | Inputs:  | Result: 77 
+Operation: createAccount | Inputs:  | Result: 78 
+Operation: createAccount | Inputs:  | Result: 79 
+Operation: createAccount | Inputs:  | Result: 80 
+Operation: createAccount | Inputs:  | Result: 81 
+Operation: createAccount | Inputs:  | Result: 82 
+Operation: createAccount | Inputs:  | Result: 83 
+Operation: createAccount | Inputs:  | Result: 84 
+Operation: createAccount | Inputs:  | Result: 85 
+Operation: createAccount | Inputs:  | Result: 86 
+Operation: createAccount | Inputs:  | Result: 87 
+Operation: createAccount | Inputs:  | Result: 88 
+Operation: createAccount | Inputs:  | Result: 89 
+Operation: createAccount | Inputs:  | Result: 90 
+Operation: createAccount | Inputs:  | Result: 91 
+Operation: createAccount | Inputs:  | Result: 92 
+Operation: createAccount | Inputs:  | Result: 93 
+Operation: createAccount | Inputs:  | Result: 94 
+Operation: createAccount | Inputs:  | Result: 95 
+Operation: createAccount | Inputs:  | Result: 96 
+Operation: createAccount | Inputs:  | Result: 97 
+Operation: createAccount | Inputs:  | Result: 98 
+Operation: createAccount | Inputs:  | Result: 99 
+Operation: createAccount | Inputs:  | Result: 100 
+Operation: deposit | Inputs: UID: 1,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 2,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 3,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 4,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 5,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 6,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 7,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 8,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 9,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 10,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 11,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 12,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 13,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 14,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 15,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 16,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 17,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 18,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 19,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 20,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 21,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 22,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 23,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 24,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 25,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 26,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 27,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 28,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 29,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 30,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 31,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 32,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 33,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 34,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 35,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 36,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 37,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 38,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 39,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 40,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 41,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 42,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 43,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 44,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 45,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 46,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 47,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 48,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 49,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 50,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 51,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 52,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 53,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 54,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 55,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 56,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 57,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 58,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 59,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 60,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 61,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 62,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 63,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 64,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 65,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 66,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 67,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 68,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 69,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 70,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 71,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 72,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 73,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 74,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 75,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 76,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 77,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 78,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 79,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 80,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 81,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 82,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 83,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 84,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 85,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 86,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 87,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 88,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 89,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 90,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 91,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 92,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 93,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 94,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 95,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 96,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 97,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 98,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 99,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 100,Amount:100 | Result: true 
+Operation: getBalance | Inputs: UID: 1 | Result: 100 
+Operation: getBalance | Inputs: UID: 2 | Result: 100 
+Operation: getBalance | Inputs: UID: 3 | Result: 100 
+Operation: getBalance | Inputs: UID: 4 | Result: 100 
+Operation: getBalance | Inputs: UID: 5 | Result: 100 
+Operation: getBalance | Inputs: UID: 6 | Result: 100 
+Operation: getBalance | Inputs: UID: 7 | Result: 100 
+Operation: getBalance | Inputs: UID: 8 | Result: 100 
+Operation: getBalance | Inputs: UID: 9 | Result: 100 
+Operation: getBalance | Inputs: UID: 10 | Result: 100 
+Operation: getBalance | Inputs: UID: 11 | Result: 100 
+Operation: getBalance | Inputs: UID: 12 | Result: 100 
+Operation: getBalance | Inputs: UID: 13 | Result: 100 
+Operation: getBalance | Inputs: UID: 14 | Result: 100 
+Operation: getBalance | Inputs: UID: 15 | Result: 100 
+Operation: getBalance | Inputs: UID: 16 | Result: 100 
+Operation: getBalance | Inputs: UID: 17 | Result: 100 
+Operation: getBalance | Inputs: UID: 18 | Result: 100 
+Operation: getBalance | Inputs: UID: 19 | Result: 100 
+Operation: getBalance | Inputs: UID: 20 | Result: 100 
+Operation: getBalance | Inputs: UID: 21 | Result: 100 
+Operation: getBalance | Inputs: UID: 22 | Result: 100 
+Operation: getBalance | Inputs: UID: 23 | Result: 100 
+Operation: getBalance | Inputs: UID: 24 | Result: 100 
+Operation: getBalance | Inputs: UID: 25 | Result: 100 
+Operation: getBalance | Inputs: UID: 26 | Result: 100 
+Operation: getBalance | Inputs: UID: 27 | Result: 100 
+Operation: getBalance | Inputs: UID: 28 | Result: 100 
+Operation: getBalance | Inputs: UID: 29 | Result: 100 
+Operation: getBalance | Inputs: UID: 30 | Result: 100 
+Operation: getBalance | Inputs: UID: 31 | Result: 100 
+Operation: getBalance | Inputs: UID: 32 | Result: 100 
+Operation: getBalance | Inputs: UID: 33 | Result: 100 
+Operation: getBalance | Inputs: UID: 34 | Result: 100 
+Operation: getBalance | Inputs: UID: 35 | Result: 100 
+Operation: getBalance | Inputs: UID: 36 | Result: 100 
+Operation: getBalance | Inputs: UID: 37 | Result: 100 
+Operation: getBalance | Inputs: UID: 38 | Result: 100 
+Operation: getBalance | Inputs: UID: 39 | Result: 100 
+Operation: getBalance | Inputs: UID: 40 | Result: 100 
+Operation: getBalance | Inputs: UID: 41 | Result: 100 
+Operation: getBalance | Inputs: UID: 42 | Result: 100 
+Operation: getBalance | Inputs: UID: 43 | Result: 100 
+Operation: getBalance | Inputs: UID: 44 | Result: 100 
+Operation: getBalance | Inputs: UID: 45 | Result: 100 
+Operation: getBalance | Inputs: UID: 46 | Result: 100 
+Operation: getBalance | Inputs: UID: 47 | Result: 100 
+Operation: getBalance | Inputs: UID: 48 | Result: 100 
+Operation: getBalance | Inputs: UID: 49 | Result: 100 
+Operation: getBalance | Inputs: UID: 50 | Result: 100 
+Operation: getBalance | Inputs: UID: 51 | Result: 100 
+Operation: getBalance | Inputs: UID: 52 | Result: 100 
+Operation: getBalance | Inputs: UID: 53 | Result: 100 
+Operation: getBalance | Inputs: UID: 54 | Result: 100 
+Operation: getBalance | Inputs: UID: 55 | Result: 100 
+Operation: getBalance | Inputs: UID: 56 | Result: 100 
+Operation: getBalance | Inputs: UID: 57 | Result: 100 
+Operation: getBalance | Inputs: UID: 58 | Result: 100 
+Operation: getBalance | Inputs: UID: 59 | Result: 100 
+Operation: getBalance | Inputs: UID: 60 | Result: 100 
+Operation: getBalance | Inputs: UID: 61 | Result: 100 
+Operation: getBalance | Inputs: UID: 62 | Result: 100 
+Operation: getBalance | Inputs: UID: 63 | Result: 100 
+Operation: getBalance | Inputs: UID: 64 | Result: 100 
+Operation: getBalance | Inputs: UID: 65 | Result: 100 
+Operation: getBalance | Inputs: UID: 66 | Result: 100 
+Operation: getBalance | Inputs: UID: 67 | Result: 100 
+Operation: getBalance | Inputs: UID: 68 | Result: 100 
+Operation: getBalance | Inputs: UID: 69 | Result: 100 
+Operation: getBalance | Inputs: UID: 70 | Result: 100 
+Operation: getBalance | Inputs: UID: 71 | Result: 100 
+Operation: getBalance | Inputs: UID: 72 | Result: 100 
+Operation: getBalance | Inputs: UID: 73 | Result: 100 
+Operation: getBalance | Inputs: UID: 74 | Result: 100 
+Operation: getBalance | Inputs: UID: 75 | Result: 100 
+Operation: getBalance | Inputs: UID: 76 | Result: 100 
+Operation: getBalance | Inputs: UID: 77 | Result: 100 
+Operation: getBalance | Inputs: UID: 78 | Result: 100 
+Operation: getBalance | Inputs: UID: 79 | Result: 100 
+Operation: getBalance | Inputs: UID: 80 | Result: 100 
+Operation: getBalance | Inputs: UID: 81 | Result: 100 
+Operation: getBalance | Inputs: UID: 82 | Result: 100 
+Operation: getBalance | Inputs: UID: 83 | Result: 100 
+Operation: getBalance | Inputs: UID: 84 | Result: 100 
+Operation: getBalance | Inputs: UID: 85 | Result: 100 
+Operation: getBalance | Inputs: UID: 86 | Result: 100 
+Operation: getBalance | Inputs: UID: 87 | Result: 100 
+Operation: getBalance | Inputs: UID: 88 | Result: 100 
+Operation: getBalance | Inputs: UID: 89 | Result: 100 
+Operation: getBalance | Inputs: UID: 90 | Result: 100 
+Operation: getBalance | Inputs: UID: 91 | Result: 100 
+Operation: getBalance | Inputs: UID: 92 | Result: 100 
+Operation: getBalance | Inputs: UID: 93 | Result: 100 
+Operation: getBalance | Inputs: UID: 94 | Result: 100 
+Operation: getBalance | Inputs: UID: 95 | Result: 100 
+Operation: getBalance | Inputs: UID: 96 | Result: 100 
+Operation: getBalance | Inputs: UID: 97 | Result: 100 
+Operation: getBalance | Inputs: UID: 98 | Result: 100 
+Operation: getBalance | Inputs: UID: 99 | Result: 100 
+Operation: getBalance | Inputs: UID: 100 | Result: 100 
+Accounts doesn't have key0Accounts doesn't have key0Operation: getBalance | Inputs: UID: 1 | Result: 80 
+Operation: getBalance | Inputs: UID: 2 | Result: 90 
+Operation: getBalance | Inputs: UID: 3 | Result: 80 
+Operation: getBalance | Inputs: UID: 4 | Result: 120 
+Operation: getBalance | Inputs: UID: 5 | Result: 110 
+Operation: getBalance | Inputs: UID: 6 | Result: 110 
+Operation: getBalance | Inputs: UID: 7 | Result: 100 
+Operation: getBalance | Inputs: UID: 8 | Result: 110 
+Operation: getBalance | Inputs: UID: 9 | Result: 110 
+Operation: getBalance | Inputs: UID: 10 | Result: 110 
+Operation: getBalance | Inputs: UID: 11 | Result: 100 
+Operation: getBalance | Inputs: UID: 12 | Result: 100 
+Operation: getBalance | Inputs: UID: 13 | Result: 120 
+Operation: getBalance | Inputs: UID: 14 | Result: 90 
+Operation: getBalance | Inputs: UID: 15 | Result: 100 
+Operation: getBalance | Inputs: UID: 16 | Result: 110 
+Operation: getBalance | Inputs: UID: 17 | Result: 90 
+Operation: getBalance | Inputs: UID: 18 | Result: 80 
+Operation: getBalance | Inputs: UID: 19 | Result: 110 
+Operation: getBalance | Inputs: UID: 20 | Result: 110 
+Operation: getBalance | Inputs: UID: 21 | Result: 100 
+Operation: getBalance | Inputs: UID: 22 | Result: 110 
+Operation: getBalance | Inputs: UID: 23 | Result: 90 
+Operation: getBalance | Inputs: UID: 24 | Result: 110 
+Operation: getBalance | Inputs: UID: 25 | Result: 90 
+Operation: getBalance | Inputs: UID: 26 | Result: 70 
+Operation: getBalance | Inputs: UID: 27 | Result: 100 
+Operation: getBalance | Inputs: UID: 28 | Result: 100 
+Operation: getBalance | Inputs: UID: 29 | Result: 130 
+Operation: getBalance | Inputs: UID: 30 | Result: 130 
+Operation: getBalance | Inputs: UID: 31 | Result: 100 
+Operation: getBalance | Inputs: UID: 32 | Result: 90 
+Operation: getBalance | Inputs: UID: 33 | Result: 110 
+Operation: getBalance | Inputs: UID: 34 | Result: 100 
+Operation: getBalance | Inputs: UID: 35 | Result: 90 
+Operation: getBalance | Inputs: UID: 36 | Result: 100 
+Operation: getBalance | Inputs: UID: 37 | Result: 100 
+Operation: getBalance | Inputs: UID: 38 | Result: 100 
+Operation: getBalance | Inputs: UID: 39 | Result: 100 
+Operation: getBalance | Inputs: UID: 40 | Result: 110 
+Operation: getBalance | Inputs: UID: 41 | Result: 110 
+Operation: getBalance | Inputs: UID: 42 | Result: 100 
+Operation: getBalance | Inputs: UID: 43 | Result: 100 
+Operation: getBalance | Inputs: UID: 44 | Result: 100 
+Operation: getBalance | Inputs: UID: 45 | Result: 110 
+Operation: getBalance | Inputs: UID: 46 | Result: 80 
+Operation: getBalance | Inputs: UID: 47 | Result: 100 
+Operation: getBalance | Inputs: UID: 48 | Result: 50 
+Operation: getBalance | Inputs: UID: 49 | Result: 110 
+Operation: getBalance | Inputs: UID: 50 | Result: 80 
+Operation: getBalance | Inputs: UID: 51 | Result: 100 
+Operation: getBalance | Inputs: UID: 52 | Result: 80 
+Operation: getBalance | Inputs: UID: 53 | Result: 100 
+Operation: getBalance | Inputs: UID: 54 | Result: 100 
+Operation: getBalance | Inputs: UID: 55 | Result: 120 
+Operation: getBalance | Inputs: UID: 56 | Result: 100 
+Operation: getBalance | Inputs: UID: 57 | Result: 90 
+Operation: getBalance | Inputs: UID: 58 | Result: 110 
+Operation: getBalance | Inputs: UID: 59 | Result: 110 
+Operation: getBalance | Inputs: UID: 60 | Result: 120 
+Operation: getBalance | Inputs: UID: 61 | Result: 120 
+Operation: getBalance | Inputs: UID: 62 | Result: 90 
+Operation: getBalance | Inputs: UID: 63 | Result: 120 
+Operation: getBalance | Inputs: UID: 64 | Result: 110 
+Operation: getBalance | Inputs: UID: 65 | Result: 130 
+Operation: getBalance | Inputs: UID: 66 | Result: 60 
+Operation: getBalance | Inputs: UID: 67 | Result: 130 
+Operation: getBalance | Inputs: UID: 68 | Result: 80 
+Operation: getBalance | Inputs: UID: 69 | Result: 90 
+Operation: getBalance | Inputs: UID: 70 | Result: 90 
+Operation: getBalance | Inputs: UID: 71 | Result: 90 
+Operation: getBalance | Inputs: UID: 72 | Result: 90 
+Operation: getBalance | Inputs: UID: 73 | Result: 120 
+Operation: getBalance | Inputs: UID: 74 | Result: 100 
+Operation: getBalance | Inputs: UID: 75 | Result: 80 
+Operation: getBalance | Inputs: UID: 76 | Result: 100 
+Operation: getBalance | Inputs: UID: 77 | Result: 100 
+Operation: getBalance | Inputs: UID: 78 | Result: 100 
+Operation: getBalance | Inputs: UID: 79 | Result: 90 
+Operation: getBalance | Inputs: UID: 80 | Result: 90 
+Operation: getBalance | Inputs: UID: 81 | Result: 120 
+Operation: getBalance | Inputs: UID: 82 | Result: 90 
+Operation: getBalance | Inputs: UID: 83 | Result: 90 
+Operation: getBalance | Inputs: UID: 84 | Result: 120 
+Operation: getBalance | Inputs: UID: 85 | Result: 100 
+Operation: getBalance | Inputs: UID: 86 | Result: 120 
+Operation: getBalance | Inputs: UID: 87 | Result: 110 
+Operation: getBalance | Inputs: UID: 88 | Result: 100 
+Operation: getBalance | Inputs: UID: 89 | Result: 110 
+Operation: getBalance | Inputs: UID: 90 | Result: 100 
+Operation: getBalance | Inputs: UID: 91 | Result: 70 
+Operation: getBalance | Inputs: UID: 92 | Result: 100 
+Operation: getBalance | Inputs: UID: 93 | Result: 100 
+Operation: getBalance | Inputs: UID: 94 | Result: 90 
+Operation: getBalance | Inputs: UID: 95 | Result: 70 
+Operation: getBalance | Inputs: UID: 96 | Result: 70 
+Operation: getBalance | Inputs: UID: 97 | Result: 90 
+Operation: getBalance | Inputs: UID: 98 | Result: 120 
+Operation: getBalance | Inputs: UID: 99 | Result: 110 
+Operation: getBalance | Inputs: UID: 100 | Result: 100 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: createAccount | Inputs:  | Result: 21 
+Operation: createAccount | Inputs:  | Result: 22 
+Operation: createAccount | Inputs:  | Result: 23 
+Operation: createAccount | Inputs:  | Result: 24 
+Operation: createAccount | Inputs:  | Result: 25 
+Operation: createAccount | Inputs:  | Result: 26 
+Operation: createAccount | Inputs:  | Result: 27 
+Operation: createAccount | Inputs:  | Result: 28 
+Operation: createAccount | Inputs:  | Result: 29 
+Operation: createAccount | Inputs:  | Result: 30 
+Operation: createAccount | Inputs:  | Result: 31 
+Operation: createAccount | Inputs:  | Result: 32 
+Operation: createAccount | Inputs:  | Result: 33 
+Operation: createAccount | Inputs:  | Result: 34 
+Operation: createAccount | Inputs:  | Result: 35 
+Operation: createAccount | Inputs:  | Result: 36 
+Operation: createAccount | Inputs:  | Result: 37 
+Operation: createAccount | Inputs:  | Result: 38 
+Operation: createAccount | Inputs:  | Result: 39 
+Operation: createAccount | Inputs:  | Result: 40 
+Operation: createAccount | Inputs:  | Result: 41 
+Operation: createAccount | Inputs:  | Result: 42 
+Operation: createAccount | Inputs:  | Result: 43 
+Operation: createAccount | Inputs:  | Result: 44 
+Operation: createAccount | Inputs:  | Result: 45 
+Operation: createAccount | Inputs:  | Result: 46 
+Operation: createAccount | Inputs:  | Result: 47 
+Operation: createAccount | Inputs:  | Result: 48 
+Operation: createAccount | Inputs:  | Result: 49 
+Operation: createAccount | Inputs:  | Result: 50 
+Operation: createAccount | Inputs:  | Result: 51 
+Operation: createAccount | Inputs:  | Result: 52 
+Operation: createAccount | Inputs:  | Result: 53 
+Operation: createAccount | Inputs:  | Result: 54 
+Operation: createAccount | Inputs:  | Result: 55 
+Operation: createAccount | Inputs:  | Result: 56 
+Operation: createAccount | Inputs:  | Result: 57 
+Operation: createAccount | Inputs:  | Result: 58 
+Operation: createAccount | Inputs:  | Result: 59 
+Operation: createAccount | Inputs:  | Result: 60 
+Operation: createAccount | Inputs:  | Result: 61 
+Operation: createAccount | Inputs:  | Result: 62 
+Operation: createAccount | Inputs:  | Result: 63 
+Operation: createAccount | Inputs:  | Result: 64 
+Operation: createAccount | Inputs:  | Result: 65 
+Operation: createAccount | Inputs:  | Result: 66 
+Operation: createAccount | Inputs:  | Result: 67 
+Operation: createAccount | Inputs:  | Result: 68 
+Operation: createAccount | Inputs:  | Result: 69 
+Operation: createAccount | Inputs:  | Result: 70 
+Operation: createAccount | Inputs:  | Result: 71 
+Operation: createAccount | Inputs:  | Result: 72 
+Operation: createAccount | Inputs:  | Result: 73 
+Operation: createAccount | Inputs:  | Result: 74 
+Operation: createAccount | Inputs:  | Result: 75 
+Operation: createAccount | Inputs:  | Result: 76 
+Operation: createAccount | Inputs:  | Result: 77 
+Operation: createAccount | Inputs:  | Result: 78 
+Operation: createAccount | Inputs:  | Result: 79 
+Operation: createAccount | Inputs:  | Result: 80 
+Operation: createAccount | Inputs:  | Result: 81 
+Operation: createAccount | Inputs:  | Result: 82 
+Operation: createAccount | Inputs:  | Result: 83 
+Operation: createAccount | Inputs:  | Result: 84 
+Operation: createAccount | Inputs:  | Result: 85 
+Operation: createAccount | Inputs:  | Result: 86 
+Operation: createAccount | Inputs:  | Result: 87 
+Operation: createAccount | Inputs:  | Result: 88 
+Operation: createAccount | Inputs:  | Result: 89 
+Operation: createAccount | Inputs:  | Result: 90 
+Operation: createAccount | Inputs:  | Result: 91 
+Operation: createAccount | Inputs:  | Result: 92 
+Operation: createAccount | Inputs:  | Result: 93 
+Operation: createAccount | Inputs:  | Result: 94 
+Operation: createAccount | Inputs:  | Result: 95 
+Operation: createAccount | Inputs:  | Result: 96 
+Operation: createAccount | Inputs:  | Result: 97 
+Operation: createAccount | Inputs:  | Result: 98 
+Operation: createAccount | Inputs:  | Result: 99 
+Operation: createAccount | Inputs:  | Result: 100 
+Operation: deposit | Inputs: UID: 1,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 2,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 3,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 4,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 5,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 6,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 7,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 8,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 9,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 10,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 11,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 12,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 13,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 14,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 15,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 16,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 17,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 18,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 19,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 20,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 21,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 22,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 23,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 24,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 25,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 26,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 27,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 28,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 29,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 30,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 31,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 32,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 33,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 34,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 35,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 36,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 37,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 38,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 39,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 40,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 41,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 42,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 43,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 44,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 45,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 46,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 47,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 48,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 49,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 50,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 51,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 52,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 53,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 54,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 55,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 56,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 57,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 58,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 59,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 60,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 61,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 62,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 63,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 64,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 65,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 66,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 67,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 68,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 69,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 70,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 71,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 72,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 73,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 74,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 75,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 76,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 77,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 78,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 79,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 80,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 81,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 82,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 83,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 84,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 85,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 86,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 87,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 88,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 89,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 90,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 91,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 92,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 93,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 94,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 95,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 96,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 97,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 98,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 99,Amount:100 | Result: true 
+Operation: deposit | Inputs: UID: 100,Amount:100 | Result: true 
+Operation: getBalance | Inputs: UID: 1 | Result: 100 
+Operation: getBalance | Inputs: UID: 2 | Result: 100 
+Operation: getBalance | Inputs: UID: 3 | Result: 100 
+Operation: getBalance | Inputs: UID: 4 | Result: 100 
+Operation: getBalance | Inputs: UID: 5 | Result: 100 
+Operation: getBalance | Inputs: UID: 6 | Result: 100 
+Operation: getBalance | Inputs: UID: 7 | Result: 100 
+Operation: getBalance | Inputs: UID: 8 | Result: 100 
+Operation: getBalance | Inputs: UID: 9 | Result: 100 
+Operation: getBalance | Inputs: UID: 10 | Result: 100 
+Operation: getBalance | Inputs: UID: 11 | Result: 100 
+Operation: getBalance | Inputs: UID: 12 | Result: 100 
+Operation: getBalance | Inputs: UID: 13 | Result: 100 
+Operation: getBalance | Inputs: UID: 14 | Result: 100 
+Operation: getBalance | Inputs: UID: 15 | Result: 100 
+Operation: getBalance | Inputs: UID: 16 | Result: 100 
+Operation: getBalance | Inputs: UID: 17 | Result: 100 
+Operation: getBalance | Inputs: UID: 18 | Result: 100 
+Operation: getBalance | Inputs: UID: 19 | Result: 100 
+Operation: getBalance | Inputs: UID: 20 | Result: 100 
+Operation: getBalance | Inputs: UID: 21 | Result: 100 
+Operation: getBalance | Inputs: UID: 22 | Result: 100 
+Operation: getBalance | Inputs: UID: 23 | Result: 100 
+Operation: getBalance | Inputs: UID: 24 | Result: 100 
+Operation: getBalance | Inputs: UID: 25 | Result: 100 
+Operation: getBalance | Inputs: UID: 26 | Result: 100 
+Operation: getBalance | Inputs: UID: 27 | Result: 100 
+Operation: getBalance | Inputs: UID: 28 | Result: 100 
+Operation: getBalance | Inputs: UID: 29 | Result: 100 
+Operation: getBalance | Inputs: UID: 30 | Result: 100 
+Operation: getBalance | Inputs: UID: 31 | Result: 100 
+Operation: getBalance | Inputs: UID: 32 | Result: 100 
+Operation: getBalance | Inputs: UID: 33 | Result: 100 
+Operation: getBalance | Inputs: UID: 34 | Result: 100 
+Operation: getBalance | Inputs: UID: 35 | Result: 100 
+Operation: getBalance | Inputs: UID: 36 | Result: 100 
+Operation: getBalance | Inputs: UID: 37 | Result: 100 
+Operation: getBalance | Inputs: UID: 38 | Result: 100 
+Operation: getBalance | Inputs: UID: 39 | Result: 100 
+Operation: getBalance | Inputs: UID: 40 | Result: 100 
+Operation: getBalance | Inputs: UID: 41 | Result: 100 
+Operation: getBalance | Inputs: UID: 42 | Result: 100 
+Operation: getBalance | Inputs: UID: 43 | Result: 100 
+Operation: getBalance | Inputs: UID: 44 | Result: 100 
+Operation: getBalance | Inputs: UID: 45 | Result: 100 
+Operation: getBalance | Inputs: UID: 46 | Result: 100 
+Operation: getBalance | Inputs: UID: 47 | Result: 100 
+Operation: getBalance | Inputs: UID: 48 | Result: 100 
+Operation: getBalance | Inputs: UID: 49 | Result: 100 
+Operation: getBalance | Inputs: UID: 50 | Result: 100 
+Operation: getBalance | Inputs: UID: 51 | Result: 100 
+Operation: getBalance | Inputs: UID: 52 | Result: 100 
+Operation: getBalance | Inputs: UID: 53 | Result: 100 
+Operation: getBalance | Inputs: UID: 54 | Result: 100 
+Operation: getBalance | Inputs: UID: 55 | Result: 100 
+Operation: getBalance | Inputs: UID: 56 | Result: 100 
+Operation: getBalance | Inputs: UID: 57 | Result: 100 
+Operation: getBalance | Inputs: UID: 58 | Result: 100 
+Operation: getBalance | Inputs: UID: 59 | Result: 100 
+Operation: getBalance | Inputs: UID: 60 | Result: 100 
+Operation: getBalance | Inputs: UID: 61 | Result: 100 
+Operation: getBalance | Inputs: UID: 62 | Result: 100 
+Operation: getBalance | Inputs: UID: 63 | Result: 100 
+Operation: getBalance | Inputs: UID: 64 | Result: 100 
+Operation: getBalance | Inputs: UID: 65 | Result: 100 
+Operation: getBalance | Inputs: UID: 66 | Result: 100 
+Operation: getBalance | Inputs: UID: 67 | Result: 100 
+Operation: getBalance | Inputs: UID: 68 | Result: 100 
+Operation: getBalance | Inputs: UID: 69 | Result: 100 
+Operation: getBalance | Inputs: UID: 70 | Result: 100 
+Operation: getBalance | Inputs: UID: 71 | Result: 100 
+Operation: getBalance | Inputs: UID: 72 | Result: 100 
+Operation: getBalance | Inputs: UID: 73 | Result: 100 
+Operation: getBalance | Inputs: UID: 74 | Result: 100 
+Operation: getBalance | Inputs: UID: 75 | Result: 100 
+Operation: getBalance | Inputs: UID: 76 | Result: 100 
+Operation: getBalance | Inputs: UID: 77 | Result: 100 
+Operation: getBalance | Inputs: UID: 78 | Result: 100 
+Operation: getBalance | Inputs: UID: 79 | Result: 100 
+Operation: getBalance | Inputs: UID: 80 | Result: 100 
+Operation: getBalance | Inputs: UID: 81 | Result: 100 
+Operation: getBalance | Inputs: UID: 82 | Result: 100 
+Operation: getBalance | Inputs: UID: 83 | Result: 100 
+Operation: getBalance | Inputs: UID: 84 | Result: 100 
+Operation: getBalance | Inputs: UID: 85 | Result: 100 
+Operation: getBalance | Inputs: UID: 86 | Result: 100 
+Operation: getBalance | Inputs: UID: 87 | Result: 100 
+Operation: getBalance | Inputs: UID: 88 | Result: 100 
+Operation: getBalance | Inputs: UID: 89 | Result: 100 
+Operation: getBalance | Inputs: UID: 90 | Result: 100 
+Operation: getBalance | Inputs: UID: 91 | Result: 100 
+Operation: getBalance | Inputs: UID: 92 | Result: 100 
+Operation: getBalance | Inputs: UID: 93 | Result: 100 
+Operation: getBalance | Inputs: UID: 94 | Result: 100 
+Operation: getBalance | Inputs: UID: 95 | Result: 100 
+Operation: getBalance | Inputs: UID: 96 | Result: 100 
+Operation: getBalance | Inputs: UID: 97 | Result: 100 
+Operation: getBalance | Inputs: UID: 98 | Result: 100 
+Operation: getBalance | Inputs: UID: 99 | Result: 100 
+Operation: getBalance | Inputs: UID: 100 | Result: 100 
+Operation: getBalance | Inputs: UID: 1 | Result: 100 
+Operation: getBalance | Inputs: UID: 2 | Result: 110 
+Operation: getBalance | Inputs: UID: 3 | Result: 90 
+Operation: getBalance | Inputs: UID: 4 | Result: 80 
+Operation: getBalance | Inputs: UID: 5 | Result: 100 
+Operation: getBalance | Inputs: UID: 6 | Result: 80 
+Operation: getBalance | Inputs: UID: 7 | Result: 100 
+Operation: getBalance | Inputs: UID: 8 | Result: 140 
+Operation: getBalance | Inputs: UID: 9 | Result: 80 
+Operation: getBalance | Inputs: UID: 10 | Result: 90 
+Operation: getBalance | Inputs: UID: 11 | Result: 100 
+Operation: getBalance | Inputs: UID: 12 | Result: 80 
+Operation: getBalance | Inputs: UID: 13 | Result: 90 
+Operation: getBalance | Inputs: UID: 14 | Result: 80 
+Operation: getBalance | Inputs: UID: 15 | Result: 110 
+Operation: getBalance | Inputs: UID: 16 | Result: 120 
+Operation: getBalance | Inputs: UID: 17 | Result: 80 
+Operation: getBalance | Inputs: UID: 18 | Result: 110 
+Operation: getBalance | Inputs: UID: 19 | Result: 50 
+Operation: getBalance | Inputs: UID: 20 | Result: 110 
+Operation: getBalance | Inputs: UID: 21 | Result: 90 
+Operation: getBalance | Inputs: UID: 22 | Result: 110 
+Operation: getBalance | Inputs: UID: 23 | Result: 100 
+Operation: getBalance | Inputs: UID: 24 | Result: 100 
+Operation: getBalance | Inputs: UID: 25 | Result: 150 
+Operation: getBalance | Inputs: UID: 26 | Result: 110 
+Operation: getBalance | Inputs: UID: 27 | Result: 100 
+Operation: getBalance | Inputs: UID: 28 | Result: 80 
+Operation: getBalance | Inputs: UID: 29 | Result: 100 
+Operation: getBalance | Inputs: UID: 30 | Result: 110 
+Operation: getBalance | Inputs: UID: 31 | Result: 90 
+Operation: getBalance | Inputs: UID: 32 | Result: 110 
+Operation: getBalance | Inputs: UID: 33 | Result: 90 
+Operation: getBalance | Inputs: UID: 34 | Result: 100 
+Operation: getBalance | Inputs: UID: 35 | Result: 80 
+Operation: getBalance | Inputs: UID: 36 | Result: 110 
+Operation: getBalance | Inputs: UID: 37 | Result: 80 
+Operation: getBalance | Inputs: UID: 38 | Result: 90 
+Operation: getBalance | Inputs: UID: 39 | Result: 100 
+Operation: getBalance | Inputs: UID: 40 | Result: 120 
+Operation: getBalance | Inputs: UID: 41 | Result: 90 
+Operation: getBalance | Inputs: UID: 42 | Result: 100 
+Operation: getBalance | Inputs: UID: 43 | Result: 90 
+Operation: getBalance | Inputs: UID: 44 | Result: 100 
+Operation: getBalance | Inputs: UID: 45 | Result: 120 
+Operation: getBalance | Inputs: UID: 46 | Result: 100 
+Operation: getBalance | Inputs: UID: 47 | Result: 80 
+Operation: getBalance | Inputs: UID: 48 | Result: 100 
+Operation: getBalance | Inputs: UID: 49 | Result: 110 
+Operation: getBalance | Inputs: UID: 50 | Result: 80 
+Operation: getBalance | Inputs: UID: 51 | Result: 100 
+Operation: getBalance | Inputs: UID: 52 | Result: 120 
+Operation: getBalance | Inputs: UID: 53 | Result: 80 
+Operation: getBalance | Inputs: UID: 54 | Result: 110 
+Operation: getBalance | Inputs: UID: 55 | Result: 90 
+Operation: getBalance | Inputs: UID: 56 | Result: 110 
+Operation: getBalance | Inputs: UID: 57 | Result: 90 
+Operation: getBalance | Inputs: UID: 58 | Result: 110 
+Operation: getBalance | Inputs: UID: 59 | Result: 70 
+Operation: getBalance | Inputs: UID: 60 | Result: 90 
+Operation: getBalance | Inputs: UID: 61 | Result: 130 
+Operation: getBalance | Inputs: UID: 62 | Result: 80 
+Operation: getBalance | Inputs: UID: 63 | Result: 110 
+Operation: getBalance | Inputs: UID: 64 | Result: 130 
+Operation: getBalance | Inputs: UID: 65 | Result: 80 
+Operation: getBalance | Inputs: UID: 66 | Result: 120 
+Operation: getBalance | Inputs: UID: 67 | Result: 120 
+Operation: getBalance | Inputs: UID: 68 | Result: 100 
+Operation: getBalance | Inputs: UID: 69 | Result: 90 
+Operation: getBalance | Inputs: UID: 70 | Result: 120 
+Operation: getBalance | Inputs: UID: 71 | Result: 120 
+Operation: getBalance | Inputs: UID: 72 | Result: 80 
+Operation: getBalance | Inputs: UID: 73 | Result: 100 
+Operation: getBalance | Inputs: UID: 74 | Result: 80 
+Operation: getBalance | Inputs: UID: 75 | Result: 120 
+Operation: getBalance | Inputs: UID: 76 | Result: 100 
+Operation: getBalance | Inputs: UID: 77 | Result: 90 
+Operation: getBalance | Inputs: UID: 78 | Result: 100 
+Operation: getBalance | Inputs: UID: 79 | Result: 120 
+Operation: getBalance | Inputs: UID: 80 | Result: 130 
+Operation: getBalance | Inputs: UID: 81 | Result: 80 
+Operation: getBalance | Inputs: UID: 82 | Result: 110 
+Operation: getBalance | Inputs: UID: 83 | Result: 100 
+Operation: getBalance | Inputs: UID: 84 | Result: 80 
+Operation: getBalance | Inputs: UID: 85 | Result: 90 
+Operation: getBalance | Inputs: UID: 86 | Result: 100 
+Operation: getBalance | Inputs: UID: 87 | Result: 80 
+Operation: getBalance | Inputs: UID: 88 | Result: 90 
+Operation: getBalance | Inputs: UID: 89 | Result: 100 
+Operation: getBalance | Inputs: UID: 90 | Result: 110 
+Operation: getBalance | Inputs: UID: 91 | Result: 110 
+Operation: getBalance | Inputs: UID: 92 | Result: 90 
+Operation: getBalance | Inputs: UID: 93 | Result: 100 
+Operation: getBalance | Inputs: UID: 94 | Result: 110 
+Operation: getBalance | Inputs: UID: 95 | Result: 120 
+Operation: getBalance | Inputs: UID: 96 | Result: 120 
+Operation: getBalance | Inputs: UID: 97 | Result: 90 
+Operation: getBalance | Inputs: UID: 98 | Result: 110 
+Operation: getBalance | Inputs: UID: 99 | Result: 140 
+Operation: getBalance | Inputs: UID: 100 | Result: 90 
