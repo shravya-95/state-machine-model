@@ -8,7 +8,7 @@ public class BankClient {
             throw new RuntimeException( "Syntax: java BankClient serverHostname severPortnumber" );
         }
         System.setSecurityManager (new SecurityManager ());
-        BankServer bankServer = (BankServer) Naming.lookup ("//" + args[0] + "/DateServer");
+        BankServer bankServer = (BankServer) Naming.lookup ("//" + args[0] + ":"+ args[1]+"/BankServer");
         //Same as before here
         bankServer.createAccount();
     }
