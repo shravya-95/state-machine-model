@@ -4,6 +4,7 @@ import java.rmi.RemoteException;
 import java.rmi.Naming;
 import java.rmi.registry.*;
 import java.util.Hashtable;
+import java.io.*;
 
 public class BankServerImpl implements BankServer {
   protected static Hashtable<Integer, Account> accounts;
@@ -46,78 +47,28 @@ public class BankServerImpl implements BankServer {
 //    notifyAll();
 //    return true;
 //  }
-//  public static synchronized void writeToLog(String fileName, String content) throws IOException {
-//    try {
-//
-//      File oFile = new File(fileName);
-//      if (!oFile.exists()) {
-//        oFile.createNewFile();
-//      }
-//      if (oFile.canWrite()) {
-//        BufferedWriter oWriter = new BufferedWriter(new FileWriter(fileName, true));
-//        oWriter.write(content);
-//        oWriter.close();
-//      }
-//    } catch (IOException e) {
-//      e.printStackTrace();
-//    }
-//  }
+  //TODO: add synchronize
+  public static void writeToLog(String fileName, String content) {
+    try {
+
+      File oFile = new File(fileName);
+      if (!oFile.exists()) {
+        oFile.createNewFile();
+      }
+      if (oFile.canWrite()) {
+        BufferedWriter oWriter = new BufferedWriter(new FileWriter(fileName, true));
+        oWriter.write(content);
+        oWriter.close();
+      }
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
 //
 //  public void run (){
 //    String logMsg = "";
 //    String[] content = new String[3];
-//    try {
-//      OutputStream out = s.getOutputStream();
-//      ObjectOutputStream outstream = new ObjectOutputStream(out);
-//      InputStream instream = s.getInputStream();
-//      ObjectInputStream oinstream = new ObjectInputStream(instream);
-//      Request request = (Request) oinstream.readObject();
-//      String requestType = request.getRequestType();
-//      System.out.println("Request type:" + requestType);
-//      switch (requestType) {
-//        case "createAccount": {
-//          int uid = ((CreateAccountRequest) request).getNewUid();
-//          Account account = new Account(uid);
-//          accounts.put(uid, account);
-//          Response createResponse = new CreateAccountResponse(uid);
-//          outstream.writeObject(createResponse);
-//
-//          content[0]="createAccount";
-//          content[1]="";
-//          content[2]= String.valueOf(uid);
-//          break;
-//        }
-//        case "deposit": {
-//          DepositRequest depositRequest = (DepositRequest) request;
-//          int uid = depositRequest.getUid();
-//          Account account = accounts.get(uid);
-//          if (account==null){
-//            System.out.printf("Account uid %d not found",uid);
-//            break;
-//          }
-//          account.deposit(depositRequest.getAmount()); //check if this updates or need to put again
-//
-//          Response createResponse = new DepositResponse(true);
-//          outstream.writeObject(createResponse);
-//          content[0]="deposit";
-//          content[1]= "UID: "+uid + "," + "Amount:" + depositRequest.getAmount();
-//          content[2]= String.valueOf(((DepositResponse) createResponse).getStatus());
-//          break;
-//        }
-//        case "getBalance": {
-//          GetBalanceRequest getBalanceRequest = (GetBalanceRequest) request;
-//          int uid = getBalanceRequest.getUid();
-//          Account account = accounts.get(uid);
-//          if (account==null){
-//            System.out.printf("Account uid %d not found",uid);
-//            break;
-//          }
-//          Response getBalanceResponse = new GetBalanceResponse(account.getBalance());
-//          outstream.writeObject(getBalanceResponse);
-//          content[0]="getBalance";
-//          content[1]="UID: "+uid;
-//          content[2]= String.valueOf(((GetBalanceResponse) getBalanceResponse).getBalance());
-//          break;
+
 //        }
 //        case "transfer": {
 //          boolean status;
@@ -160,16 +111,50 @@ public class BankServerImpl implements BankServer {
 //  }
 
   public int createAccount(){
-      int uid = getNewUid();
-      Account account = new Account(uid);
-      accounts.put(uid, account);
-      return uid;
+    int uid = getNewUid();
+    Account account = new Account(uid);
+    accounts.put(uid, account);
+    String[] content = new String[3];
+    content[0]="createAccount";
+    content[1]="";
+    content[2]= String.valueOf(uid);
+    String logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
+    writeToLog("severLogfile.txt",logMsg);
+    return uid;
   }
+
   public boolean deposit(int uid, int amount){
-    return false;
+    Account account = accounts.get(uid);
+    boolean status = true;
+    if (account==null){
+      //TODO: add logging for this
+        System.out.printf("Account uid %d not found",uid);
+        //TODO: change to return false here in TCP
+        status = false;
+    }
+    account.deposit(amount);
+    String[] content = new String[3];
+    content[0]="deposit";
+    content[1]= "UID: "+uid + "," + "Amount:" + amount;
+    content[2]= String.valueOf(status);
+    String logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
+    writeToLog("severLogfile.txt",logMsg);
+    return status;
   }
   public int getBalance(int uid){
-    return 0;
+      Account account = accounts.get(uid);
+      if (account==null){
+        System.out.printf("Account uid %d not found",uid);
+        return -1;
+      }
+      int balance = account.getBalance();
+      String[] content = new String[3];
+      content[0]="getBalance";
+      content[1]="UID: "+uid;
+      content[2]= String.valueOf(balance);
+      String logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
+      writeToLog("severLogfile.txt",logMsg);
+      return balance;
   }
   public boolean transfer(int sourceUid, int targetUid, int amount){
     synchronized (this){
@@ -202,20 +187,6 @@ public class BankServerImpl implements BankServer {
       Registry localRegistry = LocateRegistry.getRegistry( Integer.parseInt( args[0] ));
       localRegistry.bind ("BankServer", bankServerStub);
     }
-
     accounts = new Hashtable<>();
-
-////    System.out.println ("Starting on port " + args[0]);
-//    ServerSocket server = new ServerSocket (Integer.parseInt (args[0]));
-//
-//    while (true) {
-//      System.out.println ("........Waiting for a client request");
-//      Socket client = server.accept ();
-////      System.out.println( "Received request from " + client.getInetAddress ());
-////      System.out.println( "Starting worker thread..." );
-//      BankServer bankServer = new BankServer(client);
-//      bankServer.start();
-//    }
-
   }
 }
