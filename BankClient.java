@@ -37,7 +37,6 @@ public class BankClient extends Thread {
             int rnd1 = new Random().nextInt(uids.length);
             int rnd2 = new Random().nextInt(uids.length);
             if (rnd1==rnd2) {
-//                System.out.println("The accounts picked for transfer were same --- skipping");
                 continue;
             }
             try {
@@ -65,22 +64,19 @@ public class BankClient extends Thread {
         }
         System.setSecurityManager (new SecurityManager ());
         BankServer bankServer = (BankServer) Naming.lookup ("//" + args[0] + ":"+ args[1]+"/BankServer");
-        //Same as before here
         int iterationCount = Integer.parseInt(args[2]);
         int threadCount = Integer.parseInt(args[3]);
         int numAccounts = 100;
 
         //1: sequentially create 100 threads
         int [] uids = createAccounts(numAccounts, bankServer);
-//        System.out.println(uids[0]);
-//        System.out.println(uids[4]);
         //2: sequentially deposit 100 in each of these accounts
         deposit(uids, 100, numAccounts, bankServer);
         //3: get balance. return value for this should be 10,000
         int balance = getTotalBalance(numAccounts, uids, bankServer);
-        System.out.printf("In main balanace: %d \n", balance);
+        System.out.printf("Balance (should be 10,000): %d \n", balance);
 
-        //5: tansfer
+        //5: transfer
         List<BankClient> clientList = transfer(uids, threadCount, iterationCount, bankServer);
         for(int i = 0; i < clientList.size(); i++)
             try {
@@ -91,7 +87,7 @@ public class BankClient extends Thread {
 
         //6: get balance
         balance = getTotalBalance(numAccounts, uids, bankServer);
-        System.out.printf("In main balanace: %d \n", balance);
+        System.out.printf("Balance (should be 10,000): %d \n", balance);
     }
 
 
@@ -161,7 +157,6 @@ public class BankClient extends Thread {
                 String[] content = new String[3];
                 int balance = bankServer.getBalance(uids[i]);
                 total += balance;
-                System.out.println(total);
                 content[0]="getTotalBalance";
                 content[1]= "UID: "+ uids[i];
                 content[2]= "AccountBalance: "+ balance +", Total so far:"+total;
