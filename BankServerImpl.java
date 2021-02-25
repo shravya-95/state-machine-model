@@ -5,31 +5,58 @@ import java.rmi.Naming;
 import java.rmi.registry.*;
 import java.util.Hashtable;
 import java.io.*;
+
 public class BankServerImpl implements BankServer {
+  //hashtable to hold the account's uid and object
   protected static Hashtable<Integer, Account> accounts;
   private static int uuidCount = 0;
+
   public BankServerImpl () throws RemoteException{
     super();
   }
+
   public int getNewUid(){
     return ++uuidCount;
   }
+
+  /**
+   * Account Class
+   * attributes: uid and account
+   * methods: withdraw, deposit, getBalance
+   */
   class Account{
     public int uid;// unique Id for accounts - an integer sequence counter starting with 1
     int balance = 0;
+
     public Account(int uid){
       this.uid=uid;
     }
-    public int withdraw(int amount) {
 
+    /**
+     * Withdraws given amount from account by subtracting from balance
+     * @param amount Amount to be withdrawn
+     * @return new balance
+     */
+    public int withdraw(int amount) {
       this.balance = this.balance - amount;
       return this.balance;
 
     }
+
+    /**
+     * Deposit given amount to account by adding to balance
+     * @param amount Amount to be deposited
+     * @return new balance
+     */
     public int deposit(int amount){
       this.balance = this.balance+amount;
       return this.balance;
     }
+
+    /**
+     * Getter method to access balance
+     * @return balance
+     */
     public int getBalance(){
       return this.balance;
     }
@@ -69,9 +96,7 @@ public class BankServerImpl implements BankServer {
     Account account = accounts.get(uid);
     boolean status = true;
     if (account==null){
-      //TODO: add logging for this
         System.out.printf("Account uid %d not found",uid);
-        //TODO: change to return false here in TCP
         status = false;
     }
     account.deposit(amount);
@@ -98,34 +123,42 @@ public class BankServerImpl implements BankServer {
       writeToLog("severLogfile.txt",logMsg);
       return balance;
   }
+
+  /**
+   * Transfer method to transfer balance from source account to target account. This method is synchronized to access critical sections.
+   * @parameters target(uid of target account), source(uid of source account) and amount(to be transferred)
+   * @return status(true for successful transfer, false for unsuccessful)
+   */
   public synchronized boolean transfer(int sourceUid, int targetUid, int amount){
-//    synchronized (this){
-      if(!accounts.containsKey(sourceUid)){
-        writeToLog("severLogfile.txt", "Accounts doesn't have key"+String.valueOf(sourceUid));
-      }
-      if(accounts.get(sourceUid).getBalance()<amount){
-        //write to log file
-          String[] content = new String[3];
-          content[0]="transfer";
-          content[1]="From:"+ sourceUid +", To:"+ targetUid +", Amount:"+ amount;
-          content[2]= "False";
-          String logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
-          writeToLog("severLogfile.txt",logMsg);
-        return false;
-      }
-      accounts.get(sourceUid).withdraw(amount);
-      accounts.get(targetUid).deposit(amount);
-      String msg = "Transferred %d from %d to %d\n";
-      System.out.printf(msg,amount,sourceUid,targetUid);
-      notifyAll();
-      String[] content = new String[3];
-      content[0]="transfer";
-      content[1]="From:"+ sourceUid +", To:"+ targetUid +", Amount:"+ amount;
-      content[2]= "True";
-      String logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
-      writeToLog("severLogfile.txt",logMsg);
-      return true;
-//    }
+    if(!accounts.containsKey(sourceUid)){
+      writeToLog("severLogfile.txt", "Accounts doesn't have key"+String.valueOf(sourceUid));
+    }
+    //insufficient balance
+    if(accounts.get(sourceUid).getBalance()<amount){
+        String[] content = new String[3];
+        content[0]="transfer";
+        content[1]="From:"+ sourceUid +", To:"+ targetUid +", Amount:"+ amount;
+        content[2]= "False";
+        String logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
+        writeToLog("severLogfile.txt",logMsg);
+      return false;
+    }
+
+    //transfer
+    accounts.get(sourceUid).withdraw(amount);
+    accounts.get(targetUid).deposit(amount);
+    String msg = "Transferred %d from %d to %d\n";
+    System.out.printf(msg,amount,sourceUid,targetUid);
+    notifyAll();
+
+    //logging
+    String[] content = new String[3];
+    content[0]="transfer";
+    content[1]="From:"+ sourceUid +", To:"+ targetUid +", Amount:"+ amount;
+    content[2]= "True";
+    String logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
+    writeToLog("severLogfile.txt",logMsg);
+    return true;
   }
 
   public static void main (String args[]) throws Exception {
@@ -144,6 +177,7 @@ public class BankServerImpl implements BankServer {
       Registry localRegistry = LocateRegistry.getRegistry( Integer.parseInt( args[0] ));
       localRegistry.bind ("BankServer", bankServerStub);
     }
+
     accounts = new Hashtable<>();
   }
 }
