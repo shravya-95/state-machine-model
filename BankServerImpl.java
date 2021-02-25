@@ -34,19 +34,7 @@ public class BankServerImpl implements BankServer {
       return this.balance;
     }
   }
-//  public synchronized boolean transfer(int target, int source, int amount) throws InterruptedException {
-//    if(accounts.get(source).getBalance()<amount){
-//      //write to log file
-//      return false;
-//    }
-//    accounts.get(source).withdraw(amount);
-//    accounts.get(target).deposit(amount);
-//    String msg = "Transferred %d from %d to %d";
-//    System.out.printf(msg,amount,source,target);
-//    notifyAll();
-//    return true;
-//  }
-  //TODO: add synchronize
+
   public synchronized static void writeToLog(String fileName, String content) {
     try {
 
