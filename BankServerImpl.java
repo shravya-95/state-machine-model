@@ -2,27 +2,6 @@ import java.net.*;
 import java.io.*;
 import java.util.Hashtable;
 
-class Account{
-  public int uid;// unique Id for accounts - an integer sequence counter starting with 1
-  int balance = 0;
-  public Account(int uid){
-    this.uid=uid;
-  }
-  public int withdraw(int amount) {
-
-    this.balance = this.balance - amount;
-    return this.balance;
-
-  }
-  public int deposit(int amount){
-    this.balance = this.balance+amount;
-    return this.balance;
-  }
-  public int getBalance(){
-    return this.balance;
-  }
-}
-
 public class BankServer extends Thread {
   protected Socket s;
   protected static Hashtable<Integer, Account> accounts;
