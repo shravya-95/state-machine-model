@@ -172,7 +172,18 @@ public class BankServerImpl implements BankServer {
     return 0;
   }
   public boolean transfer(int sourceUid, int targetUid, int amount){
-    return false;
+    synchronized (this){
+      if(accounts.get(sourceUid).getBalance()<amount){
+        //write to log file
+        return false;
+      }
+      accounts.get(sourceUid).withdraw(amount);
+      accounts.get(targetUid).deposit(amount);
+      String msg = "Transferred %d from %d to %d";
+      System.out.printf(msg,amount,sourceUid,targetUid);
+      notifyAll();
+      return true;
+    }
   }
 
   public static void main (String args[]) throws Exception {
