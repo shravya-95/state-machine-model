@@ -33,7 +33,7 @@ public class BankClient extends Thread {
         //Same as before here
         bankServer.createAccount();
         int iterationCount
-        List<BankClient> clientList = transfer(uids, threadCount, iterationCount, serverHostname, serverPortnumber);
+        List<BankClient> clientList = transfer(uids, threadCount, iterationCount, bankServer);
         for(int i = 0; i < clientList.size(); i++)
             try {
                 clientList.get(i).join();
@@ -43,12 +43,12 @@ public class BankClient extends Thread {
         BankClient client = new BankClient();
         client.start(bankServer);
     }
-    private static List<BankClient> transfer(int[] uids, int threadCount, int iterationCount){
+    private static List<BankClient> transfer(int[] uids, int threadCount, int iterationCount, BankServer bankServer){
         List<BankClient> clientList = new ArrayList<BankClient>();
         for(int i=0;i<threadCount;i++){
             BankClient bankClient = new BankClient(uids, iterationCount);
             clientList.add(bankClient);
-            bankClient.start();
+            bankClient.start(bankServer);
         }
         return clientList;
     }
