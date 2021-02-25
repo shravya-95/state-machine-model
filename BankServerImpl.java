@@ -5,7 +5,6 @@ import java.rmi.Naming;
 import java.rmi.registry.*;
 import java.util.Hashtable;
 import java.io.*;
-
 public class BankServerImpl implements BankServer {
   protected static Hashtable<Integer, Account> accounts;
   private static int uuidCount = 0;
@@ -48,7 +47,7 @@ public class BankServerImpl implements BankServer {
 //    return true;
 //  }
   //TODO: add synchronize
-  public static void writeToLog(String fileName, String content) {
+  public synchronized static void writeToLog(String fileName, String content) {
     try {
 
       File oFile = new File(fileName);
@@ -64,51 +63,6 @@ public class BankServerImpl implements BankServer {
       e.printStackTrace();
     }
   }
-//
-//  public void run (){
-//    String logMsg = "";
-//    String[] content = new String[3];
-
-//        }
-//        case "transfer": {
-//          boolean status;
-//          TransferRequest transferRequest = (TransferRequest) request;
-//          int sourceUid = transferRequest.getSourceUid();
-//          int targetUid = transferRequest.getTargetUid();
-//          int amount = transferRequest.getAmount();
-//          try {
-//            status = this.transfer(targetUid, sourceUid, amount);
-//          } catch (InterruptedException ex) {
-//            status= false;
-//            ex.printStackTrace();
-//          }
-//          Response transferResponse = new TransferResponse(status);
-//          outstream.writeObject(transferResponse);
-//          content[0]="transfer";
-//          content[1]="From:"+ sourceUid +", To:"+ targetUid +", Amount:"+ amount;
-//          content[2]= String.valueOf(((TransferResponse) transferResponse).getStatus());
-//          break;
-//        }
-//        default:
-//          throw new RuntimeException("Illegal request type");
-//      }
-//      logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
-//      writeToLog("severLogfile.txt",logMsg);
-////      System.out.println("Client exit.");
-//    } catch (IOException ex) {
-//      ex.printStackTrace();
-//    } catch (ClassNotFoundException e) {
-//      e.printStackTrace();
-//    }
-//      finally {
-//      try {
-//        System.out.println("Closing socket");
-//        s.close();
-//      } catch (IOException ex) {
-//        ex.printStackTrace();
-//      }
-//    }
-//  }
 
   public int createAccount(){
     int uid = getNewUid();
@@ -156,8 +110,8 @@ public class BankServerImpl implements BankServer {
       writeToLog("severLogfile.txt",logMsg);
       return balance;
   }
-  public boolean transfer(int sourceUid, int targetUid, int amount){
-    synchronized (this){
+  public synchronized boolean transfer(int sourceUid, int targetUid, int amount){
+//    synchronized (this){
       if(accounts.get(sourceUid).getBalance()<amount){
         //write to log file
         return false;
@@ -168,7 +122,7 @@ public class BankServerImpl implements BankServer {
       System.out.printf(msg,amount,sourceUid,targetUid);
       notifyAll();
       return true;
-    }
+//    }
   }
 
   public static void main (String args[]) throws Exception {
