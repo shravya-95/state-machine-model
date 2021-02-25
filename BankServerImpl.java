@@ -117,6 +117,12 @@ public class BankServerImpl implements BankServer {
       }
       if(accounts.get(sourceUid).getBalance()<amount){
         //write to log file
+          String[] content = new String[3];
+          content[0]="transfer";
+          content[1]="From:"+ sourceUid +", To:"+ targetUid +", Amount:"+ amount;
+          content[2]= "False";
+          String logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
+          writeToLog("severLogfile.txt",logMsg);
         return false;
       }
       accounts.get(sourceUid).withdraw(amount);
@@ -124,6 +130,12 @@ public class BankServerImpl implements BankServer {
       String msg = "Transferred %d from %d to %d\n";
       System.out.printf(msg,amount,sourceUid,targetUid);
       notifyAll();
+      String[] content = new String[3];
+      content[0]="transfer";
+      content[1]="From:"+ sourceUid +", To:"+ targetUid +", Amount:"+ amount;
+      content[2]= "True";
+      String logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
+      writeToLog("severLogfile.txt",logMsg);
       return true;
 //    }
   }

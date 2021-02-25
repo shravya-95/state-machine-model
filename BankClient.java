@@ -19,18 +19,28 @@ public class BankClient extends Thread {
     public void run(){
 
         for (int i=0;i<iterationCount;i++){
+            boolean status = false;
+            String logMsg = "";
+            String[] content = new String[3];
             int rnd1 = new Random().nextInt(uids.length);
             int rnd2 = new Random().nextInt(uids.length);
             if (rnd1==rnd2) {
-                System.out.println("The accounts picked for transfer were same --- skipping");
+//                System.out.println("The accounts picked for transfer were same --- skipping");
                 continue;
             }
             try {
-                boolean status = this.bankServer.transfer(uids[rnd1],uids[rnd2],10);
+                status = this.bankServer.transfer(uids[rnd1],uids[rnd2],10);
             } catch (RemoteException e) {
                 e.printStackTrace();
             }
-            //write to file
+            //write to log file
+            content[0]="transfer";
+            content[1]="From:"+ uids[rnd1] +", To:"+ uids[rnd2] +", Amount:"+ 10;
+            content[2]= String.valueOf(status);
+            logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
+            writeToLog("clientLogfile.txt",logMsg);
+
+
 
         }
 
@@ -131,28 +141,7 @@ public class BankClient extends Thread {
         return total;
     }
 
-    public static int getBalance(int numAccounts, int[] uids,  BankServer bankServer) throws RemoteException {
-        int total = 0;
-        try {
-            for (int i = 0; i < numAccounts; i++) {
-                String logMsg = "";
-                String[] content = new String[3];
-                int balance = bankServer.getBalance(uids[i]);
-                total += balance;
-                System.out.println(total);
-                content[0]="getTotalBalance";
-                content[1]= "UID: "+ uids[i];
-                content[2]= "AccountBalance: "+ balance +", Total so far:"+total;
-                logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
-                writeToLog("clientLogfile.txt",logMsg);
-            }
-        }catch (IOException e){
-            e.printStackTrace ();
-        }
-        return total;
-    }
-
-    //TODO: below synchronized
+    
     public synchronized static void writeToLog(String fileName, String line){
 //        synchronized (this){
             try {
