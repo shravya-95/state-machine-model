@@ -135,7 +135,6 @@ public class BankServerImpl implements BankServer {
    * Request sent by client to initiate transfer
    */
   public boolean operate(String clientId, int sourceUid, int targetUid, int amount){
-    //add check with numClients?
     return transfer(sourceUid, targetUid, amount);
   }
 
@@ -214,12 +213,35 @@ public class BankServerImpl implements BankServer {
     localRegistry.bind (serverId, bankServerStub);
     accounts = new Hashtable<>();
 //    LogicalClock logicalClock = new LogicalClock(serverID, processID);
-    serverInitialize();
+    serverInitialize(bankServer);
+    System.out.println("Server initialization is complete");
   }
 
-  private static void serverInitialize() {
-    //create 20 accounts
-    //add 1000 to all accounts
-    //print init complete
+  private static void serverInitialize(BankServer bankServer) throws RemoteException {
+    createAccounts(20, bankServer);
+  }
+
+  /**
+   * Creates mentioned number of accounts
+   * @param numAccounts Total number of accounts
+   * @param bankServer BankServer RMI object
+   * @return List of UIDs of the accounts created
+   * @throws RemoteException When communication related exception occurs
+   */
+  private static int[] createAccounts(int numAccounts, BankServer bankServer) throws RemoteException {
+    int[] uids = new int[numAccounts];
+    for (int i = 1; i <= numAccounts; i++) {
+      String logMsg = "";
+      String[] content = new String[3];
+
+      uids[i] = bankServer.createAccount();
+
+      content[0]="createAccount";
+      content[1]= "";
+      content[2]= String.valueOf(uids[i]);
+      logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
+      writeToLog("clientLogfile.txt",logMsg);
+    }
+    return uids;
   }
 }
