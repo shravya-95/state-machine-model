@@ -5,6 +5,8 @@ import java.rmi.Naming;
 import java.rmi.registry.*;
 import java.util.Hashtable;
 import java.io.*;
+import java.util.Properties;
+import java.net.InetAddress;
 
 public class BankServerImpl implements BankServer {
   //hashtable to hold the account's uid and object
@@ -161,6 +163,21 @@ public class BankServerImpl implements BankServer {
     String logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
     writeToLog("severLogfile.txt",logMsg);
     return true;
+  }
+  public static Properties loadConfig(String configFileName){
+    Properties prop = new Properties();
+    InputStream inputStream;
+    try {
+      inputStream = new FileInputStream(configFileName);
+    } catch (FileNotFoundException ex) {
+      throw new RuntimeException("Config file not found in path: "+configFileName);
+    }
+    try {
+      prop.load(inputStream);
+    } catch (IOException ex) {
+      throw new RuntimeException("Error loading config file");
+    }
+    return prop;
   }
 
   public static void main (String args[]) throws Exception {

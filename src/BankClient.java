@@ -5,6 +5,8 @@ import java.io.*;
 import java.rmi.RemoteException;
 import java.util.List;
 import java.util.Random;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
 
 
 public class BankClient extends Thread {
@@ -57,6 +59,21 @@ public class BankClient extends Thread {
 
     }
 
+    public static Properties loadConfig(String configFileName){
+        Properties prop = new Properties();
+        InputStream inputStream;
+        try {
+            inputStream = new FileInputStream(configFileName);
+        } catch (FileNotFoundException ex) {
+            throw new RuntimeException("Config file not found in path: "+configFileName);
+        }
+        try {
+            prop.load(inputStream);
+        } catch (IOException ex) {
+            throw new RuntimeException("Error loading config file");
+        }
+        return prop;
+    }
 
     public static void main (String args[]) throws Exception {
         if ( args.length != 3 ) {
