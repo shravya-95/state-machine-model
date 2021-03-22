@@ -13,7 +13,7 @@ import java.util.PriorityQueue;
 import java.util.Properties;
 import java.net.InetAddress;
 
-public class BankServerImpl implements BankServer {
+public class server implements BankServer {
   //hashtable to hold the account's uid and object
   protected static Hashtable<Integer, Account> accounts;
   private static int uuidCount = 0;
@@ -21,7 +21,7 @@ public class BankServerImpl implements BankServer {
   public static PriorityQueue<Event> eventQueue;
   public static LogicalClock logicalClock;
 
-  public BankServerImpl () throws RemoteException{
+  public server () throws RemoteException{
     super();
   }
 
@@ -250,7 +250,7 @@ public class BankServerImpl implements BankServer {
     String configFileName = args[1];
     Properties prop = loadConfig(configFileName);
 
-    BankServerImpl  bankServer  = new BankServerImpl( );
+    server  bankServer  = new server( );
 
     System.setProperty("java.rmi.server.hostname",  InetAddress.getLocalHost().getHostName());
     BankServer bankServerStub  =  (BankServer) UnicastRemoteObject.exportObject(bankServer, Integer.parseInt(prop.getProperty(serverId+".port")));
