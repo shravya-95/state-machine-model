@@ -5,6 +5,8 @@ import java.io.*;
 import java.rmi.RemoteException;
 import java.util.List;
 import java.util.Random;
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
 
 
 public class BankClient extends Thread {
@@ -57,15 +59,44 @@ public class BankClient extends Thread {
 
     }
 
+    public static Properties loadConfig(String configFileName){
+        Properties prop = new Properties();
+        InputStream inputStream;
+        try {
+            inputStream = new FileInputStream(configFileName);
+        } catch (FileNotFoundException ex) {
+            throw new RuntimeException("Config file not found in path: "+configFileName);
+        }
+        try {
+            prop.load(inputStream);
+        } catch (IOException ex) {
+            throw new RuntimeException("Error loading config file");
+        }
+        return prop;
+    }
 
     public static void main (String args[]) throws Exception {
-        if ( args.length != 4 ) {
-            throw new RuntimeException( "Syntax: java BankClient serverHostname severPortnumber threadCount iterationCount" );
+        if ( args.length != 3 ) {
+            throw new RuntimeException( "Syntax: java client clientId threadCount configFile" );
         }
-        System.setSecurityManager (new SecurityManager ());
-        BankServer bankServer = (BankServer) Naming.lookup ("//" + args[0] + ":"+ args[1]+"/BankServer");
-        int iterationCount = Integer.parseInt(args[2]);
-        int threadCount = Integer.parseInt(args[3]);
+
+//        System.setSecurityManager (new SecurityManager ());
+//        BankServer bankServer = (BankServer) Naming.lookup ("//" + args[0] + ":"+ args[1]+"/BankServer");
+
+//        int iterationCount = 200;
+//        int threadCount = Integer.parseInt(args[1]);
+        String configFileName = args[2];
+        Properties prop = loadConfig(configFileName);
+
+        //can optimize to choose different server if this server is down
+        Random rand = new Random();
+        int n = rand.nextInt(3);
+        String server = "Server_"+n;
+        System.out.println(server);
+        Registry registry = LocateRegistry.getRegistry(prop.getProperty(server+".hostname"), Integer.parseInt(prop.getProperty(server+".rmiregistry")));
+        BankServer bankServer = (BankServer) registry.lookup(server);
+
+
         int numAccounts = 100;
 
         //1: sequentially create 100 threads
@@ -77,13 +108,13 @@ public class BankClient extends Thread {
         System.out.printf("Balance (should be 10,000): %d \n", balance);
 
         //5: transfer
-        List<BankClient> clientList = transfer(uids, threadCount, iterationCount, bankServer);
-        for(int i = 0; i < clientList.size(); i++)
-            try {
-                clientList.get(i).join();
-            }catch (InterruptedException e){
-                e.printStackTrace();
-            }
+//        List<client> clientList = transfer(uids, threadCount, iterationCount, bankServer);
+//        for(int i = 0; i < clientList.size(); i++)
+//            try {
+//                clientList.get(i).join();
+//            }catch (InterruptedException e){
+//                e.printStackTrace();
+//            }
 
         //6: get balance
         balance = getTotalBalance(numAccounts, uids, bankServer);

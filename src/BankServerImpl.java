@@ -5,6 +5,8 @@ import java.rmi.Naming;
 import java.rmi.registry.*;
 import java.util.Hashtable;
 import java.io.*;
+import java.util.Properties;
+import java.net.InetAddress;
 
 public class BankServerImpl implements BankServer {
   //hashtable to hold the account's uid and object
@@ -167,23 +169,41 @@ public class BankServerImpl implements BankServer {
     //add 1000 to all accounts
     //print init complete
   }
+  public static Properties loadConfig(String configFileName){
+    Properties prop = new Properties();
+    InputStream inputStream;
+    try {
+      inputStream = new FileInputStream(configFileName);
+    } catch (FileNotFoundException ex) {
+      throw new RuntimeException("Config file not found in path: "+configFileName);
+    }
+    try {
+      prop.load(inputStream);
+    } catch (IOException ex) {
+      throw new RuntimeException("Error loading config file");
+    }
+    return prop;
+  }
+
   public static void main (String args[]) throws Exception {
+    if ( args.length < 2 ) {
+      throw new RuntimeException( "Syntax: java server server-ID configFile numClients" );
+    }
     if (System.getSecurityManager() == null) {
       System.setSecurityManager(new SecurityManager());
     }
-    BankServerImpl  bankServer  = new BankServerImpl( );
-    BankServer bankServerStub  =  (BankServer) UnicastRemoteObject.exportObject(bankServer, 0) ;
-    //TODO: Modify args to get serverID
-    if ( args.length == 0 ) {
-      // If no port number is given for the rmiregistry, assume it is on the default port 1099
-      Naming.bind ("BankServer", bankServerStub);
-    }
-    else {
-      // rmiregistry is on port specified in args[0]. Bind to that registry.
-      Registry localRegistry = LocateRegistry.getRegistry( Integer.parseInt( args[0] ));
-      localRegistry.bind ("BankServer", bankServerStub);
-    }
 
+    String serverId = "Server_"+args[0];
+
+    String configFileName = args[1];
+    Properties prop = loadConfig(configFileName);
+
+    BankServerImpl  bankServer  = new BankServerImpl( );
+
+    System.setProperty("java.rmi.server.hostname",  InetAddress.getLocalHost().getHostName());
+    BankServer bankServerStub  =  (BankServer) UnicastRemoteObject.exportObject(bankServer, Integer.parseInt(prop.getProperty(serverId+".port")));
+    Registry localRegistry = LocateRegistry.getRegistry(Integer.parseInt(prop.getProperty(serverId+".rmiregistry")));
+    localRegistry.bind (serverId, bankServerStub);
     accounts = new Hashtable<>();
     LogicalClock logicalClock = new LogicalClock(serverID, processID);
     serverInitialize();
