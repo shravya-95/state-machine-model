@@ -129,7 +129,7 @@ public class BankServerImpl implements BankServer {
    * @parameters target(uid of target account), source(uid of source account) and amount(to be transferred)
    * @return status(true for successful transfer, false for unsuccessful)
    */
-  public synchronized boolean transfer(int sourceUid, int targetUid, int amount){
+  public boolean transfer(int sourceUid, int targetUid, int amount){
     if(!accounts.containsKey(sourceUid)){
       writeToLog("severLogfile.txt", "Accounts doesn't have key"+String.valueOf(sourceUid));
     }
@@ -143,13 +143,15 @@ public class BankServerImpl implements BankServer {
         writeToLog("severLogfile.txt",logMsg);
       return false;
     }
-
     //transfer
-    accounts.get(sourceUid).withdraw(amount);
-    accounts.get(targetUid).deposit(amount);
-    String msg = "Transferred %d from %d to %d\n";
-    System.out.printf(msg,amount,sourceUid,targetUid);
-    notifyAll();
+    synchronized (this){
+      accounts.get(sourceUid).withdraw(amount);
+      accounts.get(targetUid).deposit(amount);
+      String msg = "Transferred %d from %d to %d\n";
+      System.out.printf(msg,amount,sourceUid,targetUid);
+      notifyAll();
+    }
+
 
     //logging
     String[] content = new String[3];
@@ -167,7 +169,7 @@ public class BankServerImpl implements BankServer {
     }
     BankServerImpl  bankServer  = new BankServerImpl( );
     BankServer bankServerStub  =  (BankServer) UnicastRemoteObject.exportObject(bankServer, 0) ;
-
+    //TODO: Modify args to get serverID
     if ( args.length == 0 ) {
       // If no port number is given for the rmiregistry, assume it is on the default port 1099
       Naming.bind ("BankServer", bankServerStub);
@@ -179,5 +181,13 @@ public class BankServerImpl implements BankServer {
     }
 
     accounts = new Hashtable<>();
+    LogicalClock logicalClock = new LogicalClock(serverID, processID);
+    serverInitialize();
+  }
+
+  private static void serverInitialize() {
+    //create 20 accounts
+    //add 1000 to all accounts
+    //print init complete
   }
 }
