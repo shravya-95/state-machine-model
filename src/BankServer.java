@@ -6,5 +6,7 @@ public interface BankServer extends Remote {
   public boolean deposit(int uid, int amount) throws RemoteException;
   public int getBalance(int uid) throws RemoteException;
   public boolean transfer(int sourceUid, int targetUid, int amount) throws RemoteException;
+  public boolean operate(String clientId, int sourceUid, int targetUid, int amount) throws RemoteException;
+  public boolean halt() throws RemoteException;
 }
 

@@ -64,6 +64,11 @@ public class BankServerImpl implements BankServer {
     }
   }
 
+  public boolean halt(){
+    //communicate here
+    return true;
+  }
+
   public synchronized static void writeToLog(String fileName, String content) {
     try {
 
@@ -127,6 +132,14 @@ public class BankServerImpl implements BankServer {
   }
 
   /**
+   * Request sent by client to initiate transfer
+   */
+  public boolean operate(String clientId, int sourceUid, int targetUid, int amount){
+    //add check with numClients?
+    return transfer(sourceUid, targetUid, amount);
+  }
+
+  /**
    * Transfer method to transfer balance from source account to target account. This method is synchronized to access critical sections.
    * @parameters target(uid of target account), source(uid of source account) and amount(to be transferred)
    * @return status(true for successful transfer, false for unsuccessful)
@@ -181,7 +194,7 @@ public class BankServerImpl implements BankServer {
   }
 
   public static void main (String args[]) throws Exception {
-    if ( args.length < 2 ) {
+    if ( args.length < 3 ) {
       throw new RuntimeException( "Syntax: java server server-ID configFile numClients" );
     }
     if (System.getSecurityManager() == null) {
@@ -200,7 +213,7 @@ public class BankServerImpl implements BankServer {
     Registry localRegistry = LocateRegistry.getRegistry(Integer.parseInt(prop.getProperty(serverId+".rmiregistry")));
     localRegistry.bind (serverId, bankServerStub);
     accounts = new Hashtable<>();
-    LogicalClock logicalClock = new LogicalClock(serverID, processID);
+//    LogicalClock logicalClock = new LogicalClock(serverID, processID);
     serverInitialize();
   }
 
