@@ -1,9 +1,6 @@
-import java.rmi.NotBoundException;
-import java.rmi.RMISecurityManager;
-import java.rmi.Naming;
+import java.rmi.*;
 import java.util.*;
 import java.io.*;
-import java.rmi.RemoteException;
 import java.util.List;
 import java.util.Random;
 import java.rmi.registry.LocateRegistry;
@@ -117,6 +114,15 @@ public class client extends Thread {
             bankClient.start();
         }
 
+        boolean haltResponse=sendHalt(clientList,prop);
+
+
+        //write to log file
+        writeToLog(oWriter,"halt: "+haltResponse);
+        oWriter.close();
+    }
+
+    public static boolean sendHalt(List<client> clientList, Properties prop) throws RemoteException {
         //check if all client processes are completed
         for(int i = 0; i < clientList.size(); i++){
             try {
@@ -140,13 +146,8 @@ public class client extends Thread {
         } catch (NotBoundException e) {
             throw new RuntimeException("NotBoundException before HALT: "+e);
         }
-        Boolean haltResponse = bankServer.halt();
-
-        //write to log file
-        writeToLog(oWriter,"halt: "+haltResponse);
-        oWriter.close();
+        return bankServer.halt();
     }
-
     public static BufferedWriter startLogging(String clientId, String fileName){
         BufferedWriter oWriter = null;
         try {

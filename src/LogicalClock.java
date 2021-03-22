@@ -8,7 +8,7 @@ public class LogicalClock {
         this.localTime=0;
         this.serverId=serverId;
     }
-    //if even is local, increment localTime. If remote, update localTime
+    //if event is local, increment localTime. If remote, update localTime
 
     public int updateTime(){
             this.localTime++;

@@ -162,6 +162,9 @@ public class server implements BankServer {
     clientReq.setTimeStamp(logicalClock.updateTime());
     clientReq.setPhysicalClock();
     eventQueue.add(clientReq);
+    //here, multicast message
+    sendMulticast();
+    //change below
     return transfer(sourceUid, targetUid, amount);
   }
 
@@ -175,6 +178,7 @@ public class server implements BankServer {
 
   public void sendMulticast(){
     //send message using stub method
+
   }
 
   /**
