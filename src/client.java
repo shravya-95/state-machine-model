@@ -156,6 +156,10 @@ public class client extends Thread {
                 oWriter = new BufferedWriter(new FileWriter(fileName, true));
                 oWriter.write("Client ID" + clientId);
             }
+            else{
+                oWriter = new BufferedWriter(new FileWriter(fileName, true));
+                oWriter.write("Client ID" + clientId);
+            }
         }
         catch (IOException e) {
             e.printStackTrace();
@@ -171,7 +175,7 @@ public class client extends Thread {
     public synchronized static void writeToLog(BufferedWriter oWriter, String line){
 //        synchronized (this){
             try {
-                    oWriter.write (line);
+                    oWriter.write(line);
             }
             catch (IOException e) {
                 e.printStackTrace();

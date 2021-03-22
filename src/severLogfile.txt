@@ -1998,3 +1998,273 @@ Operation: getBalance | Inputs: UID: 97 | Result: 100
 Operation: getBalance | Inputs: UID: 98 | Result: 100 
 Operation: getBalance | Inputs: UID: 99 | Result: 100 
 Operation: getBalance | Inputs: UID: 100 | Result: 100 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: transfer | Inputs: From:4, To:6, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:3, To:4, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:2, To:4, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:1, To:2, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:17, To:19, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:15, To:16, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:12, To:9, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:13, To:14, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:6, To:12, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:1, To:11, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:3, To:4, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:7, To:5, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:16, To:5, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:14, To:4, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:12, To:15, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:3, To:10, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:7, To:14, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:19, To:8, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:7, To:16, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:3, To:12, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:12, To:10, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:7, To:11, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:10, To:19, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:14, To:6, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:6, To:18, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:5, To:13, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:8, To:3, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:4, To:16, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:3, To:9, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:15, To:7, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:13, To:14, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:17, To:7, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:6, To:16, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:4, To:13, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:17, To:3, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:15, To:9, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:6, To:13, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:1, To:17, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:6, To:18, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:14, To:7, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:18, To:16, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:8, To:2, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:9, To:19, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:1, To:5, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:1, To:5, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:12, To:3, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:4, To:8, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:19, To:8, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:4, To:3, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:2, To:14, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:11, To:18, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:4, To:2, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:10, To:1, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:12, To:8, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:17, To:14, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:13, To:2, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:4, To:1, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:7, To:2, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:14, To:12, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:2, To:7, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:3, To:4, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:8, To:9, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:2, To:5, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:19, To:7, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:17, To:15, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:7, To:14, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:13, To:6, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:13, To:6, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:11, To:2, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:18, To:9, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:11, To:1, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:4, To:16, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:15, To:4, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:19, To:17, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:1, To:15, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:11, To:16, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:11, To:17, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:4, To:10, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:12, To:7, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:9, To:14, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:16, To:19, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:1, To:19, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:9, To:2, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:15, To:6, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:1, To:8, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:11, To:13, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:17, To:4, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:11, To:7, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:8, To:10, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:15, To:6, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:4, To:17, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:5, To:8, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:1, To:3, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:9, To:3, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:12, To:13, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:8, To:17, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:2, To:4, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:19, To:13, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:15, To:9, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:11, To:9, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:16, To:10, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:18, To:13, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:17, To:1, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:18, To:3, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:8, To:5, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:14, To:5, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:15, To:4, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:19, To:5, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:6, To:3, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:15, To:13, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:9, To:6, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:19, To:4, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:5, To:9, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:3, To:2, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:15, To:17, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:12, To:5, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:16, To:10, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:11, To:5, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:9, To:14, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:1, To:19, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:15, To:14, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:11, To:8, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:5, To:9, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:14, To:10, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:11, To:6, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:9, To:3, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:2, To:18, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:1, To:4, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:8, To:10, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:19, To:16, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:15, To:9, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:13, To:9, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:14, To:3, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:7, To:10, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:15, To:17, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:12, To:16, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:12, To:15, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:18, To:2, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:13, To:16, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:1, To:6, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:19, To:8, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:6, To:4, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:9, To:4, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:14, To:11, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:2, To:19, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:11, To:6, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:12, To:13, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:10, To:16, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:9, To:4, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:19, To:2, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:2, To:16, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:11, To:2, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:7, To:8, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:3, To:8, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:9, To:19, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:9, To:6, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:10, To:4, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:1, To:19, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:15, To:11, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:10, To:18, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:14, To:2, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:16, To:5, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:18, To:5, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:13, To:6, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:13, To:16, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:5, To:2, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:14, To:17, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:7, To:9, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:18, To:5, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:16, To:8, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:18, To:17, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:15, To:2, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:3, To:19, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:14, To:18, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:6, To:11, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:9, To:1, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:12, To:19, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:17, To:9, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:12, To:18, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:2, To:1, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:11, To:13, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:14, To:10, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:3, To:11, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:9, To:2, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:6, To:1, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:16, To:2, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:17, To:14, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:15, To:9, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:17, To:19, Amount:10 | Result: False 
+Operation: transfer | Inputs: From:3, To:10, Amount:10 | Result: False 

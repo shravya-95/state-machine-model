@@ -215,11 +215,7 @@ public class server implements BankServer {
     writeToLog("severLogfile.txt",logMsg);
     return true;
   }
-   private static void serverInitialize() {
-    //create 20 accounts
-    //add 1000 to all accounts
-    //print init complete
-  }
+
   public static Properties loadConfig(String configFileName){
     Properties prop = new Properties();
     InputStream inputStream;
@@ -257,13 +253,13 @@ public class server implements BankServer {
     Registry localRegistry = LocateRegistry.getRegistry(Integer.parseInt(prop.getProperty(serverId+".rmiregistry")));
     localRegistry.bind (serverId, bankServerStub);
     accounts = new Hashtable<>();
-//    LogicalClock logicalClock = new LogicalClock(serverID, processID);
     serverInitialize(bankServer);
     System.out.println("Server initialization is complete");
   }
 
   private static void serverInitialize(BankServer bankServer) throws RemoteException {
-    createAccounts(20, bankServer);
+    int[] uids = createAccounts(20, bankServer);
+    deposit(uids, 1000, 20, bankServer);
   }
 
   /**
@@ -274,7 +270,7 @@ public class server implements BankServer {
    * @throws RemoteException When communication related exception occurs
    */
   private static int[] createAccounts(int numAccounts, BankServer bankServer) throws RemoteException {
-    int[] uids = new int[numAccounts];
+    int[] uids = new int[numAccounts+1];//changed
     for (int i = 1; i <= numAccounts; i++) {
       String logMsg = "";
       String[] content = new String[3];
@@ -286,8 +282,26 @@ public class server implements BankServer {
       content[2]= String.valueOf(uids[i]);
       logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
       writeToLog("clientLogfile.txt",logMsg);
+
     }
     return uids;
   }
 
+  private static void deposit(int[] uids, int amount, int numAccounts, BankServer bankServer) throws RemoteException {
+    try {
+      for (int i = 0; i < numAccounts; i++) {
+        String logMsg = "";
+        String[] content = new String[3];
+
+        boolean status = bankServer.deposit(uids[i], amount);
+        content[0]="deposit";
+        content[1]= "UID: "+ uids[i] +", "+"Amount: "+ amount;
+        content[2]= String.valueOf(status);
+        logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
+        writeToLog("clientLogfile.txt",logMsg);
+      }
+    }catch (IOException e){
+      e.printStackTrace ();
+    }
+  }
 }
