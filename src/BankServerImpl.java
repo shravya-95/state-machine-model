@@ -162,7 +162,11 @@ public class BankServerImpl implements BankServer {
     writeToLog("severLogfile.txt",logMsg);
     return true;
   }
-
+  private static void serverInitialize() {
+    //create 20 accounts
+    //add 1000 to all accounts
+    //print init complete
+  }
   public static void main (String args[]) throws Exception {
     if (System.getSecurityManager() == null) {
       System.setSecurityManager(new SecurityManager());
@@ -185,9 +189,5 @@ public class BankServerImpl implements BankServer {
     serverInitialize();
   }
 
-  private static void serverInitialize() {
-    //create 20 accounts
-    //add 1000 to all accounts
-    //print init complete
-  }
+
 }
