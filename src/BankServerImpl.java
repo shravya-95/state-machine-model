@@ -64,6 +64,11 @@ public class BankServerImpl implements BankServer {
     }
   }
 
+  public boolean halt(){
+    //communicate here
+    return true;
+  }
+
   public synchronized static void writeToLog(String fileName, String content) {
     try {
 
@@ -127,6 +132,13 @@ public class BankServerImpl implements BankServer {
   }
 
   /**
+   * Request sent by client to initiate transfer
+   */
+  public boolean operate(String clientId, int sourceUid, int targetUid, int amount){
+    return transfer(sourceUid, targetUid, amount);
+  }
+
+  /**
    * Transfer method to transfer balance from source account to target account. This method is synchronized to access critical sections.
    * @parameters target(uid of target account), source(uid of source account) and amount(to be transferred)
    * @return status(true for successful transfer, false for unsuccessful)
@@ -186,7 +198,7 @@ public class BankServerImpl implements BankServer {
   }
 
   public static void main (String args[]) throws Exception {
-    if ( args.length < 2 ) {
+    if ( args.length < 3 ) {
       throw new RuntimeException( "Syntax: java server server-ID configFile numClients" );
     }
     if (System.getSecurityManager() == null) {
@@ -205,9 +217,37 @@ public class BankServerImpl implements BankServer {
     Registry localRegistry = LocateRegistry.getRegistry(Integer.parseInt(prop.getProperty(serverId+".rmiregistry")));
     localRegistry.bind (serverId, bankServerStub);
     accounts = new Hashtable<>();
-    LogicalClock logicalClock = new LogicalClock(serverID, processID);
-    serverInitialize();
+//    LogicalClock logicalClock = new LogicalClock(serverID, processID);
+    serverInitialize(bankServer);
+    System.out.println("Server initialization is complete");
   }
 
+  private static void serverInitialize(BankServer bankServer) throws RemoteException {
+    createAccounts(20, bankServer);
+  }
+
+  /**
+   * Creates mentioned number of accounts
+   * @param numAccounts Total number of accounts
+   * @param bankServer BankServer RMI object
+   * @return List of UIDs of the accounts created
+   * @throws RemoteException When communication related exception occurs
+   */
+  private static int[] createAccounts(int numAccounts, BankServer bankServer) throws RemoteException {
+    int[] uids = new int[numAccounts];
+    for (int i = 1; i <= numAccounts; i++) {
+      String logMsg = "";
+      String[] content = new String[3];
+
+      uids[i] = bankServer.createAccount();
+
+      content[0]="createAccount";
+      content[1]= "";
+      content[2]= String.valueOf(uids[i]);
+      logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
+      writeToLog("clientLogfile.txt",logMsg);
+    }
+    return uids;
+  }
 
 }
