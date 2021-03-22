@@ -6,8 +6,10 @@ import java.rmi.RMISecurityManager;
 import java.rmi.RemoteException;
 import java.rmi.Naming;
 import java.rmi.registry.*;
+import java.util.Comparator;
 import java.util.Hashtable;
 import java.io.*;
+import java.util.PriorityQueue;
 import java.util.Properties;
 import java.net.InetAddress;
 
@@ -15,14 +17,26 @@ public class BankServerImpl implements BankServer {
   //hashtable to hold the account's uid and object
   protected static Hashtable<Integer, Account> accounts;
   private static int uuidCount = 0;
-  public static InetAddress groupIp=null;
-  public static String addr = "224.0.0.4";
-  public static MulticastSocket s;
-  public static int port = 5555;
   private String msg;
+  public static PriorityQueue<Event> eventQueue;
+  public static LogicalClock logicalClock;
 
   public BankServerImpl () throws RemoteException{
     super();
+  }
+
+  static class EventQueueComparator implements Comparator<Event>{
+
+    @Override
+    public int compare(Event o1, Event o2) {
+      if (o1.timeStamp< o2.timeStamp){
+        return 1;
+      }
+      else if (o1.timeStamp> o2.timeStamp){
+        return -1;
+      }
+      return 0;
+    }
   }
 
 
@@ -143,10 +157,17 @@ public class BankServerImpl implements BankServer {
   /**
    * Request sent by client to initiate transfer
    */
-  public boolean operate(String clientId, int sourceUid, int targetUid, int amount){
+  public boolean operate(String clientId,String serverId, int sourceUid, int targetUid, int amount){
+    Event clientReq = new Event(0,clientId,serverId,"CLNT-REQ");
+    clientReq.setTimeStamp(logicalClock.updateTime());
+    clientReq.setPhysicalClock();
+    eventQueue.add(clientReq);
     return transfer(sourceUid, targetUid, amount);
   }
 
+  /**
+   * Use the RMI groupserver stub to multicast messages
+   */
   public void receiveMulticast(String msg){
     //call the stub method to receive message
     this.msg = msg;
@@ -224,7 +245,8 @@ public class BankServerImpl implements BankServer {
     }
 
     String serverId = "Server_"+args[0];
-
+    logicalClock = new LogicalClock(serverId);
+    eventQueue = new PriorityQueue<Event>(new EventQueueComparator());
     String configFileName = args[1];
     Properties prop = loadConfig(configFileName);
 

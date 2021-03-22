@@ -66,7 +66,7 @@ public class client extends Thread {
                 continue;
             }
             try {
-                status = bankServer.operate(clientId, rnd1,rnd2,10);
+                status = bankServer.operate(clientId,server, rnd1,rnd2,10);
             } catch (RemoteException e) {
                 throw new RuntimeException("RemoteException: "+e);
             }
