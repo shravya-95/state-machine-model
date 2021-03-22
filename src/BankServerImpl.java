@@ -1,3 +1,6 @@
+import java.net.DatagramPacket;
+import java.net.MulticastSocket;
+import java.net.UnknownHostException;
 import java.rmi.server.UnicastRemoteObject;
 import java.rmi.RMISecurityManager;
 import java.rmi.RemoteException;
@@ -12,10 +15,16 @@ public class BankServerImpl implements BankServer {
   //hashtable to hold the account's uid and object
   protected static Hashtable<Integer, Account> accounts;
   private static int uuidCount = 0;
+  public static InetAddress groupIp=null;
+  public static String addr = "224.0.0.4";
+  public static MulticastSocket s;
+  public static int port = 5555;
+  private String msg;
 
   public BankServerImpl () throws RemoteException{
     super();
   }
+
 
   public int getNewUid(){
     return ++uuidCount;
@@ -136,6 +145,15 @@ public class BankServerImpl implements BankServer {
    */
   public boolean operate(String clientId, int sourceUid, int targetUid, int amount){
     return transfer(sourceUid, targetUid, amount);
+  }
+
+  public void receiveMulticast(String msg){
+    //call the stub method to receive message
+    this.msg = msg;
+  }
+
+  public void sendMulticast(){
+    //send message using stub method
   }
 
   /**
