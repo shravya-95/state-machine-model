@@ -164,7 +164,7 @@ public class BankServerImpl implements BankServer {
     writeToLog("severLogfile.txt",logMsg);
     return true;
   }
-  private static void serverInitialize() {
+   private static void serverInitialize() {
     //create 20 accounts
     //add 1000 to all accounts
     //print init complete
