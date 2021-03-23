@@ -1,17 +1,12 @@
-import java.io.IOException;
-import java.net.DatagramPacket;
-import java.net.InetAddress;
-import java.net.MulticastSocket;
-import java.net.UnknownHostException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.List;
 
-public class GroupServerImpl implements GroupServer{
+public class BankReplicaImpl implements BankReplica {
     public static List<String> serverReplicaIds;
-    public static List<GroupServer> groupServerStubs;
+    public static List<BankReplica> bankReplicaStubs;
     public void joinGroup(String serverReplicaId) throws RemoteException {
         serverReplicaIds.add(serverReplicaId);
 
@@ -24,9 +19,9 @@ public class GroupServerImpl implements GroupServer{
 
     }
     public static void main (String args[]) throws Exception{
-        GroupServerImpl groupServer = new GroupServerImpl();
+        BankReplicaImpl groupServer = new BankReplicaImpl();
         try{
-            GroupServer groupServerstub = (GroupServer) UnicastRemoteObject.exportObject(groupServer, 0);
+            BankReplica groupServerstub = (BankReplica) UnicastRemoteObject.exportObject(groupServer, 0);
             Registry localRegistry = LocateRegistry.getRegistry( 5555);
             localRegistry.bind("GroupServer",groupServerstub);
         }

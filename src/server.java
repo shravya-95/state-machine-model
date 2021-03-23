@@ -1,6 +1,7 @@
 import java.net.DatagramPacket;
 import java.net.MulticastSocket;
 import java.net.UnknownHostException;
+import java.rmi.NotBoundException;
 import java.rmi.server.UnicastRemoteObject;
 import java.rmi.RMISecurityManager;
 import java.rmi.RemoteException;
@@ -13,13 +14,15 @@ import java.util.PriorityQueue;
 import java.util.Properties;
 import java.net.InetAddress;
 
-public class server implements BankServer {
+public class server implements BankServer, BankReplica {
   //hashtable to hold the account's uid and object
   protected static Hashtable<Integer, Account> accounts;
   private static int uuidCount = 0;
   private String msg;
   public static PriorityQueue<Event> eventQueue;
   public static LogicalClock logicalClock;
+  private static Properties prop;
+  private static String serverId;
 
   public server () throws RemoteException{
     super();
@@ -163,7 +166,7 @@ public class server implements BankServer {
     clientReq.setPhysicalClock();
     eventQueue.add(clientReq);
     //here, multicast message
-    sendMulticast();
+    sendMulticast(clientReq);
     //change below
     return transfer(sourceUid, targetUid, amount);
   }
@@ -171,14 +174,31 @@ public class server implements BankServer {
   /**
    * Use the RMI groupserver stub to multicast messages
    */
-  public void receiveMulticast(String msg){
-    //call the stub method to receive message
+  public void receiveMulticast(String msg, Event request){
     this.msg = msg;
   }
 
-  public void sendMulticast(){
-    //send message using stub method
-
+  public void sendMulticast(Event clientReq){
+      for(int i=0;i<5;i++)
+      {
+        String replicaId = "Server_"+i;
+        if (replicaId.equals(serverId)) continue;
+        Registry registry = null;
+        BankReplica backReplica;
+        try {
+          registry = LocateRegistry.getRegistry(prop.getProperty(replicaId+".hostname"), Integer.parseInt(prop.getProperty(replicaId+".rmiregistry")));
+        } catch (RemoteException e) {
+          throw new RuntimeException("RemoteException before HALT: "+e);
+        }
+        try {
+          backReplica = (BankReplica) registry.lookup("Replica_"+i);
+        } catch (RemoteException e) {
+          throw new RuntimeException("RemoteException before HALT: "+e);
+        } catch (NotBoundException e) {
+          throw new RuntimeException("NotBoundException before HALT: "+e);
+        }
+        backReplica.receiveRequest(serverId, clientReq);
+      }
   }
 
   /**
@@ -244,21 +264,27 @@ public class server implements BankServer {
       System.setSecurityManager(new SecurityManager());
     }
 
-    String serverId = "Server_"+args[0];
+    serverId = "Server_"+args[0];
     logicalClock = new LogicalClock(serverId);
     eventQueue = new PriorityQueue<Event>(new EventQueueComparator());
     String configFileName = args[1];
-    Properties prop = loadConfig(configFileName);
+    prop = loadConfig(configFileName);
 
     server  bankServer  = new server( );
-
     System.setProperty("java.rmi.server.hostname",  InetAddress.getLocalHost().getHostName());
     BankServer bankServerStub  =  (BankServer) UnicastRemoteObject.exportObject(bankServer, Integer.parseInt(prop.getProperty(serverId+".port")));
     Registry localRegistry = LocateRegistry.getRegistry(Integer.parseInt(prop.getProperty(serverId+".rmiregistry")));
     localRegistry.bind (serverId, bankServerStub);
+
     accounts = new Hashtable<>();
     serverInitialize(bankServer);
     System.out.println("Server initialization is complete");
+
+    for(int i=0;i<5;i++){
+      BankReplica bankReplicaStub  =  (BankReplica) UnicastRemoteObject.exportObject(bankServer, Integer.parseInt(prop.getProperty("Server_"+i+".port")));
+      Registry localRegistry1 = LocateRegistry.getRegistry(Integer.parseInt(prop.getProperty(serverId+".rmiregistry")));
+      localRegistry.bind ("Replica_"+i, bankReplicaStub);
+    }
   }
 
   private static void serverInitialize(BankServer bankServer) throws RemoteException {

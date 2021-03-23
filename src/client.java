@@ -35,7 +35,7 @@ public class client extends Thread {
 
             //can optimize to choose different server if this server is down
             Random rand = new Random();
-            int n = rand.nextInt(3);
+            int n = rand.nextInt(5);
             String server = "Server_"+n;
             System.out.println(server);
 
@@ -101,9 +101,9 @@ public class client extends Thread {
 
         String configFileName = args[2];
         Properties prop = loadConfig(configFileName);
-        String clientId = args[0];
+        String clientId = "Client_"+args[0];
 
-        BufferedWriter oWriter = startLogging("Client"+clientId+".log", clientId);
+        BufferedWriter oWriter = startLogging(clientId+".log", clientId);
         int numThreads = Integer.parseInt(args[1]);
         int iterationCount=200;
 
