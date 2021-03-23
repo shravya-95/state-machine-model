@@ -12,8 +12,8 @@ public interface BankReplica extends Remote {
 //    public void joinGroup(String serverReplica) throws RemoteException;
 //    public void sendMulticastMessage(String msg);
 //    public String receiveMulticastMessage();
-    public int receiveRequest(String sourceId, Event request);
-    public void receiveExecute(Event request);
+    public int receiveRequest(String sourceId, Event request) throws RemoteException;
+    public void receiveExecute(Event request) throws RemoteException;
 }
 
 
