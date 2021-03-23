@@ -107,7 +107,9 @@ public class server implements BankServer, BankReplica {
       while(!eventQueue.isEmpty()){
         pollQueue();
       }
+      //TODO: RMI connection should be unbound and closed
 
+      System.exit(0);
     }
     return true;
   }
@@ -269,7 +271,21 @@ public class server implements BankServer, BankReplica {
         }
       }
   }
-
+  public static int getTotalBalance(int numAccounts, int[] uids) {
+    int total = 0;
+    for (int i = 0; i < numAccounts; i++) {
+      String logMsg = "";
+      String[] content = new String[3];
+      int balance = accounts.get(uids[i]).getBalance();
+      total += balance;
+      content[0]="getTotalBalance";
+      content[1]= "UID: "+ uids[i];
+      content[2]= "AccountBalance: "+ balance +", Total so far:"+total;
+      logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
+      writeToLog("clientLogfile.txt",logMsg);
+    }
+    return total;
+  }
   /**
    * Transfer method to transfer balance from source account to target account. This method is synchronized to access critical sections.
    * @parameters target(uid of target account), source(uid of source account) and amount(to be transferred)
