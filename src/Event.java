@@ -16,6 +16,7 @@ public class Event extends Object implements Serializable{
     public boolean remote;
     public LocalDateTime physicalClock;
     public int clientTimeStamp;
+    public int serverReceivedClient;
 
     public Event(int type, String senderId, String receiverId, String content)  {
         this.type = type;
@@ -24,7 +25,6 @@ public class Event extends Object implements Serializable{
         this.content = content;
         this.timeStamp = 0;
     }
-
     public Event(int type, String senderId,
                  String receiverId, int timeStamp, int clientTimeStamp, boolean remote,LocalDateTime physicalClock, String content) {
         this(type, senderId, receiverId, content);
@@ -33,12 +33,22 @@ public class Event extends Object implements Serializable{
         this.physicalClock=physicalClock;
         this.clientTimeStamp=clientTimeStamp;
     }
+
+    public Event(int type, String senderId,
+                 String receiverId, int timeStamp, int clientTimeStamp, int serverReceivedClient, boolean remote,LocalDateTime physicalClock, String content) {
+        this(type, senderId, receiverId, content);
+        this.timeStamp = timeStamp;
+        this.remote=remote;
+        this.physicalClock=physicalClock;
+        this.clientTimeStamp=clientTimeStamp;
+        this.serverReceivedClient=serverReceivedClient;
+    }
     @Override
     public boolean equals(Object o){
         if(o instanceof Event){
             Event c = (Event) o;
             System.out.println("Timestamps -----"+this.clientTimeStamp+"---"+ c.clientTimeStamp);
-            return this.clientTimeStamp== c.clientTimeStamp;
+            return this.clientTimeStamp== c.clientTimeStamp && this.serverReceivedClient==c.serverReceivedClient;
         }
         return false;
     }

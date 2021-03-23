@@ -53,6 +53,14 @@ public class server extends Thread implements BankServer, BankReplica {
       else if (o1.clientTimeStamp> o2.clientTimeStamp){
         return 1;
       }
+      else{
+        if (o1.serverReceivedClient< o2.serverReceivedClient){
+          return -1;
+        }
+        else if (o1.serverReceivedClient> o2.serverReceivedClient){
+          return 1;
+        }
+      }
       return 0;
     }
   }
@@ -106,6 +114,7 @@ public class server extends Thread implements BankServer, BankReplica {
   }
 
   public boolean halt() throws RemoteException {
+    int uts = logicalClock.updateTime();
     //communicate here
     synchronized (lock){
       haltedClients++;
@@ -114,7 +123,7 @@ public class server extends Thread implements BankServer, BankReplica {
     if (haltedClients==numClients){
       System.out.println("numClients equal");
       //send it to everyone
-      int uts = logicalClock.updateTime();
+
       Event haltEvent = new Event(2,serverId,"null",uts,uts,true,LocalDateTime.now(),"HALT!");
       sendMulticast(haltEvent);
       //empty my queue
@@ -197,6 +206,7 @@ public class server extends Thread implements BankServer, BankReplica {
     int currServerTs = logicalClock.updateTime();
     clientReq.setTimeStamp(currServerTs);
     clientReq.clientTimeStamp=currServerTs;
+    clientReq.serverReceivedClient=Integer.parseInt(serverId.substring(7));
     System.out.println("OPERATE TS -----"+currServerTs);
     clientReq.setPhysicalClock();
 
@@ -234,10 +244,11 @@ public class server extends Thread implements BankServer, BankReplica {
    */
   public int receiveRequest(String msg, Event request) throws RemoteException{
 //    Event replicaEvent = new Event(1, request.receiverId, serverId,logicalClock.updateTime(request.timeStamp),1, LocalDateTime.now(),request.content);
-    request.type=1;
+//    request.type=1;
 //    request.receiverId=serverId;
+    logicalClock.updateTime(request.timeStamp);
     eventQueue.add(request);
-    return logicalClock.updateTime(request.timeStamp);
+    return logicalClock.updateTime();
   }
   public void receiveExecute(Event removeEvent) throws RemoteException{
 

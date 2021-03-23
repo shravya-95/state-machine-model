@@ -16,7 +16,7 @@ public class LogicalClock {
     }
     public int updateTime(int timeStamp){
         this.localTime=Math.max(timeStamp, this.localTime) + 1;
-        return  this.localTime;
+        return this.localTime;
     }
 
     public int getLocalTime(){
