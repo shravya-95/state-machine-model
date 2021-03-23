@@ -20,19 +20,24 @@ public class server extends Thread implements BankServer, BankReplica {
   protected static Hashtable<Integer, Account> accounts;
   private static int uuidCount = 0;
   private String msg;
-  public static PriorityQueue<Event> eventQueue;
-  public static LogicalClock logicalClock;
+  public PriorityQueue<Event> eventQueue;
+  public LogicalClock logicalClock;
   private static Properties prop;
   private static String serverId;
   private static int haltedClients=0;
-  private static Object lock = new Object();
+  private Object lock = new Object();
   private static int numClients;
   private static int[] uids;
-  public static server  bankServer;
+  public server  bankServer;
   public static List<String> mockQ;
   public server () throws RemoteException{
     super();
+    logicalClock = new LogicalClock(serverId);
+    eventQueue = new PriorityQueue<Event>(new EventQueueComparator());
   }
+
+
+
   public void run(){
     while (!eventQueue.isEmpty()){
 //      System.out.println("QUEUE CONTENT"+eventQueue.poll().timeStamp);
@@ -42,6 +47,7 @@ public class server extends Thread implements BankServer, BankReplica {
         e.printStackTrace();
       }
     }
+    System.out.println("QUEUE IS EMPTY!!!!!!!!");
   }
   static class EventQueueComparator implements Comparator<Event>{
 
@@ -210,19 +216,20 @@ public class server extends Thread implements BankServer, BankReplica {
     System.out.println("OPERATE TS -----"+currServerTs);
     clientReq.setPhysicalClock();
 
-    eventQueue.add(clientReq);
+
 //    mockQ.add(clientReq.receiverId+","+clientReq.senderId+","+clientReq.clientTimeStamp+","+clientReq.serverReceivedClient);
     //here, multicast message
     sendMulticast(clientReq);
+    eventQueue.add(clientReq);
     //change below
-    pollQueue();
+//    pollQueue();
     return true ;
   }
 
   private boolean pollQueue() throws RemoteException {
-    System.out.print(serverId+"pollQueue");
+//    System.out.print(serverId+"pollQueue");
     Event currHead = eventQueue.peek();
-    System.out.println(currHead.type+ "-------- sender ID"+currHead.senderId+"----- receiver ID"+ currHead.receiverId+"-----Client time stamp"+currHead.clientTimeStamp+"-------Server Received from Client"+currHead.serverReceivedClient);
+//    System.out.println(currHead.type+ "-------- sender ID"+currHead.senderId+"----- receiver ID"+ currHead.receiverId+"-----Client time stamp"+currHead.clientTimeStamp+"-------Server Received from Client"+currHead.serverReceivedClient);
 
     if (currHead.senderId.contains("Client")){
       String[] msg = currHead.content.split(",");
@@ -280,10 +287,10 @@ public class server extends Thread implements BankServer, BankReplica {
     for(int i=0;i<5;i++){
 //      for(int i=0;i<5;i++){
         String replicaId = "Server_"+i;
-        System.out.println("Server_"+i + "--- sendMulticast----"+clientReq.senderId+"---"+clientReq.receiverId);
 
         if (replicaId.equals(serverId)) continue;
-        Registry registry = null;
+        System.out.println(serverId+ "MULTICASTING TO Server_"+i + "--- sendMulticast----"+clientReq.senderId+"---"+clientReq.receiverId);
+      Registry registry = null;
         BankReplica backReplica;
         try {
           registry = LocateRegistry.getRegistry(prop.getProperty(replicaId+".hostname"), Integer.parseInt(prop.getProperty(replicaId+".rmiregistry")));
@@ -390,7 +397,7 @@ public class server extends Thread implements BankServer, BankReplica {
     return prop;
   }
 
-  public static void main (String args[]) throws Exception {
+  public static void main(String args[]) throws Exception {
     if ( args.length < 3 ) {
       throw new RuntimeException( "Syntax: java server server-ID configFile numClients" );
     }
@@ -400,13 +407,12 @@ public class server extends Thread implements BankServer, BankReplica {
 
     serverId = "Server_"+args[0];
     numClients=Integer.parseInt(args[2]);
-    logicalClock = new LogicalClock(serverId);
-    eventQueue = new PriorityQueue<Event>(new EventQueueComparator());
+
 
     String configFileName = args[1];
     prop = loadConfig(configFileName);
 
-    bankServer  = new server( );
+    server bankServer  = new server( );
     System.setProperty("java.rmi.server.hostname",  InetAddress.getLocalHost().getHostName());
     BankServer bankServerStub  =  (BankServer) UnicastRemoteObject.exportObject(bankServer, Integer.parseInt(prop.getProperty(serverId+".port")));
     Registry localRegistry = LocateRegistry.getRegistry(Integer.parseInt(prop.getProperty(serverId+".rmiregistry")));
