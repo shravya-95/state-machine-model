@@ -14,6 +14,8 @@ public interface BankReplica extends Remote {
 //    public String receiveMulticastMessage();
     public int receiveRequest(String sourceId, Event request);
     public void receiveExecute(Event request);
+
+    public void receiveHalt(Event clientReq);
 }
 
 

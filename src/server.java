@@ -24,6 +24,9 @@ public class server implements BankServer, BankReplica {
   public static LogicalClock logicalClock;
   private static Properties prop;
   private static String serverId;
+  private static int haltedClients=0;
+  private static Object lock;
+  private static int numClients;
 
   public server () throws RemoteException{
     super();
@@ -93,6 +96,19 @@ public class server implements BankServer, BankReplica {
 
   public boolean halt(){
     //communicate here
+    synchronized (lock){
+      haltedClients++;
+    }
+    if (haltedClients==numClients){
+      //send it to everyone
+      Event haltEvent = new Event(2,serverId,"null",logicalClock.updateTime(),1,LocalDateTime.now(),"HALT!");
+      sendMulticast(haltEvent);
+      //empty my queue
+      while(!eventQueue.isEmpty()){
+        pollQueue();
+      }
+
+    }
     return true;
   }
 
@@ -206,6 +222,12 @@ public class server implements BankServer, BankReplica {
 
 
   }
+  public void receiveHalt(Event clientReq){
+    while(!eventQueue.isEmpty()){
+      pollQueue();
+    }
+  }
+
   public void sendMulticast(Event clientReq){
 
       for(int i=0;i<5;i++)
@@ -240,6 +262,10 @@ public class server implements BankServer, BankReplica {
           System.out.println("Server_"+i + "--- clientReq type 3 ----"+clientReq.senderId+"---"+clientReq.receiverId);
           backReplica.receiveExecute(clientReq);
           //transfer function
+        }
+        else if (clientReq.type==2){
+          System.out.println("Server_"+i + "--- clientReq type 2 --- HALT ----"+clientReq.senderId+"---"+clientReq.receiverId);
+          backReplica.receiveHalt(clientReq);
         }
       }
   }
@@ -308,6 +334,7 @@ public class server implements BankServer, BankReplica {
     }
 
     serverId = "Server_"+args[0];
+    numClients=Integer.parseInt(args[2]);
     logicalClock = new LogicalClock(serverId);
     eventQueue = new PriorityQueue<Event>(new EventQueueComparator());
     String configFileName = args[1];

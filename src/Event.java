@@ -1,11 +1,11 @@
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
-public class Event {
+public class Event implements Serializable{
 /* 0 - CLIENT_REQ
     1 - SRV_REQ
-    2 - EXECUTE
-    3 - REQ
-    4 - RSP
+    2 - HALT
+    3 - EXECUTE
  */
     public int type;
     public String senderId;
