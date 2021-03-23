@@ -15,7 +15,7 @@ import java.util.PriorityQueue;
 import java.util.Properties;
 import java.net.InetAddress;
 
-public class server implements BankServer, BankReplica {
+public class server extends Thread implements BankServer, BankReplica {
   //hashtable to hold the account's uid and object
   protected static Hashtable<Integer, Account> accounts;
   private static int uuidCount = 0;
@@ -28,11 +28,20 @@ public class server implements BankServer, BankReplica {
   private static Object lock = new Object();
   private static int numClients;
   private static int[] uids;
+  public static server  bankServer;
 
   public server () throws RemoteException{
     super();
   }
-
+  public void run(){
+    while (!eventQueue.isEmpty()){
+      try {
+        pollQueue();
+      } catch (RemoteException e) {
+        e.printStackTrace();
+      }
+    }
+  }
   static class EventQueueComparator implements Comparator<Event>{
 
     @Override
@@ -106,9 +115,8 @@ public class server implements BankServer, BankReplica {
       Event haltEvent = new Event(2,serverId,"null",logicalClock.updateTime(),true,LocalDateTime.now(),"HALT!");
       sendMulticast(haltEvent);
       //empty my queue
-      while(!eventQueue.isEmpty()){
-        pollQueue();
-      }
+      bankServer.start();
+
       //TODO: RMI connection should be unbound and closed
       getTotalBalance();
 //      System.exit(0);
@@ -231,12 +239,10 @@ public class server implements BankServer, BankReplica {
   }
   public void receiveHalt(Event clientReq) throws RemoteException {
     System.out.println("Received Halt"+serverId);
-    while(!eventQueue.isEmpty()){
-      pollQueue();
-    }
+
+    bankServer.start();
     System.out.println("finished polling"+serverId);
     getTotalBalance();
-    System.exit(0);
   }
 
 
@@ -367,7 +373,7 @@ public class server implements BankServer, BankReplica {
     String configFileName = args[1];
     prop = loadConfig(configFileName);
 
-    server  bankServer  = new server( );
+    bankServer  = new server( );
     System.setProperty("java.rmi.server.hostname",  InetAddress.getLocalHost().getHostName());
     BankServer bankServerStub  =  (BankServer) UnicastRemoteObject.exportObject(bankServer, Integer.parseInt(prop.getProperty(serverId+".port")));
     Registry localRegistry = LocateRegistry.getRegistry(Integer.parseInt(prop.getProperty(serverId+".rmiregistry")));
