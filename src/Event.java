@@ -2,7 +2,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 
-public class Event extends Object implements Serializable{
+public class Event extends Object implements Serializable,Comparable{
 /* 0 - CLIENT_REQ
     1 - SRV_REQ
     2 - HALT
@@ -58,5 +58,26 @@ public class Event extends Object implements Serializable{
     }
     public void setPhysicalClock(){
         this.physicalClock=LocalDateTime.now();
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Event o2 = (Event) o;
+        if (this.clientTimeStamp< o2.clientTimeStamp){
+            return -1;
+        }
+        else if (this.clientTimeStamp> o2.clientTimeStamp){
+            return 1;
+        }
+        else{
+            if (this.serverReceivedClient< o2.serverReceivedClient){
+                return -1;
+            }
+            else if (this.serverReceivedClient> o2.serverReceivedClient){
+                return 1;
+            }
+        }
+
+        return 0;
     }
 }

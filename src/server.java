@@ -14,14 +14,15 @@ import java.util.*;
 import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Properties;
+import java.util.concurrent.PriorityBlockingQueue;
 
 public class server extends Thread implements BankServer, BankReplica {
   //hashtable to hold the account's uid and object
   protected static Hashtable<Integer, Account> accounts;
   private static int uuidCount = 0;
   private String msg;
-  public PriorityQueue<Event> eventQueue;
-  public LogicalClock logicalClock;
+  public static PriorityBlockingQueue<Event> eventQueue;
+  public static LogicalClock logicalClock;
   private static Properties prop;
   private static String serverId;
   private static int haltedClients=0;
@@ -32,44 +33,50 @@ public class server extends Thread implements BankServer, BankReplica {
   public static List<String> mockQ;
   public server () throws RemoteException{
     super();
-    logicalClock = new LogicalClock(serverId);
-    eventQueue = new PriorityQueue<Event>(new EventQueueComparator());
+
   }
 
 
 
   public void run(){
-    while (!eventQueue.isEmpty()){
+    while(true){
+      while (!eventQueue.isEmpty()){
 //      System.out.println("QUEUE CONTENT"+eventQueue.poll().timeStamp);
+        System.out.println("PEEKING PQ"+"--------"+eventQueue.peek().serverReceivedClient+"--------"+eventQueue.peek().clientTimeStamp);
+        try {
+          pollQueue();
+        } catch (RemoteException e) {
+          e.printStackTrace();
+        }
+      }
       try {
-        pollQueue();
-      } catch (RemoteException e) {
+        sleep(10);
+      } catch (InterruptedException e) {
         e.printStackTrace();
       }
     }
-    System.out.println("QUEUE IS EMPTY!!!!!!!!");
   }
-  static class EventQueueComparator implements Comparator<Event>{
-
-    @Override
-    public int compare(Event o1, Event o2) {
-      if (o1.clientTimeStamp< o2.clientTimeStamp){
-        return -1;
-      }
-      else if (o1.clientTimeStamp> o2.clientTimeStamp){
-        return 1;
-      }
-      else{
-        if (o1.serverReceivedClient< o2.serverReceivedClient){
-          return -1;
-        }
-        else if (o1.serverReceivedClient> o2.serverReceivedClient){
-          return 1;
-        }
-      }
-      return 0;
-    }
-  }
+//  static class EventQueueComparator implements Comparable<Event>{
+//
+//    @Override
+//    public int compareTo(Event o1, Event o2) {
+//      if (o1.clientTimeStamp< o2.clientTimeStamp){
+//        return -1;
+//      }
+//      else if (o1.clientTimeStamp> o2.clientTimeStamp){
+//        return 1;
+//      }
+//      else{
+//        if (o1.serverReceivedClient< o2.serverReceivedClient){
+//          return -1;
+//        }
+//        else if (o1.serverReceivedClient> o2.serverReceivedClient){
+//          return 1;
+//        }
+//      }
+//      return 0;
+//    }
+//  }
 
 
   public int getNewUid(){
@@ -133,11 +140,13 @@ public class server extends Thread implements BankServer, BankReplica {
       Event haltEvent = new Event(2,serverId,"null",uts,uts,true,LocalDateTime.now(),"HALT!");
       sendMulticast(haltEvent);
       //empty my queue
-      bankServer.start();
 
       //TODO: RMI connection should be unbound and closed
+      while (!eventQueue.isEmpty());
       getTotalBalance();
+      System.out.println("ALL DONE!----- READY TO EXIT");
 //      System.exit(0);
+
     }
     return true;
   }
@@ -227,23 +236,28 @@ public class server extends Thread implements BankServer, BankReplica {
   }
 
   private boolean pollQueue() throws RemoteException {
-//    System.out.print(serverId+"pollQueue");
-    Event currHead = eventQueue.peek();
-//    System.out.println(currHead.type+ "-------- sender ID"+currHead.senderId+"----- receiver ID"+ currHead.receiverId+"-----Client time stamp"+currHead.clientTimeStamp+"-------Server Received from Client"+currHead.serverReceivedClient);
+    if (!eventQueue.isEmpty()){
 
-    if (currHead.senderId.contains("Client")){
-      String[] msg = currHead.content.split(",");
-      System.out.println("---EXECUTING TRANSFER----"+currHead.senderId+"---"+currHead.receiverId);
-      transfer(Integer.parseInt(msg[0]),Integer.parseInt(msg[1]),Integer.parseInt(msg[2]));
-      System.out.println("POLL QUEUE CLIENT MESSAGE" + currHead.clientTimeStamp);
-      eventQueue.poll();
+//      System.out.print(serverId+"pollQueue");
+      Event currHead = eventQueue.peek();
+//      System.out.println(currHead.type+ "-------- sender ID"+currHead.senderId+"----- receiver ID"+ currHead.receiverId+"-----Client time stamp"+currHead.clientTimeStamp+"-------Server Received from Client"+currHead.serverReceivedClient);
+
+      if (currHead.senderId.contains("Client")){
+        String[] msg = currHead.content.split(",");
+        System.out.println("---EXECUTING TRANSFER----"+currHead.senderId+"---"+currHead.receiverId);
+        transfer(Integer.parseInt(msg[0]),Integer.parseInt(msg[1]),Integer.parseInt(msg[2]));
+        System.out.println("POLL QUEUE CLIENT MESSAGE" + currHead.clientTimeStamp);
+        eventQueue.poll();
 //      if (!result){
 //        System.out.println("UNABLE TO REMOVE"+serverId);
 //      }
-      currHead.type=3;
-      currHead.senderId=serverId;
-      sendMulticast(currHead);
+        currHead.type=3;
+        currHead.senderId=serverId;
+        sendMulticast(currHead);
+      }
+
     }
+
     return true;
   }
 
@@ -276,10 +290,11 @@ public class server extends Thread implements BankServer, BankReplica {
   }
   public void receiveHalt(Event clientReq) throws RemoteException {
     System.out.println("Received Halt"+serverId);
-
-    bankServer.start();
+    while (!eventQueue.isEmpty());
     System.out.println("finished polling"+serverId);
     getTotalBalance();
+//    System.exit(0);
+    System.out.println("REMOTE HAT DONE!-----READY TO EXIT");
   }
 
 
@@ -407,7 +422,8 @@ public class server extends Thread implements BankServer, BankReplica {
 
     serverId = "Server_"+args[0];
     numClients=Integer.parseInt(args[2]);
-
+    logicalClock = new LogicalClock(serverId);
+    eventQueue = new PriorityBlockingQueue<Event>();
 
     String configFileName = args[1];
     prop = loadConfig(configFileName);
@@ -429,12 +445,14 @@ public class server extends Thread implements BankServer, BankReplica {
       Registry localRegistry1 = LocateRegistry.getRegistry(Integer.parseInt(prop.getProperty(serverId+".rmiregistry")));
       localRegistry.bind ("Replica_"+i, bankReplicaStub);
     }
+    bankServer.start();
   }
 
   private static void serverInitialize(BankServer bankServer) throws RemoteException {
     int[] uid_array = createAccounts(20, bankServer);
     deposit(uid_array, 1000, 20, bankServer);
     uids = uid_array;
+
   }
 
   /**
