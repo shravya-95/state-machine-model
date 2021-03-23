@@ -7,6 +7,7 @@ import java.rmi.RMISecurityManager;
 import java.rmi.RemoteException;
 import java.rmi.Naming;
 import java.rmi.registry.*;
+import java.time.LocalDateTime;
 import java.util.Comparator;
 import java.util.Hashtable;
 import java.io.*;
@@ -161,27 +162,57 @@ public class server implements BankServer, BankReplica {
    * Request sent by client to initiate transfer
    */
   public boolean operate(String clientId,String serverId, int sourceUid, int targetUid, int amount){
-    Event clientReq = new Event(0,clientId,serverId,"CLNT-REQ");
+    Event clientReq = new Event(0,clientId,serverId,sourceUid+","+targetUid+","+amount);
     clientReq.setTimeStamp(logicalClock.updateTime());
     clientReq.setPhysicalClock();
     eventQueue.add(clientReq);
     //here, multicast message
     sendMulticast(clientReq);
     //change below
-    return transfer(sourceUid, targetUid, amount);
+    pollQueue();
+    return true ;
+  }
+
+  private boolean pollQueue() {
+    Event currHead = eventQueue.peek();
+    if (currHead.type==0){
+      String[] msg = currHead.content.split(",");
+      System.out.println("---EXECUTING TRANSFER----"+currHead.senderId+"---"+currHead.receiverId);
+      transfer(Integer.parseInt(msg[0]),Integer.parseInt(msg[1]),Integer.parseInt(msg[2]));
+      eventQueue.remove(currHead);
+      currHead.type=3;
+      currHead.senderId=serverId;
+      sendMulticast(currHead);
+    }
+    return true;
   }
 
   /**
    * Use the RMI groupserver stub to multicast messages
    */
-  public void receiveMulticast(String msg, Event request){
-    this.msg = msg;
+  public int receiveRequest(String msg, Event request){
+//    Event replicaEvent = new Event(1, request.receiverId, serverId,logicalClock.updateTime(request.timeStamp),1, LocalDateTime.now(),request.content);
+    request.type=1;
+    eventQueue.add(request);
+    return logicalClock.updateTime(request.timeStamp);
   }
+  public void receiveExecute(Event request){
+    Event remove = request;
+    remove.type=1;
+    eventQueue.remove(remove);
+    String[] msg = remove.content.split(",");
+    System.out.println("--- receiveExecute --- EXECUTING TRANSFER----"+request.senderId+"---"+request.receiverId);
+    transfer(Integer.parseInt(msg[0]),Integer.parseInt(msg[1]),Integer.parseInt(msg[2]));
 
+
+  }
   public void sendMulticast(Event clientReq){
+
       for(int i=0;i<5;i++)
       {
         String replicaId = "Server_"+i;
+        System.out.println("Server_"+i + "--- sendMulticast----"+clientReq.senderId+"---"+clientReq.receiverId);
+
         if (replicaId.equals(serverId)) continue;
         Registry registry = null;
         BankReplica backReplica;
@@ -197,7 +228,19 @@ public class server implements BankServer, BankReplica {
         } catch (NotBoundException e) {
           throw new RuntimeException("NotBoundException before HALT: "+e);
         }
-        backReplica.receiveRequest(serverId, clientReq);
+        logicalClock.updateTime();
+        if (clientReq.type==0) {
+          System.out.println("Server_"+i + "--- clientReq type 0 ----"+clientReq.senderId+"---"+clientReq.receiverId);
+          int replicaTimestamp = backReplica.receiveRequest(serverId, clientReq);
+          //logging ack??
+          logicalClock.updateTime(replicaTimestamp);
+        }
+        else if (clientReq.type==3){
+          //remove from pq
+          System.out.println("Server_"+i + "--- clientReq type 3 ----"+clientReq.senderId+"---"+clientReq.receiverId);
+          backReplica.receiveExecute(clientReq);
+          //transfer function
+        }
       }
   }
 

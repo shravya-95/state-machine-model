@@ -3,7 +3,7 @@ import java.time.LocalDateTime;
 public class Event {
 /* 0 - CLIENT_REQ
     1 - SRV_REQ
-    2 - REQ_PROCESSING
+    2 - EXECUTE
     3 - REQ
     4 - RSP
  */

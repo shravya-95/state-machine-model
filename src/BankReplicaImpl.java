@@ -4,7 +4,7 @@ import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.List;
 
-public class BankReplicaImpl implements BankReplica {
+public class BankReplicaImpl {
     public static List<String> serverReplicaIds;
     public static List<BankReplica> bankReplicaStubs;
     public void joinGroup(String serverReplicaId) throws RemoteException {
