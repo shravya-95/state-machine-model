@@ -8,12 +8,12 @@ import java.rmi.RemoteException;
 import java.rmi.Naming;
 import java.rmi.registry.*;
 import java.time.LocalDateTime;
-import java.util.Comparator;
-import java.util.Hashtable;
 import java.io.*;
+import java.net.InetAddress;
+import java.util.*;
+import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Properties;
-import java.net.InetAddress;
 
 public class server extends Thread implements BankServer, BankReplica {
   //hashtable to hold the account's uid and object
@@ -29,7 +29,7 @@ public class server extends Thread implements BankServer, BankReplica {
   private static int numClients;
   private static int[] uids;
   public static server  bankServer;
-
+  public static List<String> mockQ;
   public server () throws RemoteException{
     super();
   }
@@ -211,6 +211,7 @@ public class server extends Thread implements BankServer, BankReplica {
     clientReq.setPhysicalClock();
 
     eventQueue.add(clientReq);
+//    mockQ.add(clientReq.receiverId+","+clientReq.senderId+","+clientReq.clientTimeStamp+","+clientReq.serverReceivedClient);
     //here, multicast message
     sendMulticast(clientReq);
     //change below
@@ -221,17 +222,17 @@ public class server extends Thread implements BankServer, BankReplica {
   private boolean pollQueue() throws RemoteException {
     System.out.print(serverId+"pollQueue");
     Event currHead = eventQueue.peek();
-    System.out.println(currHead.type+ "-------- sender ID"+currHead.senderId+"----- receiver ID"+ currHead.receiverId+"-----Client time stamp"+currHead.clientTimeStamp);
+    System.out.println(currHead.type+ "-------- sender ID"+currHead.senderId+"----- receiver ID"+ currHead.receiverId+"-----Client time stamp"+currHead.clientTimeStamp+"-------Server Received from Client"+currHead.serverReceivedClient);
 
     if (currHead.senderId.contains("Client")){
       String[] msg = currHead.content.split(",");
       System.out.println("---EXECUTING TRANSFER----"+currHead.senderId+"---"+currHead.receiverId);
       transfer(Integer.parseInt(msg[0]),Integer.parseInt(msg[1]),Integer.parseInt(msg[2]));
       System.out.println("POLL QUEUE CLIENT MESSAGE" + currHead.clientTimeStamp);
-      boolean result = eventQueue.remove(currHead);
-      if (!result){
-        System.out.println("UNABLE TO REMOVE"+serverId);
-      }
+      eventQueue.poll();
+//      if (!result){
+//        System.out.println("UNABLE TO REMOVE"+serverId);
+//      }
       currHead.type=3;
       currHead.senderId=serverId;
       sendMulticast(currHead);
@@ -248,12 +249,15 @@ public class server extends Thread implements BankServer, BankReplica {
 //    request.receiverId=serverId;
     logicalClock.updateTime(request.timeStamp);
     eventQueue.add(request);
+//    mockQ.add(request.receiverId+","+request.senderId+","+request.clientTimeStamp+","+request.serverReceivedClient);
+
     return logicalClock.updateTime();
   }
   public void receiveExecute(Event removeEvent) throws RemoteException{
 
     System.out.println("receiveExecute REMOVE EVENT TS---"+removeEvent.clientTimeStamp);
     boolean result = eventQueue.remove(removeEvent);
+//    System.out.println("REMOVED EVENT"+result.serverReceivedClient+"--"+removeEvent.serverReceivedClient+"------------" + result.clientTimeStamp+"---"+removeEvent.clientTimeStamp);
     if (!result){
       System.out.println("FAILED TO REMOVE AFTER MULTICAST");
     }
@@ -295,7 +299,7 @@ public class server extends Thread implements BankServer, BankReplica {
         }
         logicalClock.updateTime();
         if (clientReq.type==0) {
-          Event multicastEvent = new Event(1,serverId,"Server_"+i,logicalClock.getLocalTime(),clientReq.clientTimeStamp,true,LocalDateTime.now(),clientReq.content);
+          Event multicastEvent = new Event(1,serverId,"Server_"+i,logicalClock.getLocalTime(),clientReq.clientTimeStamp,clientReq.serverReceivedClient,true,LocalDateTime.now(),clientReq.content);
           System.out.println("CLIENT REQ TIME STAMP multicastEvent "+clientReq.clientTimeStamp);
           System.out.println("Server_"+i + "--- clientReq type 0 ----"+clientReq.senderId+"---"+clientReq.receiverId);
           int replicaTimestamp = backReplica.receiveRequest(serverId, multicastEvent);
@@ -398,6 +402,7 @@ public class server extends Thread implements BankServer, BankReplica {
     numClients=Integer.parseInt(args[2]);
     logicalClock = new LogicalClock(serverId);
     eventQueue = new PriorityQueue<Event>(new EventQueueComparator());
+
     String configFileName = args[1];
     prop = loadConfig(configFileName);
 

@@ -7817,3 +7817,1803 @@ Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1000, Tot
 Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 1000, Total so far:18000 
 Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 1000, Total so far:19000 
 Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: getTotalBalance | Inputs: UID: 1 | Result: AccountBalance: 1000, Total so far:1000 
+Operation: getTotalBalance | Inputs: UID: 2 | Result: AccountBalance: 1000, Total so far:2000 
+Operation: getTotalBalance | Inputs: UID: 3 | Result: AccountBalance: 1000, Total so far:3000 
+Operation: getTotalBalance | Inputs: UID: 4 | Result: AccountBalance: 1000, Total so far:4000 
+Operation: getTotalBalance | Inputs: UID: 5 | Result: AccountBalance: 1000, Total so far:5000 
+Operation: getTotalBalance | Inputs: UID: 6 | Result: AccountBalance: 1000, Total so far:6000 
+Operation: getTotalBalance | Inputs: UID: 7 | Result: AccountBalance: 1000, Total so far:7000 
+Operation: getTotalBalance | Inputs: UID: 8 | Result: AccountBalance: 1000, Total so far:8000 
+Operation: getTotalBalance | Inputs: UID: 9 | Result: AccountBalance: 1000, Total so far:9000 
+Operation: getTotalBalance | Inputs: UID: 10 | Result: AccountBalance: 1030, Total so far:10030 
+Operation: getTotalBalance | Inputs: UID: 11 | Result: AccountBalance: 970, Total so far:11000 
+Operation: getTotalBalance | Inputs: UID: 12 | Result: AccountBalance: 1000, Total so far:12000 
+Operation: getTotalBalance | Inputs: UID: 13 | Result: AccountBalance: 1000, Total so far:13000 
+Operation: getTotalBalance | Inputs: UID: 14 | Result: AccountBalance: 1000, Total so far:14000 
+Operation: getTotalBalance | Inputs: UID: 15 | Result: AccountBalance: 1000, Total so far:15000 
+Operation: getTotalBalance | Inputs: UID: 16 | Result: AccountBalance: 1000, Total so far:16000 
+Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1010, Total so far:17010 
+Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 1000, Total so far:18010 
+Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 990, Total so far:19000 
+Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: getTotalBalance | Inputs: UID: 1 | Result: AccountBalance: 1000, Total so far:1000 
+Operation: getTotalBalance | Inputs: UID: 2 | Result: AccountBalance: 1000, Total so far:2000 
+Operation: getTotalBalance | Inputs: UID: 3 | Result: AccountBalance: 1000, Total so far:3000 
+Operation: getTotalBalance | Inputs: UID: 4 | Result: AccountBalance: 1000, Total so far:4000 
+Operation: getTotalBalance | Inputs: UID: 5 | Result: AccountBalance: 1000, Total so far:5000 
+Operation: getTotalBalance | Inputs: UID: 6 | Result: AccountBalance: 1000, Total so far:6000 
+Operation: getTotalBalance | Inputs: UID: 7 | Result: AccountBalance: 1000, Total so far:7000 
+Operation: getTotalBalance | Inputs: UID: 8 | Result: AccountBalance: 1000, Total so far:8000 
+Operation: getTotalBalance | Inputs: UID: 9 | Result: AccountBalance: 1000, Total so far:9000 
+Operation: getTotalBalance | Inputs: UID: 10 | Result: AccountBalance: 1030, Total so far:10030 
+Operation: getTotalBalance | Inputs: UID: 11 | Result: AccountBalance: 970, Total so far:11000 
+Operation: getTotalBalance | Inputs: UID: 12 | Result: AccountBalance: 1000, Total so far:12000 
+Operation: getTotalBalance | Inputs: UID: 13 | Result: AccountBalance: 1000, Total so far:13000 
+Operation: getTotalBalance | Inputs: UID: 14 | Result: AccountBalance: 1000, Total so far:14000 
+Operation: getTotalBalance | Inputs: UID: 15 | Result: AccountBalance: 1000, Total so far:15000 
+Operation: getTotalBalance | Inputs: UID: 16 | Result: AccountBalance: 1000, Total so far:16000 
+Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1010, Total so far:17010 
+Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 1000, Total so far:18010 
+Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 990, Total so far:19000 
+Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: getTotalBalance | Inputs: UID: 1 | Result: AccountBalance: 1000, Total so far:1000 
+Operation: getTotalBalance | Inputs: UID: 2 | Result: AccountBalance: 1000, Total so far:2000 
+Operation: getTotalBalance | Inputs: UID: 3 | Result: AccountBalance: 1000, Total so far:3000 
+Operation: getTotalBalance | Inputs: UID: 4 | Result: AccountBalance: 1000, Total so far:4000 
+Operation: getTotalBalance | Inputs: UID: 5 | Result: AccountBalance: 1000, Total so far:5000 
+Operation: getTotalBalance | Inputs: UID: 6 | Result: AccountBalance: 1000, Total so far:6000 
+Operation: getTotalBalance | Inputs: UID: 7 | Result: AccountBalance: 1000, Total so far:7000 
+Operation: getTotalBalance | Inputs: UID: 8 | Result: AccountBalance: 1000, Total so far:8000 
+Operation: getTotalBalance | Inputs: UID: 9 | Result: AccountBalance: 1000, Total so far:9000 
+Operation: getTotalBalance | Inputs: UID: 10 | Result: AccountBalance: 1030, Total so far:10030 
+Operation: getTotalBalance | Inputs: UID: 11 | Result: AccountBalance: 970, Total so far:11000 
+Operation: getTotalBalance | Inputs: UID: 12 | Result: AccountBalance: 1000, Total so far:12000 
+Operation: getTotalBalance | Inputs: UID: 13 | Result: AccountBalance: 1000, Total so far:13000 
+Operation: getTotalBalance | Inputs: UID: 14 | Result: AccountBalance: 1000, Total so far:14000 
+Operation: getTotalBalance | Inputs: UID: 15 | Result: AccountBalance: 1000, Total so far:15000 
+Operation: getTotalBalance | Inputs: UID: 16 | Result: AccountBalance: 1000, Total so far:16000 
+Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1010, Total so far:17010 
+Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 1000, Total so far:18010 
+Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 990, Total so far:19000 
+Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: getTotalBalance | Inputs: UID: 1 | Result: AccountBalance: 1000, Total so far:1000 
+Operation: getTotalBalance | Inputs: UID: 2 | Result: AccountBalance: 1000, Total so far:2000 
+Operation: getTotalBalance | Inputs: UID: 3 | Result: AccountBalance: 1000, Total so far:3000 
+Operation: getTotalBalance | Inputs: UID: 4 | Result: AccountBalance: 1000, Total so far:4000 
+Operation: getTotalBalance | Inputs: UID: 5 | Result: AccountBalance: 1000, Total so far:5000 
+Operation: getTotalBalance | Inputs: UID: 6 | Result: AccountBalance: 1000, Total so far:6000 
+Operation: getTotalBalance | Inputs: UID: 7 | Result: AccountBalance: 1000, Total so far:7000 
+Operation: getTotalBalance | Inputs: UID: 8 | Result: AccountBalance: 1000, Total so far:8000 
+Operation: getTotalBalance | Inputs: UID: 9 | Result: AccountBalance: 1000, Total so far:9000 
+Operation: getTotalBalance | Inputs: UID: 10 | Result: AccountBalance: 1040, Total so far:10040 
+Operation: getTotalBalance | Inputs: UID: 11 | Result: AccountBalance: 960, Total so far:11000 
+Operation: getTotalBalance | Inputs: UID: 12 | Result: AccountBalance: 1000, Total so far:12000 
+Operation: getTotalBalance | Inputs: UID: 13 | Result: AccountBalance: 1000, Total so far:13000 
+Operation: getTotalBalance | Inputs: UID: 14 | Result: AccountBalance: 1000, Total so far:14000 
+Operation: getTotalBalance | Inputs: UID: 15 | Result: AccountBalance: 1000, Total so far:15000 
+Operation: getTotalBalance | Inputs: UID: 16 | Result: AccountBalance: 1000, Total so far:16000 
+Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1010, Total so far:17010 
+Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 1000, Total so far:18010 
+Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 990, Total so far:19000 
+Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: getTotalBalance | Inputs: UID: 1 | Result: AccountBalance: 1000, Total so far:1000 
+Operation: getTotalBalance | Inputs: UID: 2 | Result: AccountBalance: 1000, Total so far:2000 
+Operation: getTotalBalance | Inputs: UID: 3 | Result: AccountBalance: 1000, Total so far:3000 
+Operation: getTotalBalance | Inputs: UID: 4 | Result: AccountBalance: 1000, Total so far:4000 
+Operation: getTotalBalance | Inputs: UID: 5 | Result: AccountBalance: 1000, Total so far:5000 
+Operation: getTotalBalance | Inputs: UID: 6 | Result: AccountBalance: 1000, Total so far:6000 
+Operation: getTotalBalance | Inputs: UID: 7 | Result: AccountBalance: 1000, Total so far:7000 
+Operation: getTotalBalance | Inputs: UID: 8 | Result: AccountBalance: 1000, Total so far:8000 
+Operation: getTotalBalance | Inputs: UID: 9 | Result: AccountBalance: 1000, Total so far:9000 
+Operation: getTotalBalance | Inputs: UID: 10 | Result: AccountBalance: 1030, Total so far:10030 
+Operation: getTotalBalance | Inputs: UID: 11 | Result: AccountBalance: 970, Total so far:11000 
+Operation: getTotalBalance | Inputs: UID: 12 | Result: AccountBalance: 1000, Total so far:12000 
+Operation: getTotalBalance | Inputs: UID: 13 | Result: AccountBalance: 1000, Total so far:13000 
+Operation: getTotalBalance | Inputs: UID: 14 | Result: AccountBalance: 1000, Total so far:14000 
+Operation: getTotalBalance | Inputs: UID: 15 | Result: AccountBalance: 1000, Total so far:15000 
+Operation: getTotalBalance | Inputs: UID: 16 | Result: AccountBalance: 1000, Total so far:16000 
+Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1010, Total so far:17010 
+Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 1000, Total so far:18010 
+Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 990, Total so far:19000 
+Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: getTotalBalance | Inputs: UID: 1 | Result: AccountBalance: 1000, Total so far:1000 
+Operation: getTotalBalance | Inputs: UID: 2 | Result: AccountBalance: 1000, Total so far:2000 
+Operation: getTotalBalance | Inputs: UID: 3 | Result: AccountBalance: 1000, Total so far:3000 
+Operation: getTotalBalance | Inputs: UID: 4 | Result: AccountBalance: 1000, Total so far:4000 
+Operation: getTotalBalance | Inputs: UID: 5 | Result: AccountBalance: 1000, Total so far:5000 
+Operation: getTotalBalance | Inputs: UID: 6 | Result: AccountBalance: 1000, Total so far:6000 
+Operation: getTotalBalance | Inputs: UID: 7 | Result: AccountBalance: 1000, Total so far:7000 
+Operation: getTotalBalance | Inputs: UID: 8 | Result: AccountBalance: 1000, Total so far:8000 
+Operation: getTotalBalance | Inputs: UID: 9 | Result: AccountBalance: 1000, Total so far:9000 
+Operation: getTotalBalance | Inputs: UID: 10 | Result: AccountBalance: 1000, Total so far:10000 
+Operation: getTotalBalance | Inputs: UID: 11 | Result: AccountBalance: 1000, Total so far:11000 
+Operation: getTotalBalance | Inputs: UID: 12 | Result: AccountBalance: 1000, Total so far:12000 
+Operation: getTotalBalance | Inputs: UID: 13 | Result: AccountBalance: 970, Total so far:12970 
+Operation: getTotalBalance | Inputs: UID: 14 | Result: AccountBalance: 1000, Total so far:13970 
+Operation: getTotalBalance | Inputs: UID: 15 | Result: AccountBalance: 1030, Total so far:15000 
+Operation: getTotalBalance | Inputs: UID: 16 | Result: AccountBalance: 1000, Total so far:16000 
+Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1000, Total so far:17000 
+Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 1000, Total so far:18000 
+Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 1000, Total so far:19000 
+Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: getTotalBalance | Inputs: UID: 1 | Result: AccountBalance: 1000, Total so far:1000 
+Operation: getTotalBalance | Inputs: UID: 2 | Result: AccountBalance: 1000, Total so far:2000 
+Operation: getTotalBalance | Inputs: UID: 3 | Result: AccountBalance: 1000, Total so far:3000 
+Operation: getTotalBalance | Inputs: UID: 4 | Result: AccountBalance: 1000, Total so far:4000 
+Operation: getTotalBalance | Inputs: UID: 5 | Result: AccountBalance: 1000, Total so far:5000 
+Operation: getTotalBalance | Inputs: UID: 6 | Result: AccountBalance: 1000, Total so far:6000 
+Operation: getTotalBalance | Inputs: UID: 7 | Result: AccountBalance: 1000, Total so far:7000 
+Operation: getTotalBalance | Inputs: UID: 8 | Result: AccountBalance: 1000, Total so far:8000 
+Operation: getTotalBalance | Inputs: UID: 9 | Result: AccountBalance: 1000, Total so far:9000 
+Operation: getTotalBalance | Inputs: UID: 10 | Result: AccountBalance: 1000, Total so far:10000 
+Operation: getTotalBalance | Inputs: UID: 11 | Result: AccountBalance: 1000, Total so far:11000 
+Operation: getTotalBalance | Inputs: UID: 12 | Result: AccountBalance: 1000, Total so far:12000 
+Operation: getTotalBalance | Inputs: UID: 13 | Result: AccountBalance: 970, Total so far:12970 
+Operation: getTotalBalance | Inputs: UID: 14 | Result: AccountBalance: 1000, Total so far:13970 
+Operation: getTotalBalance | Inputs: UID: 15 | Result: AccountBalance: 1030, Total so far:15000 
+Operation: getTotalBalance | Inputs: UID: 16 | Result: AccountBalance: 1000, Total so far:16000 
+Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1000, Total so far:17000 
+Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 1000, Total so far:18000 
+Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 1000, Total so far:19000 
+Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: getTotalBalance | Inputs: UID: 1 | Result: AccountBalance: 1000, Total so far:1000 
+Operation: getTotalBalance | Inputs: UID: 2 | Result: AccountBalance: 1000, Total so far:2000 
+Operation: getTotalBalance | Inputs: UID: 3 | Result: AccountBalance: 1000, Total so far:3000 
+Operation: getTotalBalance | Inputs: UID: 4 | Result: AccountBalance: 1000, Total so far:4000 
+Operation: getTotalBalance | Inputs: UID: 5 | Result: AccountBalance: 1000, Total so far:5000 
+Operation: getTotalBalance | Inputs: UID: 6 | Result: AccountBalance: 1000, Total so far:6000 
+Operation: getTotalBalance | Inputs: UID: 7 | Result: AccountBalance: 1000, Total so far:7000 
+Operation: getTotalBalance | Inputs: UID: 8 | Result: AccountBalance: 1000, Total so far:8000 
+Operation: getTotalBalance | Inputs: UID: 9 | Result: AccountBalance: 1000, Total so far:9000 
+Operation: getTotalBalance | Inputs: UID: 10 | Result: AccountBalance: 1000, Total so far:10000 
+Operation: getTotalBalance | Inputs: UID: 11 | Result: AccountBalance: 1000, Total so far:11000 
+Operation: getTotalBalance | Inputs: UID: 12 | Result: AccountBalance: 1000, Total so far:12000 
+Operation: getTotalBalance | Inputs: UID: 13 | Result: AccountBalance: 970, Total so far:12970 
+Operation: getTotalBalance | Inputs: UID: 14 | Result: AccountBalance: 1000, Total so far:13970 
+Operation: getTotalBalance | Inputs: UID: 15 | Result: AccountBalance: 1030, Total so far:15000 
+Operation: getTotalBalance | Inputs: UID: 16 | Result: AccountBalance: 1000, Total so far:16000 
+Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1000, Total so far:17000 
+Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 1000, Total so far:18000 
+Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 1000, Total so far:19000 
+Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: getTotalBalance | Inputs: UID: 1 | Result: AccountBalance: 1000, Total so far:1000 
+Operation: getTotalBalance | Inputs: UID: 2 | Result: AccountBalance: 1000, Total so far:2000 
+Operation: getTotalBalance | Inputs: UID: 3 | Result: AccountBalance: 1000, Total so far:3000 
+Operation: getTotalBalance | Inputs: UID: 4 | Result: AccountBalance: 1000, Total so far:4000 
+Operation: getTotalBalance | Inputs: UID: 5 | Result: AccountBalance: 1000, Total so far:5000 
+Operation: getTotalBalance | Inputs: UID: 6 | Result: AccountBalance: 1000, Total so far:6000 
+Operation: getTotalBalance | Inputs: UID: 7 | Result: AccountBalance: 1000, Total so far:7000 
+Operation: getTotalBalance | Inputs: UID: 8 | Result: AccountBalance: 1000, Total so far:8000 
+Operation: getTotalBalance | Inputs: UID: 9 | Result: AccountBalance: 1000, Total so far:9000 
+Operation: getTotalBalance | Inputs: UID: 10 | Result: AccountBalance: 1000, Total so far:10000 
+Operation: getTotalBalance | Inputs: UID: 11 | Result: AccountBalance: 1000, Total so far:11000 
+Operation: getTotalBalance | Inputs: UID: 12 | Result: AccountBalance: 1000, Total so far:12000 
+Operation: getTotalBalance | Inputs: UID: 13 | Result: AccountBalance: 970, Total so far:12970 
+Operation: getTotalBalance | Inputs: UID: 14 | Result: AccountBalance: 1000, Total so far:13970 
+Operation: getTotalBalance | Inputs: UID: 15 | Result: AccountBalance: 1030, Total so far:15000 
+Operation: getTotalBalance | Inputs: UID: 16 | Result: AccountBalance: 1000, Total so far:16000 
+Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1000, Total so far:17000 
+Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 1000, Total so far:18000 
+Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 1000, Total so far:19000 
+Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: getTotalBalance | Inputs: UID: 1 | Result: AccountBalance: 1000, Total so far:1000 
+Operation: getTotalBalance | Inputs: UID: 2 | Result: AccountBalance: 1000, Total so far:2000 
+Operation: getTotalBalance | Inputs: UID: 3 | Result: AccountBalance: 1000, Total so far:3000 
+Operation: getTotalBalance | Inputs: UID: 4 | Result: AccountBalance: 1000, Total so far:4000 
+Operation: getTotalBalance | Inputs: UID: 5 | Result: AccountBalance: 1000, Total so far:5000 
+Operation: getTotalBalance | Inputs: UID: 6 | Result: AccountBalance: 1000, Total so far:6000 
+Operation: getTotalBalance | Inputs: UID: 7 | Result: AccountBalance: 1000, Total so far:7000 
+Operation: getTotalBalance | Inputs: UID: 8 | Result: AccountBalance: 1000, Total so far:8000 
+Operation: getTotalBalance | Inputs: UID: 9 | Result: AccountBalance: 1000, Total so far:9000 
+Operation: getTotalBalance | Inputs: UID: 10 | Result: AccountBalance: 1000, Total so far:10000 
+Operation: getTotalBalance | Inputs: UID: 11 | Result: AccountBalance: 1000, Total so far:11000 
+Operation: getTotalBalance | Inputs: UID: 12 | Result: AccountBalance: 1000, Total so far:12000 
+Operation: getTotalBalance | Inputs: UID: 13 | Result: AccountBalance: 970, Total so far:12970 
+Operation: getTotalBalance | Inputs: UID: 14 | Result: AccountBalance: 1000, Total so far:13970 
+Operation: getTotalBalance | Inputs: UID: 15 | Result: AccountBalance: 1030, Total so far:15000 
+Operation: getTotalBalance | Inputs: UID: 16 | Result: AccountBalance: 1000, Total so far:16000 
+Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1000, Total so far:17000 
+Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 1000, Total so far:18000 
+Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 1000, Total so far:19000 
+Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: getTotalBalance | Inputs: UID: 1 | Result: AccountBalance: 1000, Total so far:1000 
+Operation: getTotalBalance | Inputs: UID: 2 | Result: AccountBalance: 1020, Total so far:2020 
+Operation: getTotalBalance | Inputs: UID: 3 | Result: AccountBalance: 1000, Total so far:3020 
+Operation: getTotalBalance | Inputs: UID: 4 | Result: AccountBalance: 990, Total so far:4010 
+Operation: getTotalBalance | Inputs: UID: 5 | Result: AccountBalance: 980, Total so far:4990 
+Operation: getTotalBalance | Inputs: UID: 6 | Result: AccountBalance: 1020, Total so far:6010 
+Operation: getTotalBalance | Inputs: UID: 7 | Result: AccountBalance: 1000, Total so far:7010 
+Operation: getTotalBalance | Inputs: UID: 8 | Result: AccountBalance: 1000, Total so far:8010 
+Operation: getTotalBalance | Inputs: UID: 9 | Result: AccountBalance: 1010, Total so far:9020 
+Operation: getTotalBalance | Inputs: UID: 10 | Result: AccountBalance: 1000, Total so far:10020 
+Operation: getTotalBalance | Inputs: UID: 11 | Result: AccountBalance: 1000, Total so far:11020 
+Operation: getTotalBalance | Inputs: UID: 12 | Result: AccountBalance: 1000, Total so far:12020 
+Operation: getTotalBalance | Inputs: UID: 13 | Result: AccountBalance: 980, Total so far:13000 
+Operation: getTotalBalance | Inputs: UID: 14 | Result: AccountBalance: 1000, Total so far:14000 
+Operation: getTotalBalance | Inputs: UID: 15 | Result: AccountBalance: 1000, Total so far:15000 
+Operation: getTotalBalance | Inputs: UID: 16 | Result: AccountBalance: 1020, Total so far:16020 
+Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1000, Total so far:17020 
+Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 980, Total so far:18000 
+Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 1000, Total so far:19000 
+Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: getTotalBalance | Inputs: UID: 1 | Result: AccountBalance: 1000, Total so far:1000 
+Operation: getTotalBalance | Inputs: UID: 2 | Result: AccountBalance: 1020, Total so far:2020 
+Operation: getTotalBalance | Inputs: UID: 3 | Result: AccountBalance: 1000, Total so far:3020 
+Operation: getTotalBalance | Inputs: UID: 4 | Result: AccountBalance: 990, Total so far:4010 
+Operation: getTotalBalance | Inputs: UID: 5 | Result: AccountBalance: 980, Total so far:4990 
+Operation: getTotalBalance | Inputs: UID: 6 | Result: AccountBalance: 1020, Total so far:6010 
+Operation: getTotalBalance | Inputs: UID: 7 | Result: AccountBalance: 1000, Total so far:7010 
+Operation: getTotalBalance | Inputs: UID: 8 | Result: AccountBalance: 1000, Total so far:8010 
+Operation: getTotalBalance | Inputs: UID: 9 | Result: AccountBalance: 1010, Total so far:9020 
+Operation: getTotalBalance | Inputs: UID: 10 | Result: AccountBalance: 1000, Total so far:10020 
+Operation: getTotalBalance | Inputs: UID: 11 | Result: AccountBalance: 1000, Total so far:11020 
+Operation: getTotalBalance | Inputs: UID: 12 | Result: AccountBalance: 1000, Total so far:12020 
+Operation: getTotalBalance | Inputs: UID: 13 | Result: AccountBalance: 980, Total so far:13000 
+Operation: getTotalBalance | Inputs: UID: 14 | Result: AccountBalance: 1000, Total so far:14000 
+Operation: getTotalBalance | Inputs: UID: 15 | Result: AccountBalance: 1000, Total so far:15000 
+Operation: getTotalBalance | Inputs: UID: 16 | Result: AccountBalance: 1020, Total so far:16020 
+Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1000, Total so far:17020 
+Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 980, Total so far:18000 
+Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 1000, Total so far:19000 
+Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: getTotalBalance | Inputs: UID: 1 | Result: AccountBalance: 1000, Total so far:1000 
+Operation: getTotalBalance | Inputs: UID: 2 | Result: AccountBalance: 1020, Total so far:2020 
+Operation: getTotalBalance | Inputs: UID: 3 | Result: AccountBalance: 1000, Total so far:3020 
+Operation: getTotalBalance | Inputs: UID: 4 | Result: AccountBalance: 990, Total so far:4010 
+Operation: getTotalBalance | Inputs: UID: 5 | Result: AccountBalance: 980, Total so far:4990 
+Operation: getTotalBalance | Inputs: UID: 6 | Result: AccountBalance: 1020, Total so far:6010 
+Operation: getTotalBalance | Inputs: UID: 7 | Result: AccountBalance: 1000, Total so far:7010 
+Operation: getTotalBalance | Inputs: UID: 8 | Result: AccountBalance: 1000, Total so far:8010 
+Operation: getTotalBalance | Inputs: UID: 9 | Result: AccountBalance: 1010, Total so far:9020 
+Operation: getTotalBalance | Inputs: UID: 10 | Result: AccountBalance: 1000, Total so far:10020 
+Operation: getTotalBalance | Inputs: UID: 11 | Result: AccountBalance: 1000, Total so far:11020 
+Operation: getTotalBalance | Inputs: UID: 12 | Result: AccountBalance: 1000, Total so far:12020 
+Operation: getTotalBalance | Inputs: UID: 13 | Result: AccountBalance: 980, Total so far:13000 
+Operation: getTotalBalance | Inputs: UID: 14 | Result: AccountBalance: 1000, Total so far:14000 
+Operation: getTotalBalance | Inputs: UID: 15 | Result: AccountBalance: 1000, Total so far:15000 
+Operation: getTotalBalance | Inputs: UID: 16 | Result: AccountBalance: 1020, Total so far:16020 
+Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1000, Total so far:17020 
+Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 980, Total so far:18000 
+Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 1000, Total so far:19000 
+Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: getTotalBalance | Inputs: UID: 1 | Result: AccountBalance: 1000, Total so far:1000 
+Operation: getTotalBalance | Inputs: UID: 2 | Result: AccountBalance: 1020, Total so far:2020 
+Operation: getTotalBalance | Inputs: UID: 3 | Result: AccountBalance: 1000, Total so far:3020 
+Operation: getTotalBalance | Inputs: UID: 4 | Result: AccountBalance: 990, Total so far:4010 
+Operation: getTotalBalance | Inputs: UID: 5 | Result: AccountBalance: 980, Total so far:4990 
+Operation: getTotalBalance | Inputs: UID: 6 | Result: AccountBalance: 1020, Total so far:6010 
+Operation: getTotalBalance | Inputs: UID: 7 | Result: AccountBalance: 1000, Total so far:7010 
+Operation: getTotalBalance | Inputs: UID: 8 | Result: AccountBalance: 1000, Total so far:8010 
+Operation: getTotalBalance | Inputs: UID: 9 | Result: AccountBalance: 1010, Total so far:9020 
+Operation: getTotalBalance | Inputs: UID: 10 | Result: AccountBalance: 1000, Total so far:10020 
+Operation: getTotalBalance | Inputs: UID: 11 | Result: AccountBalance: 1000, Total so far:11020 
+Operation: getTotalBalance | Inputs: UID: 12 | Result: AccountBalance: 1000, Total so far:12020 
+Operation: getTotalBalance | Inputs: UID: 13 | Result: AccountBalance: 980, Total so far:13000 
+Operation: getTotalBalance | Inputs: UID: 14 | Result: AccountBalance: 1000, Total so far:14000 
+Operation: getTotalBalance | Inputs: UID: 15 | Result: AccountBalance: 1000, Total so far:15000 
+Operation: getTotalBalance | Inputs: UID: 16 | Result: AccountBalance: 1020, Total so far:16020 
+Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1000, Total so far:17020 
+Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 980, Total so far:18000 
+Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 1000, Total so far:19000 
+Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: getTotalBalance | Inputs: UID: 1 | Result: AccountBalance: 1000, Total so far:1000 
+Operation: getTotalBalance | Inputs: UID: 2 | Result: AccountBalance: 1020, Total so far:2020 
+Operation: getTotalBalance | Inputs: UID: 3 | Result: AccountBalance: 1000, Total so far:3020 
+Operation: getTotalBalance | Inputs: UID: 4 | Result: AccountBalance: 990, Total so far:4010 
+Operation: getTotalBalance | Inputs: UID: 5 | Result: AccountBalance: 980, Total so far:4990 
+Operation: getTotalBalance | Inputs: UID: 6 | Result: AccountBalance: 1020, Total so far:6010 
+Operation: getTotalBalance | Inputs: UID: 7 | Result: AccountBalance: 1000, Total so far:7010 
+Operation: getTotalBalance | Inputs: UID: 8 | Result: AccountBalance: 1000, Total so far:8010 
+Operation: getTotalBalance | Inputs: UID: 9 | Result: AccountBalance: 1010, Total so far:9020 
+Operation: getTotalBalance | Inputs: UID: 10 | Result: AccountBalance: 1000, Total so far:10020 
+Operation: getTotalBalance | Inputs: UID: 11 | Result: AccountBalance: 1000, Total so far:11020 
+Operation: getTotalBalance | Inputs: UID: 12 | Result: AccountBalance: 1000, Total so far:12020 
+Operation: getTotalBalance | Inputs: UID: 13 | Result: AccountBalance: 980, Total so far:13000 
+Operation: getTotalBalance | Inputs: UID: 14 | Result: AccountBalance: 1000, Total so far:14000 
+Operation: getTotalBalance | Inputs: UID: 15 | Result: AccountBalance: 1000, Total so far:15000 
+Operation: getTotalBalance | Inputs: UID: 16 | Result: AccountBalance: 1020, Total so far:16020 
+Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1000, Total so far:17020 
+Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 980, Total so far:18000 
+Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 1000, Total so far:19000 
+Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: getTotalBalance | Inputs: UID: 1 | Result: AccountBalance: 1000, Total so far:1000 
+Operation: getTotalBalance | Inputs: UID: 2 | Result: AccountBalance: 1000, Total so far:2000 
+Operation: getTotalBalance | Inputs: UID: 3 | Result: AccountBalance: 1000, Total so far:3000 
+Operation: getTotalBalance | Inputs: UID: 4 | Result: AccountBalance: 1000, Total so far:4000 
+Operation: getTotalBalance | Inputs: UID: 5 | Result: AccountBalance: 1000, Total so far:5000 
+Operation: getTotalBalance | Inputs: UID: 6 | Result: AccountBalance: 1000, Total so far:6000 
+Operation: getTotalBalance | Inputs: UID: 7 | Result: AccountBalance: 1010, Total so far:7010 
+Operation: getTotalBalance | Inputs: UID: 8 | Result: AccountBalance: 1000, Total so far:8010 
+Operation: getTotalBalance | Inputs: UID: 9 | Result: AccountBalance: 1000, Total so far:9010 
+Operation: getTotalBalance | Inputs: UID: 10 | Result: AccountBalance: 1010, Total so far:10020 
+Operation: getTotalBalance | Inputs: UID: 11 | Result: AccountBalance: 990, Total so far:11010 
+Operation: getTotalBalance | Inputs: UID: 12 | Result: AccountBalance: 990, Total so far:12000 
+Operation: getTotalBalance | Inputs: UID: 13 | Result: AccountBalance: 1000, Total so far:13000 
+Operation: getTotalBalance | Inputs: UID: 14 | Result: AccountBalance: 990, Total so far:13990 
+Operation: getTotalBalance | Inputs: UID: 15 | Result: AccountBalance: 1000, Total so far:14990 
+Operation: getTotalBalance | Inputs: UID: 16 | Result: AccountBalance: 1000, Total so far:15990 
+Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1010, Total so far:17000 
+Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 1000, Total so far:18000 
+Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 1000, Total so far:19000 
+Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: getTotalBalance | Inputs: UID: 1 | Result: AccountBalance: 1000, Total so far:1000 
+Operation: getTotalBalance | Inputs: UID: 2 | Result: AccountBalance: 1000, Total so far:2000 
+Operation: getTotalBalance | Inputs: UID: 3 | Result: AccountBalance: 1000, Total so far:3000 
+Operation: getTotalBalance | Inputs: UID: 4 | Result: AccountBalance: 1000, Total so far:4000 
+Operation: getTotalBalance | Inputs: UID: 5 | Result: AccountBalance: 1000, Total so far:5000 
+Operation: getTotalBalance | Inputs: UID: 6 | Result: AccountBalance: 1000, Total so far:6000 
+Operation: getTotalBalance | Inputs: UID: 7 | Result: AccountBalance: 1010, Total so far:7010 
+Operation: getTotalBalance | Inputs: UID: 8 | Result: AccountBalance: 1000, Total so far:8010 
+Operation: getTotalBalance | Inputs: UID: 9 | Result: AccountBalance: 1000, Total so far:9010 
+Operation: getTotalBalance | Inputs: UID: 10 | Result: AccountBalance: 1010, Total so far:10020 
+Operation: getTotalBalance | Inputs: UID: 11 | Result: AccountBalance: 990, Total so far:11010 
+Operation: getTotalBalance | Inputs: UID: 12 | Result: AccountBalance: 990, Total so far:12000 
+Operation: getTotalBalance | Inputs: UID: 13 | Result: AccountBalance: 1000, Total so far:13000 
+Operation: getTotalBalance | Inputs: UID: 14 | Result: AccountBalance: 990, Total so far:13990 
+Operation: getTotalBalance | Inputs: UID: 15 | Result: AccountBalance: 1000, Total so far:14990 
+Operation: getTotalBalance | Inputs: UID: 16 | Result: AccountBalance: 1000, Total so far:15990 
+Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1010, Total so far:17000 
+Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 1000, Total so far:18000 
+Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 1000, Total so far:19000 
+Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: getTotalBalance | Inputs: UID: 1 | Result: AccountBalance: 1000, Total so far:1000 
+Operation: getTotalBalance | Inputs: UID: 2 | Result: AccountBalance: 1000, Total so far:2000 
+Operation: getTotalBalance | Inputs: UID: 3 | Result: AccountBalance: 1000, Total so far:3000 
+Operation: getTotalBalance | Inputs: UID: 4 | Result: AccountBalance: 1000, Total so far:4000 
+Operation: getTotalBalance | Inputs: UID: 5 | Result: AccountBalance: 1000, Total so far:5000 
+Operation: getTotalBalance | Inputs: UID: 6 | Result: AccountBalance: 1000, Total so far:6000 
+Operation: getTotalBalance | Inputs: UID: 7 | Result: AccountBalance: 1010, Total so far:7010 
+Operation: getTotalBalance | Inputs: UID: 8 | Result: AccountBalance: 1000, Total so far:8010 
+Operation: getTotalBalance | Inputs: UID: 9 | Result: AccountBalance: 1000, Total so far:9010 
+Operation: getTotalBalance | Inputs: UID: 10 | Result: AccountBalance: 1010, Total so far:10020 
+Operation: getTotalBalance | Inputs: UID: 11 | Result: AccountBalance: 990, Total so far:11010 
+Operation: getTotalBalance | Inputs: UID: 12 | Result: AccountBalance: 990, Total so far:12000 
+Operation: getTotalBalance | Inputs: UID: 13 | Result: AccountBalance: 1000, Total so far:13000 
+Operation: getTotalBalance | Inputs: UID: 14 | Result: AccountBalance: 990, Total so far:13990 
+Operation: getTotalBalance | Inputs: UID: 15 | Result: AccountBalance: 1000, Total so far:14990 
+Operation: getTotalBalance | Inputs: UID: 16 | Result: AccountBalance: 1000, Total so far:15990 
+Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1010, Total so far:17000 
+Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 1000, Total so far:18000 
+Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 1000, Total so far:19000 
+Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: getTotalBalance | Inputs: UID: 1 | Result: AccountBalance: 1000, Total so far:1000 
+Operation: getTotalBalance | Inputs: UID: 2 | Result: AccountBalance: 1000, Total so far:2000 
+Operation: getTotalBalance | Inputs: UID: 3 | Result: AccountBalance: 1000, Total so far:3000 
+Operation: getTotalBalance | Inputs: UID: 4 | Result: AccountBalance: 1000, Total so far:4000 
+Operation: getTotalBalance | Inputs: UID: 5 | Result: AccountBalance: 1000, Total so far:5000 
+Operation: getTotalBalance | Inputs: UID: 6 | Result: AccountBalance: 1000, Total so far:6000 
+Operation: getTotalBalance | Inputs: UID: 7 | Result: AccountBalance: 1010, Total so far:7010 
+Operation: getTotalBalance | Inputs: UID: 8 | Result: AccountBalance: 1000, Total so far:8010 
+Operation: getTotalBalance | Inputs: UID: 9 | Result: AccountBalance: 1000, Total so far:9010 
+Operation: getTotalBalance | Inputs: UID: 10 | Result: AccountBalance: 1010, Total so far:10020 
+Operation: getTotalBalance | Inputs: UID: 11 | Result: AccountBalance: 990, Total so far:11010 
+Operation: getTotalBalance | Inputs: UID: 12 | Result: AccountBalance: 990, Total so far:12000 
+Operation: getTotalBalance | Inputs: UID: 13 | Result: AccountBalance: 1000, Total so far:13000 
+Operation: getTotalBalance | Inputs: UID: 14 | Result: AccountBalance: 990, Total so far:13990 
+Operation: getTotalBalance | Inputs: UID: 15 | Result: AccountBalance: 1000, Total so far:14990 
+Operation: getTotalBalance | Inputs: UID: 16 | Result: AccountBalance: 1000, Total so far:15990 
+Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1010, Total so far:17000 
+Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 1000, Total so far:18000 
+Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 1000, Total so far:19000 
+Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: getTotalBalance | Inputs: UID: 1 | Result: AccountBalance: 1000, Total so far:1000 
+Operation: getTotalBalance | Inputs: UID: 2 | Result: AccountBalance: 1000, Total so far:2000 
+Operation: getTotalBalance | Inputs: UID: 3 | Result: AccountBalance: 1000, Total so far:3000 
+Operation: getTotalBalance | Inputs: UID: 4 | Result: AccountBalance: 1000, Total so far:4000 
+Operation: getTotalBalance | Inputs: UID: 5 | Result: AccountBalance: 1000, Total so far:5000 
+Operation: getTotalBalance | Inputs: UID: 6 | Result: AccountBalance: 1000, Total so far:6000 
+Operation: getTotalBalance | Inputs: UID: 7 | Result: AccountBalance: 1010, Total so far:7010 
+Operation: getTotalBalance | Inputs: UID: 8 | Result: AccountBalance: 1000, Total so far:8010 
+Operation: getTotalBalance | Inputs: UID: 9 | Result: AccountBalance: 1000, Total so far:9010 
+Operation: getTotalBalance | Inputs: UID: 10 | Result: AccountBalance: 1010, Total so far:10020 
+Operation: getTotalBalance | Inputs: UID: 11 | Result: AccountBalance: 990, Total so far:11010 
+Operation: getTotalBalance | Inputs: UID: 12 | Result: AccountBalance: 990, Total so far:12000 
+Operation: getTotalBalance | Inputs: UID: 13 | Result: AccountBalance: 1000, Total so far:13000 
+Operation: getTotalBalance | Inputs: UID: 14 | Result: AccountBalance: 990, Total so far:13990 
+Operation: getTotalBalance | Inputs: UID: 15 | Result: AccountBalance: 1000, Total so far:14990 
+Operation: getTotalBalance | Inputs: UID: 16 | Result: AccountBalance: 1000, Total so far:15990 
+Operation: getTotalBalance | Inputs: UID: 17 | Result: AccountBalance: 1010, Total so far:17000 
+Operation: getTotalBalance | Inputs: UID: 18 | Result: AccountBalance: 1000, Total so far:18000 
+Operation: getTotalBalance | Inputs: UID: 19 | Result: AccountBalance: 1000, Total so far:19000 
+Operation: getTotalBalance | Inputs: UID: 20 | Result: AccountBalance: 1000, Total so far:20000 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 
+Operation: createAccount | Inputs:  | Result: 1 
+Operation: createAccount | Inputs:  | Result: 2 
+Operation: createAccount | Inputs:  | Result: 3 
+Operation: createAccount | Inputs:  | Result: 4 
+Operation: createAccount | Inputs:  | Result: 5 
+Operation: createAccount | Inputs:  | Result: 6 
+Operation: createAccount | Inputs:  | Result: 7 
+Operation: createAccount | Inputs:  | Result: 8 
+Operation: createAccount | Inputs:  | Result: 9 
+Operation: createAccount | Inputs:  | Result: 10 
+Operation: createAccount | Inputs:  | Result: 11 
+Operation: createAccount | Inputs:  | Result: 12 
+Operation: createAccount | Inputs:  | Result: 13 
+Operation: createAccount | Inputs:  | Result: 14 
+Operation: createAccount | Inputs:  | Result: 15 
+Operation: createAccount | Inputs:  | Result: 16 
+Operation: createAccount | Inputs:  | Result: 17 
+Operation: createAccount | Inputs:  | Result: 18 
+Operation: createAccount | Inputs:  | Result: 19 
+Operation: createAccount | Inputs:  | Result: 20 
+Operation: deposit | Inputs: UID: 1, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 2, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 3, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 4, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 5, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 6, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 7, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 8, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 9, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 10, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 11, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 12, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 13, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 14, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 15, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 16, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 17, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 18, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 19, Amount: 1000 | Result: true 
+Operation: deposit | Inputs: UID: 20, Amount: 1000 | Result: true 

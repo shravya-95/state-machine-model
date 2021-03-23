@@ -32,7 +32,7 @@ public class client extends Thread {
     public void run() {
 
 //        for (int i=0;i<iterationCount;i++){
-                for (int i=0;i<50;i++){
+                for (int i=0;i<5;i++){
 
 
         //can optimize to choose different server if this server is down

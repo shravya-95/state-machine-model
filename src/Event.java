@@ -16,7 +16,8 @@ public class Event extends Object implements Serializable{
     public boolean remote;
     public LocalDateTime physicalClock;
     public int clientTimeStamp;
-    public int serverReceivedClient;
+    public int serverReceivedClient=Integer.MAX_VALUE;
+
 
     public Event(int type, String senderId, String receiverId, String content)  {
         this.type = type;
