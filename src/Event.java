@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.time.LocalDateTime;
 
-public class Event {
+public class Event implements Serializable {
 /* 0 - CLIENT_REQ
     1 - SRV_REQ
     2 - EXECUTE
@@ -15,7 +16,7 @@ public class Event {
     public boolean remote;
     public LocalDateTime physicalClock;
 
-    public Event(int type, String senderId, String receiverId, String content) {
+    public Event(int type, String senderId, String receiverId, String content)  {
         this.type = type;
         this.senderId = senderId;
         this.receiverId = receiverId;

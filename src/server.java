@@ -207,9 +207,8 @@ public class server implements BankServer, BankReplica {
 
   }
   public void sendMulticast(Event clientReq) throws RemoteException {
-
-      for(int i=0;i<5;i++)
-      {
+    for(int i=0;i<2;i++){
+//      for(int i=0;i<5;i++){
         String replicaId = "Server_"+i;
         System.out.println("Server_"+i + "--- sendMulticast----"+clientReq.senderId+"---"+clientReq.receiverId);
 
@@ -323,7 +322,8 @@ public class server implements BankServer, BankReplica {
     serverInitialize(bankServer);
     System.out.println("Server initialization is complete");
 
-    for(int i=0;i<5;i++){
+    for(int i=0;i<2;i++){
+//    for(int i=0;i<5;i++){
 //      BankReplica bankReplicaStub  =  (BankReplica) UnicastRemoteObject.exportObject(bankServer, Integer.parseInt(prop.getProperty("Server_"+i+".port")));
       BankReplica bankReplicaStub  =  (BankReplica) bankServerStub;
       Registry localRegistry1 = LocateRegistry.getRegistry(Integer.parseInt(prop.getProperty(serverId+".rmiregistry")));
