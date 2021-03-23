@@ -25,8 +25,9 @@ public class server implements BankServer, BankReplica {
   private static Properties prop;
   private static String serverId;
   private static int haltedClients=0;
-  private static Object lock;
+  private static Object lock = new Object();
   private static int numClients;
+  private static int[] uids;
 
   public server () throws RemoteException{
     super();
@@ -100,6 +101,7 @@ public class server implements BankServer, BankReplica {
       haltedClients++;
     }
     if (haltedClients==numClients){
+      System.out.println("numClients equal");
       //send it to everyone
       Event haltEvent = new Event(2,serverId,"null",logicalClock.updateTime(),true,LocalDateTime.now(),"HALT!");
       sendMulticast(haltEvent);
@@ -108,8 +110,8 @@ public class server implements BankServer, BankReplica {
         pollQueue();
       }
       //TODO: RMI connection should be unbound and closed
-
-      System.exit(0);
+      getTotalBalance();
+//      System.exit(0);
     }
     return true;
   }
@@ -192,7 +194,9 @@ public class server implements BankServer, BankReplica {
   }
 
   private boolean pollQueue() throws RemoteException {
+    System.out.print(serverId+"pollQueue");
     Event currHead = eventQueue.peek();
+    System.out.println(currHead.type);
     if (currHead.type==0){
       String[] msg = currHead.content.split(",");
       System.out.println("---EXECUTING TRANSFER----"+currHead.senderId+"---"+currHead.receiverId);
@@ -211,6 +215,7 @@ public class server implements BankServer, BankReplica {
   public int receiveRequest(String msg, Event request) throws RemoteException{
 //    Event replicaEvent = new Event(1, request.receiverId, serverId,logicalClock.updateTime(request.timeStamp),1, LocalDateTime.now(),request.content);
     request.type=1;
+//    request.receiverId=serverId;
     eventQueue.add(request);
     return logicalClock.updateTime(request.timeStamp);
   }
@@ -219,15 +224,19 @@ public class server implements BankServer, BankReplica {
     remove.type=1;
     eventQueue.remove(remove);
     String[] msg = remove.content.split(",");
-    System.out.println("--- receiveExecute --- EXECUTING TRANSFER----"+request.senderId+"---"+request.receiverId);
+    System.out.println("--- receiveExecute --- EXECUTING TRANSFER----"+request.senderId+"---"+serverId);
     transfer(Integer.parseInt(msg[0]),Integer.parseInt(msg[1]),Integer.parseInt(msg[2]));
 
 
   }
   public void receiveHalt(Event clientReq) throws RemoteException {
+    System.out.println("Received Halt"+serverId);
     while(!eventQueue.isEmpty()){
       pollQueue();
     }
+    System.out.println("finished polling"+serverId);
+    getTotalBalance();
+    System.exit(0);
   }
 
 
@@ -271,7 +280,8 @@ public class server implements BankServer, BankReplica {
         }
       }
   }
-  public static int getTotalBalance(int numAccounts, int[] uids) {
+  public static int getTotalBalance() {
+    int numAccounts = 20;
     int total = 0;
     for (int i = 0; i < numAccounts; i++) {
       String logMsg = "";
@@ -284,6 +294,7 @@ public class server implements BankServer, BankReplica {
       logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
       writeToLog("clientLogfile.txt",logMsg);
     }
+    System.out.println(serverId+": total= "+total);
     return total;
   }
   /**
@@ -376,8 +387,9 @@ public class server implements BankServer, BankReplica {
   }
 
   private static void serverInitialize(BankServer bankServer) throws RemoteException {
-    int[] uids = createAccounts(20, bankServer);
-    deposit(uids, 1000, 20, bankServer);
+    int[] uid_array = createAccounts(20, bankServer);
+    deposit(uid_array, 1000, 20, bankServer);
+    uids = uid_array;
   }
 
   /**
