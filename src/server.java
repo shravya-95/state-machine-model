@@ -35,6 +35,7 @@ public class server extends Thread implements BankServer, BankReplica {
   }
   public void run(){
     while (!eventQueue.isEmpty()){
+//      System.out.println("QUEUE CONTENT"+eventQueue.poll().timeStamp);
       try {
         pollQueue();
       } catch (RemoteException e) {
@@ -46,11 +47,11 @@ public class server extends Thread implements BankServer, BankReplica {
 
     @Override
     public int compare(Event o1, Event o2) {
-      if (o1.timeStamp< o2.timeStamp){
-        return 1;
-      }
-      else if (o1.timeStamp> o2.timeStamp){
+      if (o1.clientTimeStamp< o2.clientTimeStamp){
         return -1;
+      }
+      else if (o1.clientTimeStamp> o2.clientTimeStamp){
+        return 1;
       }
       return 0;
     }
@@ -108,11 +109,13 @@ public class server extends Thread implements BankServer, BankReplica {
     //communicate here
     synchronized (lock){
       haltedClients++;
+      System.out.println("HALTED CLIENT"+haltedClients+"----Total clients"+numClients);
     }
     if (haltedClients==numClients){
       System.out.println("numClients equal");
       //send it to everyone
-      Event haltEvent = new Event(2,serverId,"null",logicalClock.updateTime(),true,LocalDateTime.now(),"HALT!");
+      int uts = logicalClock.updateTime();
+      Event haltEvent = new Event(2,serverId,"null",uts,uts,true,LocalDateTime.now(),"HALT!");
       sendMulticast(haltEvent);
       //empty my queue
       bankServer.start();
@@ -191,8 +194,12 @@ public class server extends Thread implements BankServer, BankReplica {
    */
   public boolean operate(String clientId,String serverId, int sourceUid, int targetUid, int amount) throws RemoteException {
     Event clientReq = new Event(0,clientId,serverId,sourceUid+","+targetUid+","+amount);
-    clientReq.setTimeStamp(logicalClock.updateTime());
+    int currServerTs = logicalClock.updateTime();
+    clientReq.setTimeStamp(currServerTs);
+    clientReq.clientTimeStamp=currServerTs;
+    System.out.println("OPERATE TS -----"+currServerTs);
     clientReq.setPhysicalClock();
+
     eventQueue.add(clientReq);
     //here, multicast message
     sendMulticast(clientReq);
@@ -204,12 +211,17 @@ public class server extends Thread implements BankServer, BankReplica {
   private boolean pollQueue() throws RemoteException {
     System.out.print(serverId+"pollQueue");
     Event currHead = eventQueue.peek();
-    System.out.println(currHead.type);
-    if (currHead.type==0){
+    System.out.println(currHead.type+ "-------- sender ID"+currHead.senderId+"----- receiver ID"+ currHead.receiverId+"-----Client time stamp"+currHead.clientTimeStamp);
+
+    if (currHead.senderId.contains("Client")){
       String[] msg = currHead.content.split(",");
       System.out.println("---EXECUTING TRANSFER----"+currHead.senderId+"---"+currHead.receiverId);
       transfer(Integer.parseInt(msg[0]),Integer.parseInt(msg[1]),Integer.parseInt(msg[2]));
-      eventQueue.remove(currHead);
+      System.out.println("POLL QUEUE CLIENT MESSAGE" + currHead.clientTimeStamp);
+      boolean result = eventQueue.remove(currHead);
+      if (!result){
+        System.out.println("UNABLE TO REMOVE"+serverId);
+      }
       currHead.type=3;
       currHead.senderId=serverId;
       sendMulticast(currHead);
@@ -227,12 +239,15 @@ public class server extends Thread implements BankServer, BankReplica {
     eventQueue.add(request);
     return logicalClock.updateTime(request.timeStamp);
   }
-  public void receiveExecute(Event request) throws RemoteException{
-    Event remove = request;
-    remove.type=1;
-    eventQueue.remove(remove);
-    String[] msg = remove.content.split(",");
-    System.out.println("--- receiveExecute --- EXECUTING TRANSFER----"+request.senderId+"---"+serverId);
+  public void receiveExecute(Event removeEvent) throws RemoteException{
+
+    System.out.println("receiveExecute REMOVE EVENT TS---"+removeEvent.clientTimeStamp);
+    boolean result = eventQueue.remove(removeEvent);
+    if (!result){
+      System.out.println("FAILED TO REMOVE AFTER MULTICAST");
+    }
+    String[] msg = removeEvent.content.split(",");
+    System.out.println("--- receiveExecute --- EXECUTING TRANSFER----"+removeEvent.senderId+"---"+serverId);
     transfer(Integer.parseInt(msg[0]),Integer.parseInt(msg[1]),Integer.parseInt(msg[2]));
 
 
@@ -247,7 +262,7 @@ public class server extends Thread implements BankServer, BankReplica {
 
 
   public void sendMulticast(Event clientReq) throws RemoteException {
-    for(int i=0;i<2;i++){
+    for(int i=0;i<5;i++){
 //      for(int i=0;i<5;i++){
         String replicaId = "Server_"+i;
         System.out.println("Server_"+i + "--- sendMulticast----"+clientReq.senderId+"---"+clientReq.receiverId);
@@ -269,8 +284,10 @@ public class server extends Thread implements BankServer, BankReplica {
         }
         logicalClock.updateTime();
         if (clientReq.type==0) {
+          Event multicastEvent = new Event(1,serverId,"Server_"+i,logicalClock.getLocalTime(),clientReq.clientTimeStamp,true,LocalDateTime.now(),clientReq.content);
+          System.out.println("CLIENT REQ TIME STAMP multicastEvent "+clientReq.clientTimeStamp);
           System.out.println("Server_"+i + "--- clientReq type 0 ----"+clientReq.senderId+"---"+clientReq.receiverId);
-          int replicaTimestamp = backReplica.receiveRequest(serverId, clientReq);
+          int replicaTimestamp = backReplica.receiveRequest(serverId, multicastEvent);
           //logging ack??
           logicalClock.updateTime(replicaTimestamp);
         }
@@ -289,7 +306,7 @@ public class server extends Thread implements BankServer, BankReplica {
   public static int getTotalBalance() {
     int numAccounts = 20;
     int total = 0;
-    for (int i = 0; i < numAccounts; i++) {
+    for (int i = 1; i <= numAccounts; i++) {
       String logMsg = "";
       String[] content = new String[3];
       int balance = accounts.get(uids[i]).getBalance();
@@ -323,12 +340,12 @@ public class server extends Thread implements BankServer, BankReplica {
       return false;
     }
     //transfer
-    synchronized (this){
+    synchronized (accounts){
       accounts.get(sourceUid).withdraw(amount);
       accounts.get(targetUid).deposit(amount);
       String msg = "Transferred %d from %d to %d\n";
       System.out.printf(msg,amount,sourceUid,targetUid);
-      notifyAll();
+      accounts.notifyAll();
     }
 
 
@@ -383,7 +400,7 @@ public class server extends Thread implements BankServer, BankReplica {
     serverInitialize(bankServer);
     System.out.println("Server initialization is complete");
 
-    for(int i=0;i<2;i++){
+    for(int i=0;i<5;i++){
 //    for(int i=0;i<5;i++){
 //      BankReplica bankReplicaStub  =  (BankReplica) UnicastRemoteObject.exportObject(bankServer, Integer.parseInt(prop.getProperty("Server_"+i+".port")));
       BankReplica bankReplicaStub  =  (BankReplica) bankServerStub;

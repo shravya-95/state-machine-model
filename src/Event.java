@@ -2,7 +2,7 @@ import java.io.Serializable;
 import java.time.LocalDateTime;
 
 
-public class Event implements Serializable{
+public class Event extends Object implements Serializable{
 /* 0 - CLIENT_REQ
     1 - SRV_REQ
     2 - HALT
@@ -15,6 +15,7 @@ public class Event implements Serializable{
     public String content;
     public boolean remote;
     public LocalDateTime physicalClock;
+    public int clientTimeStamp;
 
     public Event(int type, String senderId, String receiverId, String content)  {
         this.type = type;
@@ -25,13 +26,22 @@ public class Event implements Serializable{
     }
 
     public Event(int type, String senderId,
-                 String receiverId, int timeStamp, boolean remote,LocalDateTime physicalClock, String content) {
+                 String receiverId, int timeStamp, int clientTimeStamp, boolean remote,LocalDateTime physicalClock, String content) {
         this(type, senderId, receiverId, content);
         this.timeStamp = timeStamp;
         this.remote=remote;
         this.physicalClock=physicalClock;
+        this.clientTimeStamp=clientTimeStamp;
     }
-
+    @Override
+    public boolean equals(Object o){
+        if(o instanceof Event){
+            Event c = (Event) o;
+            System.out.println("Timestamps -----"+this.clientTimeStamp+"---"+ c.clientTimeStamp);
+            return this.clientTimeStamp== c.clientTimeStamp;
+        }
+        return false;
+    }
     public void setTimeStamp(int timeStamp) {
         this.timeStamp = timeStamp;
     }

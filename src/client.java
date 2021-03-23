@@ -22,7 +22,7 @@ public class client extends Thread {
 
         this.iterationCount = iterationCount;
         this.prop = prop;
-        this.clientId = clientId;
+        this.clientId = "Client_"+clientId;
         this.oWriter = oWriter;
     }
 
@@ -31,13 +31,15 @@ public class client extends Thread {
      */
     public void run() {
 
-        for (int i=0;i<iterationCount;i++){
+//        for (int i=0;i<iterationCount;i++){
+                for (int i=0;i<50;i++){
 
-            //can optimize to choose different server if this server is down
+
+        //can optimize to choose different server if this server is down
             Random rand = new Random();
             //change bound
-//            int n = rand.nextInt(5);
-            int n = rand.nextInt(2);
+            int n = rand.nextInt(5);
+//            int n = rand.nextInt(2);
             String server = "Server_"+n;
             System.out.println(server);
 
