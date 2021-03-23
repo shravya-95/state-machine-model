@@ -35,7 +35,9 @@ public class client extends Thread {
 
             //can optimize to choose different server if this server is down
             Random rand = new Random();
-            int n = rand.nextInt(5);
+            //change bound
+//            int n = rand.nextInt(5);
+            int n = rand.nextInt(2);
             String server = "Server_"+n;
             System.out.println(server);
 

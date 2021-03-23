@@ -94,14 +94,14 @@ public class server implements BankServer, BankReplica {
     }
   }
 
-  public boolean halt(){
+  public boolean halt() throws RemoteException {
     //communicate here
     synchronized (lock){
       haltedClients++;
     }
     if (haltedClients==numClients){
       //send it to everyone
-      Event haltEvent = new Event(2,serverId,"null",logicalClock.updateTime(),1,LocalDateTime.now(),"HALT!");
+      Event haltEvent = new Event(2,serverId,"null",logicalClock.updateTime(),true,LocalDateTime.now(),"HALT!");
       sendMulticast(haltEvent);
       //empty my queue
       while(!eventQueue.isEmpty()){
@@ -177,7 +177,7 @@ public class server implements BankServer, BankReplica {
   /**
    * Request sent by client to initiate transfer
    */
-  public boolean operate(String clientId,String serverId, int sourceUid, int targetUid, int amount){
+  public boolean operate(String clientId,String serverId, int sourceUid, int targetUid, int amount) throws RemoteException {
     Event clientReq = new Event(0,clientId,serverId,sourceUid+","+targetUid+","+amount);
     clientReq.setTimeStamp(logicalClock.updateTime());
     clientReq.setPhysicalClock();
@@ -189,7 +189,7 @@ public class server implements BankServer, BankReplica {
     return true ;
   }
 
-  private boolean pollQueue() {
+  private boolean pollQueue() throws RemoteException {
     Event currHead = eventQueue.peek();
     if (currHead.type==0){
       String[] msg = currHead.content.split(",");
@@ -206,13 +206,13 @@ public class server implements BankServer, BankReplica {
   /**
    * Use the RMI groupserver stub to multicast messages
    */
-  public int receiveRequest(String msg, Event request){
+  public int receiveRequest(String msg, Event request) throws RemoteException{
 //    Event replicaEvent = new Event(1, request.receiverId, serverId,logicalClock.updateTime(request.timeStamp),1, LocalDateTime.now(),request.content);
     request.type=1;
     eventQueue.add(request);
     return logicalClock.updateTime(request.timeStamp);
   }
-  public void receiveExecute(Event request){
+  public void receiveExecute(Event request) throws RemoteException{
     Event remove = request;
     remove.type=1;
     eventQueue.remove(remove);
@@ -222,16 +222,16 @@ public class server implements BankServer, BankReplica {
 
 
   }
-  public void receiveHalt(Event clientReq){
+  public void receiveHalt(Event clientReq) throws RemoteException {
     while(!eventQueue.isEmpty()){
       pollQueue();
     }
   }
 
-  public void sendMulticast(Event clientReq){
 
-      for(int i=0;i<5;i++)
-      {
+  public void sendMulticast(Event clientReq) throws RemoteException {
+    for(int i=0;i<2;i++){
+//      for(int i=0;i<5;i++){
         String replicaId = "Server_"+i;
         System.out.println("Server_"+i + "--- sendMulticast----"+clientReq.senderId+"---"+clientReq.receiverId);
 
@@ -350,8 +350,10 @@ public class server implements BankServer, BankReplica {
     serverInitialize(bankServer);
     System.out.println("Server initialization is complete");
 
-    for(int i=0;i<5;i++){
-      BankReplica bankReplicaStub  =  (BankReplica) UnicastRemoteObject.exportObject(bankServer, Integer.parseInt(prop.getProperty("Server_"+i+".port")));
+    for(int i=0;i<2;i++){
+//    for(int i=0;i<5;i++){
+//      BankReplica bankReplicaStub  =  (BankReplica) UnicastRemoteObject.exportObject(bankServer, Integer.parseInt(prop.getProperty("Server_"+i+".port")));
+      BankReplica bankReplicaStub  =  (BankReplica) bankServerStub;
       Registry localRegistry1 = LocateRegistry.getRegistry(Integer.parseInt(prop.getProperty(serverId+".rmiregistry")));
       localRegistry.bind ("Replica_"+i, bankReplicaStub);
     }
@@ -382,14 +384,13 @@ public class server implements BankServer, BankReplica {
       content[2]= String.valueOf(uids[i]);
       logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
       writeToLog("clientLogfile.txt",logMsg);
-
     }
     return uids;
   }
 
   private static void deposit(int[] uids, int amount, int numAccounts, BankServer bankServer) throws RemoteException {
     try {
-      for (int i = 0; i < numAccounts; i++) {
+      for (int i = 1; i <= numAccounts; i++) {
         String logMsg = "";
         String[] content = new String[3];
 
