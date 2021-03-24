@@ -1,4 +1,3 @@
-import java.net.SocketException;
 import java.rmi.*;
 import java.util.*;
 import java.io.*;
@@ -7,24 +6,24 @@ import java.util.Random;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 
-
 public class client extends Thread {
     int iterationCount;
     Properties prop;
     String clientId;
-    BufferedWriter oWriter;
+    int numServers;
 
     /**
      * Constructor for the BankClient class
-     * @param iterationCount Number of iterations for transfer
      * @param prop config
+     * @param clientId clientId in the form Client_'id sent as argument'
+     * @param iterationCount Number of iterations for transfer
+     *
      */
-    client(Properties prop, String clientId, int iterationCount, BufferedWriter oWriter){
-
+    client(Properties prop, String clientId, int iterationCount, int numServers){
         this.iterationCount = iterationCount;
         this.prop = prop;
         this.clientId = "Client_"+clientId;
-        this.oWriter = oWriter;
+        this.numServers = numServers;
     }
 
     /**
@@ -32,15 +31,9 @@ public class client extends Thread {
      */
     public void run() {
 
-//        for (int i=0;i<iterationCount;i++){
-                for (int i=0;i<5;i++){
-
-
-        //can optimize to choose different server if this server is down
+        for (int i=0;i<iterationCount;i++){
             Random rand = new Random();
-            //change bound
             int n = rand.nextInt(5);
-//            int n = rand.nextInt(2);
             String server = "Server_"+n;
             System.out.println(server);
 
@@ -68,7 +61,9 @@ public class client extends Thread {
                 continue;
             }
             try {
+                //t0 for experiment
                 status = bankServer.operate(clientId,server, rnd1,rnd2,10);
+                //t1 for experiment
             } catch (RemoteException e) {
                 throw new RuntimeException("RemoteException: "+e);
             }
@@ -108,24 +103,22 @@ public class client extends Thread {
         Properties prop = loadConfig(configFileName);
         String clientId = "Client_"+args[0];
 
-        BufferedWriter oWriter = startLogging(clientId+".log", clientId);
         int numThreads = Integer.parseInt(args[1]);
         int iterationCount=200;
 
         List<client> clientList = new ArrayList<client>();
+        int numServers = 3;
         for (int i = 0; i < numThreads; i++) {
-            client bankClient = new client(prop, clientId, iterationCount, oWriter);
+            client bankClient = new client(prop, clientId, iterationCount, numServers);
             clientList.add(bankClient);
             bankClient.start();
         }
 
-//        boolean haltResponse=
         sendHalt(clientList,prop);
 
 
         //write to log file
 //        writeToLog(oWriter,"halt: "+haltResponse);
-        oWriter.close();
     }
 
     public static void sendHalt(List<client> clientList, Properties prop) throws RemoteException {
@@ -152,48 +145,32 @@ public class client extends Thread {
         } catch (NotBoundException e) {
             throw new RuntimeException("NotBoundException before HALT: "+e);
         }
-//        return
-//        try{
-            bankServer.halt();
-//        }
-//        catch (Exception e){
-//            System.out.println("CLIENT EXITED GRACEFULLY!!!");
 
-//        }
+            bankServer.halt();
+
         return;
     }
-    public static BufferedWriter startLogging(String clientId, String fileName){
-        BufferedWriter oWriter = null;
-        try {
-            File oFile = new File(fileName);
-            if (!oFile.exists()) {
-                oFile.createNewFile();
-                oWriter = new BufferedWriter(new FileWriter(fileName, true));
-                oWriter.write("Client ID" + clientId);
-            }
-            else{
-                oWriter = new BufferedWriter(new FileWriter(fileName, true));
-                oWriter.write("Client ID" + clientId);
-            }
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
-        return oWriter;
-    }
+
     /**
      * Writes content to log file. Critical section because multiple threads access the function and only one thread
      * should be able to write to the log file.
-     * @param oWriter Name of the log file
-     * @param line Conent to be written to the file
+     * @param fileName Name of the log file
+     * @param content Content to be written to the file
      */
-    public synchronized static void writeToLog(BufferedWriter oWriter, String line){
-//        synchronized (this){
-            try {
-                    oWriter.write(line);
+    public synchronized static void writeToLog(String fileName, String content) {
+        try {
+
+            File oFile = new File(fileName);
+            if (!oFile.exists()) {
+                oFile.createNewFile();
             }
-            catch (IOException e) {
-                e.printStackTrace();
+            if (oFile.canWrite()) {
+                BufferedWriter oWriter = new BufferedWriter(new FileWriter(fileName, true));
+                oWriter.write(content);
+                oWriter.close();
             }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

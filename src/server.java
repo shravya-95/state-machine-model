@@ -309,7 +309,7 @@ public class server extends Thread implements BankServer, BankReplica {
 
         if (replicaId.equals(serverId)) continue;
         System.out.println(serverId+ "MULTICASTING TO Server_"+i + "--- sendMulticast----"+clientReq.senderId+"---"+clientReq.receiverId);
-      Registry registry = null;
+        Registry registry = null;
         BankReplica backReplica;
         try {
           registry = LocateRegistry.getRegistry(prop.getProperty(replicaId+".hostname"), Integer.parseInt(prop.getProperty(replicaId+".rmiregistry")));
