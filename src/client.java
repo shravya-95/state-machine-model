@@ -153,13 +153,13 @@ public class client extends Thread {
             throw new RuntimeException("NotBoundException before HALT: "+e);
         }
 //        return
-        try{
+//        try{
             bankServer.halt();
-        }
-        catch (Exception e){
-            System.out.println("CLIENT EXITED GRACEFULLY!!!");
+//        }
+//        catch (Exception e){
+//            System.out.println("CLIENT EXITED GRACEFULLY!!!");
 
-        }
+//        }
         return;
     }
     public static BufferedWriter startLogging(String clientId, String fileName){

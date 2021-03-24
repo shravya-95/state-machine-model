@@ -1,75 +1,62 @@
 Server initialization is complete
 OPERATE TS -----1
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
 OPERATE TS -----2
 Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 2
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
+OPERATE TS -----3
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
 OPERATE TS -----4
 Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 3
 CLIENT REQ TIME STAMP multicastEvent 4
+CLIENT REQ TIME STAMP multicastEvent 2
+Server_0--- clientReq type 0 ----Client_Client_1---Server_1
 Server_0--- clientReq type 0 ----Client_Client_1---Server_1
 Server_0--- clientReq type 0 ----Client_Client_1---Server_1
 CLIENT REQ TIME STAMP multicastEvent 1
 Server_0--- clientReq type 0 ----Client_Client_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
 Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
 Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
 CLIENT REQ TIME STAMP multicastEvent 1
 Server_2--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
 CLIENT REQ TIME STAMP multicastEvent 2
 Server_2--- clientReq type 0 ----Client_Client_1---Server_1
 CLIENT REQ TIME STAMP multicastEvent 4
 Server_2--- clientReq type 0 ----Client_Client_1---Server_1
 Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 2
-Server_3--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 4
-Server_3--- clientReq type 0 ----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 2
-Server_4--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 4
-Server_4--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1
-Server_3--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1
-Server_4--- clientReq type 0 ----Client_Client_1---Server_1
-OPERATE TS -----103
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 103
-Server_0--- clientReq type 0 ----Client_Client_1---Server_1
-OPERATE TS -----105
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 105
-Server_0--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 103
+CLIENT REQ TIME STAMP multicastEvent 3
 Server_2--- clientReq type 0 ----Client_Client_1---Server_1
 Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 105
-Server_2--- clientReq type 0 ----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 103
-Server_3--- clientReq type 0 ----Client_Client_1---Server_1
 Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 105
-Server_3--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 103
-Server_4--- clientReq type 0 ----Client_Client_1---Server_1
 receiveExecute REMOVE EVENT TS---1
 Timestamps -----1---1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 105
-Server_4--- clientReq type 0 ----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 3
+Server_3--- clientReq type 0 ----Client_Client_1---Server_1
 --- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
-Transferred 10 from 3 to 1
+Transferred 10 from 17 to 3
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 2
+Server_3--- clientReq type 0 ----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 4
+Server_3--- clientReq type 0 ----Client_Client_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1
+Server_3--- clientReq type 0 ----Client_Client_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 2
+Server_4--- clientReq type 0 ----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 4
+Server_4--- clientReq type 0 ----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1
+Server_4--- clientReq type 0 ----Client_Client_1---Server_1
 ---EXECUTING TRANSFER----Client_Client_1---Server_1
-Transferred 10 from 16 to 3
+Transferred 10 from 16 to 6
+CLIENT REQ TIME STAMP multicastEvent 3
+Server_4--- clientReq type 0 ----Client_Client_1---Server_1
 POLL QUEUE CLIENT MESSAGE1
 Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
 Server_0--- clientReq type 3 ----Server_1---Server_1
@@ -81,253 +68,210 @@ Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
 Server_4--- clientReq type 3 ----Server_1---Server_1
 receiveExecute REMOVE EVENT TS---1
 Timestamps -----1---1
---- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
-Transferred 10 from 16 to 18
-OPERATE TS -----202
+Timestamps -----1---1
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 19 to 17
+OPERATE TS -----165
 Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
-OPERATE TS -----203
+CLIENT REQ TIME STAMP multicastEvent 165
+Server_0--- clientReq type 0 ----Client_Client_1---Server_1
+OPERATE TS -----167
 Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 202
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 167
 Server_0--- clientReq type 0 ----Client_Client_1---Server_1
 Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 203
-Server_0--- clientReq type 0 ----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 202
+CLIENT REQ TIME STAMP multicastEvent 165
 Server_2--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 203
+CLIENT REQ TIME STAMP multicastEvent 167
 Server_2--- clientReq type 0 ----Client_Client_1---Server_1
 Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
 Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 202
+CLIENT REQ TIME STAMP multicastEvent 165
 Server_3--- clientReq type 0 ----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 203
+CLIENT REQ TIME STAMP multicastEvent 167
 Server_3--- clientReq type 0 ----Client_Client_1---Server_1
 Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 202
+CLIENT REQ TIME STAMP multicastEvent 165
 Server_4--- clientReq type 0 ----Client_Client_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 167
+Server_4--- clientReq type 0 ----Client_Client_1---Server_1
+receiveExecute REMOVE EVENT TS---1
+Timestamps -----1---1
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 14 to 19
 receiveExecute REMOVE EVENT TS---1
 Timestamps -----1---1
 --- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
-Transferred 10 from 1 to 19
-CLIENT REQ TIME STAMP multicastEvent 203
-Server_4--- clientReq type 0 ----Client_Client_1---Server_1
-OPERATE TS -----254
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 254
-Server_0--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
-OPERATE TS -----279
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 254
-Server_2--- clientReq type 0 ----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 279
-Server_0--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 279
-Server_2--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 254
-Server_3--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 254
-Server_4--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 279
-Server_3--- clientReq type 0 ----Client_Client_1---Server_1
-receiveExecute REMOVE EVENT TS---1
-Timestamps -----1---1
---- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
-Transferred 10 from 19 to 16
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 279
-Server_4--- clientReq type 0 ----Client_Client_1---Server_1
-receiveExecute REMOVE EVENT TS---2
-Timestamps -----2---2
---- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
-Transferred 10 from 7 to 5
+Transferred 10 from 11 to 9
 ---EXECUTING TRANSFER----Client_Client_1---Server_1
-Transferred 10 from 6 to 17
+Transferred 10 from 19 to 9
 POLL QUEUE CLIENT MESSAGE2
 Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
 Server_0--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
-OPERATE TS -----352
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 352
-Server_0--- clientReq type 0 ----Client_Client_1---Server_1
 Server_2--- clientReq type 3 ----Server_1---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
 Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 352
-Server_2--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 352
-Server_3--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 352
-Server_4--- clientReq type 0 ----Client_Client_1---Server_1
 Server_3--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
 Server_4--- clientReq type 3 ----Server_1---Server_1
 receiveExecute REMOVE EVENT TS---2
 Timestamps -----2---2
 --- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
-Transferred 10 from 12 to 15
-OPERATE TS -----378
+Transferred 10 from 10 to 12
+OPERATE TS -----276
 Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 378
+CLIENT REQ TIME STAMP multicastEvent 276
 Server_0--- clientReq type 0 ----Client_Client_1---Server_1
 Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 378
+CLIENT REQ TIME STAMP multicastEvent 276
 Server_2--- clientReq type 0 ----Client_Client_1---Server_1
 Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 378
+CLIENT REQ TIME STAMP multicastEvent 276
 Server_3--- clientReq type 0 ----Client_Client_1---Server_1
 Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 378
+OPERATE TS -----298
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 276
 Server_4--- clientReq type 0 ----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 298
+Server_0--- clientReq type 0 ----Client_Client_1---Server_1
 receiveExecute REMOVE EVENT TS---2
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
 Timestamps -----2---2
 --- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
-Transferred 10 from 13 to 8
-OPERATE TS -----397
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
-receiveExecute REMOVE EVENT TS---3
-CLIENT REQ TIME STAMP multicastEvent 397
-Server_0--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 397
+Transferred 10 from 12 to 7
+CLIENT REQ TIME STAMP multicastEvent 298
 Server_2--- clientReq type 0 ----Client_Client_1---Server_1
+---EXECUTING TRANSFER----Client_Client_1---Server_1
+Transferred 10 from 13 to 9
+POLL QUEUE CLIENT MESSAGE3
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+OPERATE TS -----327
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 327
+Server_0--- clientReq type 0 ----Client_Client_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
-Timestamps -----3---3
---- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
-Transferred 10 from 18 to 10
-CLIENT REQ TIME STAMP multicastEvent 397
+CLIENT REQ TIME STAMP multicastEvent 298
 Server_3--- clientReq type 0 ----Client_Client_1---Server_1
 Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 397
+CLIENT REQ TIME STAMP multicastEvent 298
 Server_4--- clientReq type 0 ----Client_Client_1---Server_1
+OPERATE TS -----354
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 354
+Server_0--- clientReq type 0 ----Client_Client_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 354
+Server_2--- clientReq type 0 ----Client_Client_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 354
+Server_3--- clientReq type 0 ----Client_Client_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 354
+Server_4--- clientReq type 0 ----Client_Client_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 327
+Server_2--- clientReq type 0 ----Client_Client_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 327
+Server_3--- clientReq type 0 ----Client_Client_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 327
+Server_4--- clientReq type 0 ----Client_Client_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
 receiveExecute REMOVE EVENT TS---3
 Timestamps -----3---3
 --- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
-Transferred 10 from 5 to 14
-OPERATE TS -----429
+Transferred 10 from 15 to 14
+OPERATE TS -----478
 Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 429
+CLIENT REQ TIME STAMP multicastEvent 478
+Server_0--- clientReq type 0 ----Client_Client_1---Server_1
+OPERATE TS -----480
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 480
 Server_0--- clientReq type 0 ----Client_Client_1---Server_1
 Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
-OPERATE TS -----448
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 429
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 480
 Server_2--- clientReq type 0 ----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 448
-Server_0--- clientReq type 0 ----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 478
+Server_2--- clientReq type 0 ----Client_Client_1---Server_1
+receiveExecute REMOVE EVENT TS---3
 Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
-receiveExecute REMOVE EVENT TS---4
-Timestamps -----4---4
---- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
-Transferred 10 from 11 to 12
-CLIENT REQ TIME STAMP multicastEvent 429
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 480
 Server_3--- clientReq type 0 ----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 448
-Server_2--- clientReq type 0 ----Client_Client_1---Server_1
----EXECUTING TRANSFER----Client_Client_1---Server_1
-Transferred 10 from 17 to 19
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 478
+Server_3--- clientReq type 0 ----Client_Client_1---Server_1
 Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 448
-Server_3--- clientReq type 0 ----Client_Client_1---Server_1
+Timestamps -----3---3
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 13 to 10
+CLIENT REQ TIME STAMP multicastEvent 480
+Server_4--- clientReq type 0 ----Client_Client_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
+---EXECUTING TRANSFER----Client_Client_1---Server_1
+Transferred 10 from 3 to 8
 POLL QUEUE CLIENT MESSAGE4
 Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 448
-Server_4--- clientReq type 0 ----Client_Client_1---Server_1
-OPERATE TS -----475
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 429
+CLIENT REQ TIME STAMP multicastEvent 478
 Server_4--- clientReq type 0 ----Client_Client_1---Server_1
 Server_0--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 475
-Server_0--- clientReq type 0 ----Client_Client_1---Server_1
+OPERATE TS -----534
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
 Server_2--- clientReq type 3 ----Server_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 534
+Server_0--- clientReq type 0 ----Client_Client_1---Server_1
 Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 475
+CLIENT REQ TIME STAMP multicastEvent 534
 Server_2--- clientReq type 0 ----Client_Client_1---Server_1
-Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
 Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 475
+CLIENT REQ TIME STAMP multicastEvent 534
 Server_3--- clientReq type 0 ----Client_Client_1---Server_1
 Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
 Server_4--- clientReq type 3 ----Server_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 475
+CLIENT REQ TIME STAMP multicastEvent 534
 Server_4--- clientReq type 0 ----Client_Client_1---Server_1
 receiveExecute REMOVE EVENT TS---4
 Timestamps -----4---4
 --- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
-Transferred 10 from 12 to 2
+Transferred 10 from 4 to 12
+receiveExecute REMOVE EVENT TS---4
+Timestamps -----4---4
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 3 to 16
 receiveExecute REMOVE EVENT TS---5
 Timestamps -----5---5
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 12 to 5
+receiveExecute REMOVE EVENT TS---97
+Timestamps -----97---97
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 11 to 7
+receiveExecute REMOVE EVENT TS---137
+Timestamps -----137---137
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 13 to 10
+receiveExecute REMOVE EVENT TS---149
+Timestamps -----149---149
 --- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 1 to 14
+---EXECUTING TRANSFER----Client_Client_1---Server_1
 Transferred 10 from 9 to 17
----EXECUTING TRANSFER----Client_Client_1---Server_1
-Transferred 10 from 17 to 13
-OPERATE TS -----579
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
-OPERATE TS -----580
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 580
-Server_0--- clientReq type 0 ----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 579
-Server_0--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 579
-Server_2--- clientReq type 0 ----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 580
-Server_2--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 580
-Server_3--- clientReq type 0 ----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 579
-Server_3--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
-OPERATE TS -----600
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 580
-Server_4--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 600
-Server_0--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 579
-Server_4--- clientReq type 0 ----Client_Client_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 600
-Server_2--- clientReq type 0 ----Client_Client_1---Server_1
-POLL QUEUE CLIENT MESSAGE103
-Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
-Server_0--- clientReq type 3 ----Server_1---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
-Server_2--- clientReq type 3 ----Server_1---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 600
-Server_3--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_1---Server_1
-Server_3--- clientReq type 3 ----Server_1---Server_1
-CLIENT REQ TIME STAMP multicastEvent 600
-Server_4--- clientReq type 0 ----Client_Client_1---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
-Server_4--- clientReq type 3 ----Server_1---Server_1
----EXECUTING TRANSFER----Client_Client_1---Server_1
-Transferred 10 from 6 to 10
-POLL QUEUE CLIENT MESSAGE105
+POLL QUEUE CLIENT MESSAGE165
 Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
 Server_0--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
@@ -336,37 +280,56 @@ Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
 Server_3--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
 Server_4--- clientReq type 3 ----Server_1---Server_1
-receiveExecute REMOVE EVENT TS---138
-Timestamps -----138---138
---- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
-Transferred 10 from 13 to 15
-receiveExecute REMOVE EVENT TS---156
-Timestamps -----156---156
+---EXECUTING TRANSFER----Client_Client_1---Server_1
+Transferred 10 from 1 to 8
+POLL QUEUE CLIENT MESSAGE167
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---174
+Timestamps -----174---174
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 11 to 17
+receiveExecute REMOVE EVENT TS---198
+Timestamps -----198---198
 --- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
-Transferred 10 from 12 to 1
-receiveExecute REMOVE EVENT TS---171
-Timestamps -----171---171
---- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
-Transferred 10 from 7 to 19
-receiveExecute REMOVE EVENT TS---175
-Timestamps -----175---175
+Transferred 10 from 19 to 11
+receiveExecute REMOVE EVENT TS---199
+Timestamps -----199---199
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 2 to 9
+receiveExecute REMOVE EVENT TS---222
+Timestamps -----222---222
 --- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
-Transferred 10 from 8 to 19
-receiveExecute REMOVE EVENT TS---187
-Timestamps -----187---187
+Transferred 10 from 11 to 17
+receiveExecute REMOVE EVENT TS---232
+Timestamps -----232---232
 --- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
-Transferred 10 from 13 to 4
-receiveExecute REMOVE EVENT TS---196
-Timestamps -----196---196
---- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
-Transferred 10 from 10 to 17
-receiveExecute REMOVE EVENT TS---197
-Timestamps -----197---197
+Transferred 10 from 3 to 15
+receiveExecute REMOVE EVENT TS---251
+Timestamps -----251---251
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 16 to 12
+receiveExecute REMOVE EVENT TS---252
+Timestamps -----252---252
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 12 to 11
+receiveExecute REMOVE EVENT TS---259
+Timestamps -----259---259
 --- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
-Transferred 10 from 12 to 8
+Transferred 10 from 15 to 9
+receiveExecute REMOVE EVENT TS---267
+Timestamps -----267---267
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 12 to 16
 ---EXECUTING TRANSFER----Client_Client_1---Server_1
-Transferred 10 from 18 to 16
-POLL QUEUE CLIENT MESSAGE202
+Transferred 10 from 8 to 5
+POLL QUEUE CLIENT MESSAGE276
 Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
 Server_0--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
@@ -375,143 +338,48 @@ Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
 Server_3--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
 Server_4--- clientReq type 3 ----Server_1---Server_1
----EXECUTING TRANSFER----Client_Client_1---Server_1
-Transferred 10 from 16 to 7
-POLL QUEUE CLIENT MESSAGE203
-Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
-Server_0--- clientReq type 3 ----Server_1---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
-Server_2--- clientReq type 3 ----Server_1---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
-Server_3--- clientReq type 3 ----Server_1---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
-Server_4--- clientReq type 3 ----Server_1---Server_1
-receiveExecute REMOVE EVENT TS---224
-Timestamps -----224---224
---- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
-Transferred 10 from 4 to 2
-receiveExecute REMOVE EVENT TS---236
-Timestamps -----236---236
---- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
-Transferred 10 from 3 to 11
----EXECUTING TRANSFER----Client_Client_1---Server_1
-Transferred 10 from 11 to 1
-POLL QUEUE CLIENT MESSAGE254
-Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
-Server_0--- clientReq type 3 ----Server_1---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
-Server_2--- clientReq type 3 ----Server_1---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
-Server_3--- clientReq type 3 ----Server_1---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
-Server_4--- clientReq type 3 ----Server_1---Server_1
-receiveExecute REMOVE EVENT TS---257
-Timestamps -----257---257
---- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
-Transferred 10 from 3 to 17
-receiveExecute REMOVE EVENT TS---258
-Timestamps -----258---258
---- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
-Transferred 10 from 2 to 8
-receiveExecute REMOVE EVENT TS---266
-Timestamps -----266---266
---- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
-Transferred 10 from 15 to 5
-receiveExecute REMOVE EVENT TS---267
-Timestamps -----267---267
---- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
-Transferred 10 from 6 to 10
-receiveExecute REMOVE EVENT TS---267
-Timestamps -----267---267
---- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
-Transferred 10 from 15 to 6
-receiveExecute REMOVE EVENT TS---267
-Timestamps -----267---267
---- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
-Transferred 10 from 9 to 17
-receiveExecute REMOVE EVENT TS---269
-Timestamps -----269---269
---- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
-Transferred 10 from 9 to 7
-receiveExecute REMOVE EVENT TS---272
-Timestamps -----272---272
+receiveExecute REMOVE EVENT TS---284
+Timestamps -----284---284
 --- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
-Transferred 10 from 16 to 11
----EXECUTING TRANSFER----Client_Client_1---Server_1
-Transferred 10 from 2 to 13
-POLL QUEUE CLIENT MESSAGE279
-Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
-Server_0--- clientReq type 3 ----Server_1---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
-Server_2--- clientReq type 3 ----Server_1---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
-Server_3--- clientReq type 3 ----Server_1---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
-Server_4--- clientReq type 3 ----Server_1---Server_1
-receiveExecute REMOVE EVENT TS---285
-Timestamps -----285---285
+Transferred 10 from 11 to 18
+receiveExecute REMOVE EVENT TS---286
+Timestamps -----286---286
 --- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
-Transferred 10 from 3 to 18
+Transferred 10 from 14 to 16
+receiveExecute REMOVE EVENT TS---288
+Timestamps -----288---288
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 12 to 13
 receiveExecute REMOVE EVENT TS---289
 Timestamps -----289---289
 --- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
-Transferred 10 from 12 to 7
-receiveExecute REMOVE EVENT TS---305
-Timestamps -----305---305
---- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
-Transferred 10 from 14 to 18
-receiveExecute REMOVE EVENT TS---306
-Timestamps -----306---306
---- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
-Transferred 10 from 15 to 4
----EXECUTING TRANSFER----Client_Client_1---Server_1
-Transferred 10 from 15 to 13
-POLL QUEUE CLIENT MESSAGE352
-Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
-Server_0--- clientReq type 3 ----Server_1---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
-Server_2--- clientReq type 3 ----Server_1---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
-Server_3--- clientReq type 3 ----Server_1---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
-Server_4--- clientReq type 3 ----Server_1---Server_1
----EXECUTING TRANSFER----Client_Client_1---Server_1
 Transferred 10 from 13 to 6
-POLL QUEUE CLIENT MESSAGE378
+receiveExecute REMOVE EVENT TS---290
+Timestamps -----290---290
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 7 to 5
+receiveExecute REMOVE EVENT TS---291
+Timestamps -----291---291
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 5 to 9
+receiveExecute REMOVE EVENT TS---295
+Timestamps -----295---295
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+---EXECUTING TRANSFER----Client_Client_1---Server_1
+Transferred 10 from 10 to 7
+Transferred 10 from 10 to 11
+POLL QUEUE CLIENT MESSAGE298
 Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
 Server_0--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
 Server_2--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
 Server_3--- clientReq type 3 ----Server_1---Server_1
-receiveExecute REMOVE EVENT TS---382
-Timestamps -----382---382
---- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
-Transferred 10 from 15 to 12
 Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
 Server_4--- clientReq type 3 ----Server_1---Server_1
 ---EXECUTING TRANSFER----Client_Client_1---Server_1
-Transferred 10 from 9 to 11
-POLL QUEUE CLIENT MESSAGE397
-Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
-Server_0--- clientReq type 3 ----Server_1---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
-Server_2--- clientReq type 3 ----Server_1---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
-receiveExecute REMOVE EVENT TS---413
-Timestamps -----413---413
---- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
-Transferred 10 from 6 to 8
-Server_3--- clientReq type 3 ----Server_1---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
-Server_4--- clientReq type 3 ----Server_1---Server_1
-receiveExecute REMOVE EVENT TS---414
-Timestamps -----414---414
---- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
----EXECUTING TRANSFER----Client_Client_1---Server_1
-Transferred 10 from 7 to 6
-Transferred 10 from 8 to 11
-POLL QUEUE CLIENT MESSAGE429
+Transferred 10 from 5 to 17
+POLL QUEUE CLIENT MESSAGE327
 Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
 Server_0--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
@@ -520,17 +388,37 @@ Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
 Server_3--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
 Server_4--- clientReq type 3 ----Server_1---Server_1
-receiveExecute REMOVE EVENT TS---435
-Timestamps -----435---435
+receiveExecute REMOVE EVENT TS---332
+Timestamps -----332---332
 --- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
-Transferred 10 from 1 to 4
-receiveExecute REMOVE EVENT TS---442
-Timestamps -----442---442
---- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 4 to 12
+receiveExecute REMOVE EVENT TS---334
+Timestamps -----334---334
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 13 to 7
+receiveExecute REMOVE EVENT TS---337
+Timestamps -----337---337
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 8 to 7
+receiveExecute REMOVE EVENT TS---343
+Timestamps -----343---343
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 18 to 5
+receiveExecute REMOVE EVENT TS---346
+Timestamps -----346---346
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 2 to 13
+receiveExecute REMOVE EVENT TS---348
+Timestamps -----348---348
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 10 to 9
+receiveExecute REMOVE EVENT TS---353
+Timestamps -----353---353
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 9 to 10
 ---EXECUTING TRANSFER----Client_Client_1---Server_1
-Transferred 10 from 1 to 3
-Transferred 10 from 5 to 18
-POLL QUEUE CLIENT MESSAGE448
+Transferred 10 from 4 to 13
+POLL QUEUE CLIENT MESSAGE354
 Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
 Server_0--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
@@ -539,60 +427,50 @@ Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
 Server_3--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
 Server_4--- clientReq type 3 ----Server_1---Server_1
-receiveExecute REMOVE EVENT TS---455
-Timestamps -----455---455
---- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
-Transferred 10 from 14 to 19
----EXECUTING TRANSFER----Client_Client_1---Server_1
-Transferred 10 from 8 to 18
-POLL QUEUE CLIENT MESSAGE475
-Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
-Server_0--- clientReq type 3 ----Server_1---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
-Server_2--- clientReq type 3 ----Server_1---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
-Server_3--- clientReq type 3 ----Server_1---Server_1
-receiveExecute REMOVE EVENT TS---478
-Timestamps -----478---478
---- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
-Transferred 10 from 10 to 17
-Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
-Server_4--- clientReq type 3 ----Server_1---Server_1
-receiveExecute REMOVE EVENT TS---485
-Timestamps -----485---485
+receiveExecute REMOVE EVENT TS---357
+Timestamps -----357---357
 --- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
-Transferred 10 from 12 to 18
-receiveExecute REMOVE EVENT TS---488
-Timestamps -----488---488
---- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
-Transferred 10 from 5 to 18
-receiveExecute REMOVE EVENT TS---492
-Timestamps -----492---492
+Transferred 10 from 12 to 14
+receiveExecute REMOVE EVENT TS---372
+Timestamps -----372---372
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 15 to 10
+receiveExecute REMOVE EVENT TS---377
+Timestamps -----377---377
 --- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
 Transferred 10 from 11 to 12
-receiveExecute REMOVE EVENT TS---521
-Timestamps -----521---521
+receiveExecute REMOVE EVENT TS---390
+Timestamps -----390---381
+Timestamps -----390---390
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 8 to 7
+receiveExecute REMOVE EVENT TS---381
+Timestamps -----381---381
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 9 to 8
+receiveExecute REMOVE EVENT TS---391
+Timestamps -----391---391
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 1 to 14
+receiveExecute REMOVE EVENT TS---444
+Timestamps -----444---444
 --- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
-Transferred 10 from 12 to 4
-receiveExecute REMOVE EVENT TS---534
-Timestamps -----534---534
---- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
-Transferred 10 from 8 to 19
-receiveExecute REMOVE EVENT TS---554
-Timestamps -----554---554
---- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
-Transferred 10 from 6 to 14
-receiveExecute REMOVE EVENT TS---570
-Timestamps -----570---570
+Transferred 10 from 19 to 7
+receiveExecute REMOVE EVENT TS---450
+Timestamps -----450---450
 --- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
-Transferred 10 from 7 to 13
-receiveExecute REMOVE EVENT TS---571
-Timestamps -----571---571
----EXECUTING TRANSFER----Client_Client_1---Server_1
+Transferred 10 from 16 to 10
+receiveExecute REMOVE EVENT TS---467
+Timestamps -----467---467
 --- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
-Transferred 10 from 8 to 16
-Transferred 10 from 5 to 16
-POLL QUEUE CLIENT MESSAGE579
+Transferred 10 from 18 to 17
+receiveExecute REMOVE EVENT TS---476
+Timestamps -----476---476
+---EXECUTING TRANSFER----Client_Client_1---Server_1
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 16 to 12
+Transferred 10 from 4 to 1
+POLL QUEUE CLIENT MESSAGE478
 Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
 Server_0--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
@@ -602,23 +480,304 @@ Server_3--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
 Server_4--- clientReq type 3 ----Server_1---Server_1
 ---EXECUTING TRANSFER----Client_Client_1---Server_1
-Transferred 10 from 7 to 13
-POLL QUEUE CLIENT MESSAGE580
+Transferred 10 from 7 to 19
+POLL QUEUE CLIENT MESSAGE480
 Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
 Server_0--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---481
+Timestamps -----481---481
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 16 to 3
 Server_2--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
 Server_3--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
 Server_4--- clientReq type 3 ----Server_1---Server_1
-receiveExecute REMOVE EVENT TS---584
-Timestamps -----584---584
----EXECUTING TRANSFER----Client_Client_1---Server_1
+receiveExecute REMOVE EVENT TS---481
+Timestamps -----481---481
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 6 to 2
+receiveExecute REMOVE EVENT TS---483
+Timestamps -----483---483
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 14 to 16
+receiveExecute REMOVE EVENT TS---523
+Timestamps -----523---494
+Timestamps -----523---523
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 6 to 9
+receiveExecute REMOVE EVENT TS---494
+Timestamps -----494---494
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 19 to 14
+receiveExecute REMOVE EVENT TS---530
+Timestamps -----530---530
 --- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
-Transferred 10 from 3 to 15
-Transferred 10 from 19 to 5
-POLL QUEUE CLIENT MESSAGE600
+Transferred 10 from 14 to 17
+receiveExecute REMOVE EVENT TS---533
+Timestamps -----533---533
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 2 to 12
+---EXECUTING TRANSFER----Client_Client_1---Server_1
+Transferred 10 from 12 to 8
+POLL QUEUE CLIENT MESSAGE534
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---578
+Timestamps -----578---578
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 10 to 1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---618
+Timestamps -----618---592
+Timestamps -----618---618
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 11 to 12
+receiveExecute REMOVE EVENT TS---592
+Timestamps -----592---592
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 4 to 15
+receiveExecute REMOVE EVENT TS---635
+Timestamps -----635---635
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 11 to 17
+OPERATE TS -----680
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 680
+Server_0--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 680
+Server_2--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
+OPERATE TS -----721
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 680
+Server_3--- clientReq type 0 ----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 721
+Server_0--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 680
+Server_4--- clientReq type 0 ----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 721
+Server_2--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
+OPERATE TS -----740
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 740
+Server_0--- clientReq type 0 ----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 721
+Server_3--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 721
+Server_4--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 740
+Server_2--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
+receiveExecute REMOVE EVENT TS---676
+Timestamps -----676---676
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 10 to 6
+CLIENT REQ TIME STAMP multicastEvent 740
+Server_3--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 740
+Server_4--- clientReq type 0 ----Client_Client_3---Server_1
+---EXECUTING TRANSFER----Client_Client_3---Server_1
+Transferred 10 from 5 to 17
+POLL QUEUE CLIENT MESSAGE680
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+OPERATE TS -----823
+OPERATE TS -----824
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 823
+Server_0--- clientReq type 0 ----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 824
+Server_0--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 823
+Server_2--- clientReq type 0 ----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 824
+Server_2--- clientReq type 0 ----Client_Client_3---Server_1
+OPERATE TS -----845
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 845
+Server_0--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 845
+Server_2--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 845
+Server_3--- clientReq type 0 ----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 824
+Server_3--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 824
+Server_4--- clientReq type 0 ----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 845
+Server_4--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 823
+Server_3--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 823
+Server_4--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---685
+Timestamps -----685---685
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 9 to 1
+receiveExecute REMOVE EVENT TS---705
+Timestamps -----705---705
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 18 to 11
+receiveExecute REMOVE EVENT TS---710
+Timestamps -----710---710
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 1 to 9
+---EXECUTING TRANSFER----Client_Client_3---Server_1
+Transferred 10 from 7 to 15
+OPERATE TS -----1072
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1072
+Server_0--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1072
+Server_2--- clientReq type 0 ----Client_Client_3---Server_1
+OPERATE TS -----1117
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1117
+Server_0--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1117
+Server_2--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1117
+Server_3--- clientReq type 0 ----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1072
+Server_3--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
+OPERATE TS -----1145
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1072
+Server_4--- clientReq type 0 ----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1145
+Server_0--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1145
+Server_2--- clientReq type 0 ----Client_Client_3---Server_1
+POLL QUEUE CLIENT MESSAGE721
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1145
+Server_3--- clientReq type 0 ----Client_Client_3---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1117
+Server_4--- clientReq type 0 ----Client_Client_3---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1145
+Server_4--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---732
+Timestamps -----732---732
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 17 to 8
+receiveExecute REMOVE EVENT TS---736
+Timestamps -----736---736
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 4 to 6
+receiveExecute REMOVE EVENT TS---739
+Timestamps -----739---739
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 10 to 13
+---EXECUTING TRANSFER----Client_Client_3---Server_1
+Transferred 10 from 13 to 4
+OPERATE TS -----1201
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
+POLL QUEUE CLIENT MESSAGE740
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1201
+Server_0--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1201
+Server_2--- clientReq type 0 ----Client_Client_3---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1201
+Server_3--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
+OPERATE TS -----1238
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1238
+Server_0--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---742
+Timestamps -----742---742
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 6 to 15
+CLIENT REQ TIME STAMP multicastEvent 1201
+Server_4--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1238
+Server_2--- clientReq type 0 ----Client_Client_3---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1238
+Server_3--- clientReq type 0 ----Client_Client_3---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1238
+Server_4--- clientReq type 0 ----Client_Client_3---Server_1
+receiveExecute REMOVE EVENT TS---748
+Timestamps -----748---748
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 8 to 17
+receiveExecute REMOVE EVENT TS---751
+Timestamps -----751---751
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 15 to 6
+receiveExecute REMOVE EVENT TS---762
+Timestamps -----762---762
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 11 to 7
+receiveExecute REMOVE EVENT TS---763
+Timestamps -----763---763
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 16 to 13
+receiveExecute REMOVE EVENT TS---813
+Timestamps -----813---813
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 13 to 16
+---EXECUTING TRANSFER----Client_Client_3---Server_1
+Transferred 10 from 15 to 5
+POLL QUEUE CLIENT MESSAGE823
 Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
 Server_0--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
@@ -627,338 +786,915 @@ Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
 Server_3--- clientReq type 3 ----Server_1---Server_1
 Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
 Server_4--- clientReq type 3 ----Server_1---Server_1
-receiveExecute REMOVE EVENT TS---614
-Timestamps -----614---614
+receiveExecute REMOVE EVENT TS---823
+Timestamps -----823---823
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 3 to 8
+---EXECUTING TRANSFER----Client_Client_3---Server_1
+Transferred 10 from 15 to 9
+POLL QUEUE CLIENT MESSAGE824
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---825
+Timestamps -----825---825
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 17 to 12
+receiveExecute REMOVE EVENT TS---833
+Timestamps -----833---833
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 17 to 6
+---EXECUTING TRANSFER----Client_Client_3---Server_1
+Transferred 10 from 18 to 13
+POLL QUEUE CLIENT MESSAGE845
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---846
+Timestamps -----846---846
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 12 to 15
+receiveExecute REMOVE EVENT TS---847
+Timestamps -----847---847
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 1 to 13
+receiveExecute REMOVE EVENT TS---854
+Timestamps -----854---854
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 15 to 19
+receiveExecute REMOVE EVENT TS---855
+Timestamps -----855---855
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 2 to 12
+receiveExecute REMOVE EVENT TS---861
+Timestamps -----861---861
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 18 to 7
+receiveExecute REMOVE EVENT TS---873
+Timestamps -----873---873
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 8 to 18
+receiveExecute REMOVE EVENT TS---900
+Timestamps -----900---900
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 13 to 3
+receiveExecute REMOVE EVENT TS---913
+Timestamps -----913---913
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 13 to 9
+receiveExecute REMOVE EVENT TS---915
+Timestamps -----915---915
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 7 to 12
+receiveExecute REMOVE EVENT TS---919
+Timestamps -----919---919
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 19 to 4
+receiveExecute REMOVE EVENT TS---941
+Timestamps -----941---941
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 9 to 4
+receiveExecute REMOVE EVENT TS---946
+receiveExecute REMOVE EVENT TS---942
+Timestamps -----946---942
+Timestamps -----946---960
+Timestamps -----946---946
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 8 to 10
+Timestamps -----942---942
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 17 to 16
+receiveExecute REMOVE EVENT TS---960
+Timestamps -----960---960
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 11 to 7
+receiveExecute REMOVE EVENT TS---960
+Timestamps -----960---960
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 10 to 18
+receiveExecute REMOVE EVENT TS---961
+Timestamps -----961---961
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 17 to 18
+receiveExecute REMOVE EVENT TS---962
+Timestamps -----962---962
 --- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
 Transferred 10 from 17 to 11
-receiveExecute REMOVE EVENT TS---615
-Timestamps -----615---615
---- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
-Transferred 10 from 8 to 10
-receiveExecute REMOVE EVENT TS---620
-Timestamps -----620---620
---- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
-Transferred 10 from 18 to 9
-receiveExecute REMOVE EVENT TS---637
-Timestamps -----637---637
---- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
-Transferred 10 from 8 to 3
-receiveExecute REMOVE EVENT TS---653
-Timestamps -----653---653
---- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
-Transferred 10 from 2 to 11
-OPERATE TS -----722
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 722
-Server_0--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 722
-Server_2--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
-receiveExecute REMOVE EVENT TS---702
-Timestamps -----702---700
-Timestamps -----702---701
-Timestamps -----702---723
-Timestamps -----702---702
+receiveExecute REMOVE EVENT TS---964
+Timestamps -----964---964
 --- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
-Transferred 10 from 5 to 8
-CLIENT REQ TIME STAMP multicastEvent 722
-Server_3--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 722
-Server_4--- clientReq type 0 ----Client_Client_3---Server_1
-receiveExecute REMOVE EVENT TS---700
-Timestamps -----700---700
+Transferred 10 from 16 to 3
+receiveExecute REMOVE EVENT TS---967
+Timestamps -----967---967
 --- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
-Transferred 10 from 16 to 12
-OPERATE TS -----867
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 867
-Server_0--- clientReq type 0 ----Client_Client_3---Server_1
-OPERATE TS -----869
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 869
-Server_0--- clientReq type 0 ----Client_Client_3---Server_1
-receiveExecute REMOVE EVENT TS---701
-Timestamps -----701---701
+Transferred 10 from 17 to 9
+receiveExecute REMOVE EVENT TS---968
+Timestamps -----968---968
 --- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 19 to 8
+receiveExecute REMOVE EVENT TS---994
+Timestamps -----994---994
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 16 to 2
+receiveExecute REMOVE EVENT TS---995
+Timestamps -----995---995
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 12 to 7
+receiveExecute REMOVE EVENT TS---995
+Timestamps -----995---995
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 10 to 16
+receiveExecute REMOVE EVENT TS---995
+Timestamps -----995---995
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 19 to 13
+receiveExecute REMOVE EVENT TS---1029
+Timestamps -----1029---1029
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 15 to 13
+receiveExecute REMOVE EVENT TS---1052
+receiveExecute REMOVE EVENT TS---1053
+Timestamps -----1052---1052
+Timestamps -----1053---1053
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 19 to 4
+Transferred 10 from 5 to 13
+---EXECUTING TRANSFER----Client_Client_3---Server_1
+Transferred 10 from 4 to 6
+POLL QUEUE CLIENT MESSAGE1072
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---1076
+Timestamps -----1076---1076
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 6 to 9
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---1077
+Timestamps -----1077---1077
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 13 to 5
+receiveExecute REMOVE EVENT TS---1082
+receiveExecute REMOVE EVENT TS---1087
+Timestamps -----1082---1082
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Timestamps -----1087---1087
+Transferred 10 from 4 to 9
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 8 to 19
+---EXECUTING TRANSFER----Client_Client_3---Server_1
+Transferred 10 from 5 to 9
+POLL QUEUE CLIENT MESSAGE1117
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---1127
+Timestamps -----1127---1127
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 6 to 13
+receiveExecute REMOVE EVENT TS---1142
+Timestamps -----1142---1142
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 6 to 15
+---EXECUTING TRANSFER----Client_Client_3---Server_1
+Transferred 10 from 17 to 15
+POLL QUEUE CLIENT MESSAGE1145
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---1158
+Timestamps -----1158---1158
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 4 to 17
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---1189
+receiveExecute REMOVE EVENT TS---1193
+Timestamps -----1189---1189
+Timestamps -----1193---1193
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 13 to 4
+Transferred 10 from 18 to 9
+---EXECUTING TRANSFER----Client_Client_3---Server_1
+Transferred 10 from 3 to 15
+POLL QUEUE CLIENT MESSAGE1201
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---1230
+Timestamps -----1230---1230
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 14 to 17
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+---EXECUTING TRANSFER----Client_Client_3---Server_1
+Transferred 10 from 1 to 2
+POLL QUEUE CLIENT MESSAGE1238
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---1268
+Timestamps -----1268---1268
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 9 to 19
+receiveExecute REMOVE EVENT TS---1282
+Timestamps -----1282---1282
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 13 to 1
+receiveExecute REMOVE EVENT TS---1284
+Timestamps -----1284---1284
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 7 to 3
+receiveExecute REMOVE EVENT TS---1292
+Timestamps -----1292---1292
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 12 to 14
+receiveExecute REMOVE EVENT TS---1311
+Timestamps -----1311---1311
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 8 to 17
+OPERATE TS -----1351
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1351
+Server_0--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1351
+Server_2--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1351
+Server_3--- clientReq type 0 ----Client_Client_2---Server_1
+OPERATE TS -----1416
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1416
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
+Server_0--- clientReq type 0 ----Client_Client_2---Server_1
+OPERATE TS -----1419
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1351
+Server_4--- clientReq type 0 ----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1416
+Server_2--- clientReq type 0 ----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1419
+Server_0--- clientReq type 0 ----Client_Client_2---Server_1
+---EXECUTING TRANSFER----Client_Client_2---Server_1
+Transferred 10 from 5 to 4
+POLL QUEUE CLIENT MESSAGE1351
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1419
+Server_2--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1416
+Server_3--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1419
+Server_3--- clientReq type 0 ----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1416
+Server_4--- clientReq type 0 ----Client_Client_2---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1419
+Server_4--- clientReq type 0 ----Client_Client_2---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---1356
+Timestamps -----1356---1356
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 7 to 12
+receiveExecute REMOVE EVENT TS---1390
+Timestamps -----1390---1390
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 8 to 19
+receiveExecute REMOVE EVENT TS---1391
+Timestamps -----1391---1391
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 19 to 11
+OPERATE TS -----1479
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1479
+Server_0--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1479
+Server_2--- clientReq type 0 ----Client_Client_2---Server_1
+receiveExecute REMOVE EVENT TS---1392
+Timestamps -----1392---1392
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 2 to 14
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1479
+Server_3--- clientReq type 0 ----Client_Client_2---Server_1
+OPERATE TS -----1498
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1498
+Server_0--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
+OPERATE TS -----1503
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1498
+Server_2--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1503
+Server_0--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1498
+Server_3--- clientReq type 0 ----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1503
+Server_2--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1503
+Server_3--- clientReq type 0 ----Client_Client_2---Server_1
+OPERATE TS -----1542
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1542
+Server_0--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1542
+Server_2--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1542
+Server_3--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1479
+Server_4--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1498
+Server_4--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1503
+Server_4--- clientReq type 0 ----Client_Client_2---Server_1
+OPERATE TS -----1626
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1626
+Server_0--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1626
+Server_2--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1626
+Server_3--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1626
+Server_4--- clientReq type 0 ----Client_Client_2---Server_1
+receiveExecute REMOVE EVENT TS---1393
+Timestamps -----1393---1392
+Timestamps -----1393---1393
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 10 to 3
+receiveExecute REMOVE EVENT TS---1392
+Timestamps -----1392---1392
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 19 to 10
+---EXECUTING TRANSFER----Client_Client_2---Server_1
+Transferred 10 from 12 to 11
+POLL QUEUE CLIENT MESSAGE1416
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+OPERATE TS -----1707
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1707
+Server_0--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1707
+Server_2--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1707
+Server_3--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1707
+Server_4--- clientReq type 0 ----Client_Client_2---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+---EXECUTING TRANSFER----Client_Client_2---Server_1
+Transferred 10 from 19 to 14
+POLL QUEUE CLIENT MESSAGE1419
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+OPERATE TS -----1795
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1795
+Server_0--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1795
+Server_2--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1795
+Server_3--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1795
+Server_4--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1542
+Server_4--- clientReq type 0 ----Client_Client_2---Server_1
+receiveExecute REMOVE EVENT TS---1419
+Timestamps -----1419---1419
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 2 to 13
+OPERATE TS -----1851
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
+receiveExecute REMOVE EVENT TS---1465
+Timestamps -----1465---1465
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 5 to 15
+CLIENT REQ TIME STAMP multicastEvent 1851
+Server_0--- clientReq type 0 ----Client_Client_2---Server_1
+OPERATE TS -----1853
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1853
+Server_0--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
+OPERATE TS -----1860
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1853
+Server_2--- clientReq type 0 ----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1851
+Server_2--- clientReq type 0 ----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1860
+Server_0--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
+OPERATE TS -----1877
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1860
+Server_2--- clientReq type 0 ----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1877
+Server_0--- clientReq type 0 ----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1851
+Server_3--- clientReq type 0 ----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1853
+Server_3--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
+receiveExecute REMOVE EVENT TS---1467
+Timestamps -----1467---1467
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 17 to 14
+receiveExecute REMOVE EVENT TS---1473
+CLIENT REQ TIME STAMP multicastEvent 1853
+CLIENT REQ TIME STAMP multicastEvent 1851
+Server_4--- clientReq type 0 ----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1877
+Server_2--- clientReq type 0 ----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1860
+Server_3--- clientReq type 0 ----Client_Client_2---Server_1
+Server_4--- clientReq type 0 ----Client_Client_2---Server_1
+Timestamps -----1473---1473
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 8 to 4
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1860
+Server_4--- clientReq type 0 ----Client_Client_2---Server_1
+---EXECUTING TRANSFER----Client_Client_2---Server_1
 Transferred 10 from 2 to 9
-OPERATE TS -----920
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 920
-Server_0--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 867
-Server_2--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 869
-Server_2--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 867
-Server_3--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 867
-Server_4--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 869
-Server_3--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 869
-Server_4--- clientReq type 0 ----Client_Client_3---Server_1
-OPERATE TS -----1005
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1005
-Server_0--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1005
-Server_2--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1005
-Server_3--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1005
-Server_4--- clientReq type 0 ----Client_Client_3---Server_1
-OPERATE TS -----1042
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1042
-Server_0--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1042
-Server_2--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1042
-Server_3--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1042
-Server_4--- clientReq type 0 ----Client_Client_3---Server_1
-OPERATE TS -----1100
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1100
-Server_0--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1100
-Server_2--- clientReq type 0 ----Client_Client_3---Server_1
-OPERATE TS -----1149
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1149
-Server_0--- clientReq type 0 ----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1100
-Server_3--- clientReq type 0 ----Client_Client_3---Server_1
-OPERATE TS -----1160
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1160
-Server_0--- clientReq type 0 ----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1100
-Server_4--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1160
-CLIENT REQ TIME STAMP multicastEvent 920
-Server_2--- clientReq type 0 ----Client_Client_3---Server_1
-Server_2--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1149
-Server_2--- clientReq type 0 ----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1160
-Server_3--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 920
-Server_3--- clientReq type 0 ----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1149
-Server_3--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1149
-Server_4--- clientReq type 0 ----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1160
-Server_4--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 920
-Server_4--- clientReq type 0 ----Client_Client_3---Server_1
-OPERATE TS -----1274
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1274
-Server_0--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1274
-Server_2--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1274
-Server_3--- clientReq type 0 ----Client_Client_3---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_3---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1274
-Server_4--- clientReq type 0 ----Client_Client_3---Server_1
-OPERATE TS -----1324
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1324
-Server_0--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1324
-Server_2--- clientReq type 0 ----Client_Client_2---Server_1
-OPERATE TS -----1343
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1343
-Server_0--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1343
-Server_2--- clientReq type 0 ----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1324
-Server_3--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1343
+CLIENT REQ TIME STAMP multicastEvent 1877
 Server_3--- clientReq type 0 ----Client_Client_2---Server_1
 Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1324
+CLIENT REQ TIME STAMP multicastEvent 1877
 Server_4--- clientReq type 0 ----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1343
-Server_4--- clientReq type 0 ----Client_Client_2---Server_1
-OPERATE TS -----1412
+POLL QUEUE CLIENT MESSAGE1479
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+OPERATE TS -----1919
 Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1412
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+OPERATE TS -----1920
+Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1920
+Server_0--- clientReq type 0 ----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1919
 Server_0--- clientReq type 0 ----Client_Client_2---Server_1
 Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1412
+receiveExecute REMOVE EVENT TS---1484
+Timestamps -----1484---1484
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 11 to 2
+Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1920
 Server_2--- clientReq type 0 ----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1919
+Server_2--- clientReq type 0 ----Client_Client_2---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
 Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1412
+Server_3--- clientReq type 3 ----Server_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1920
 Server_3--- clientReq type 0 ----Client_Client_2---Server_1
 Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1412
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1920
 Server_4--- clientReq type 0 ----Client_Client_2---Server_1
-OPERATE TS -----1523
+Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
+---EXECUTING TRANSFER----Client_Client_2---Server_1
+Transferred 10 from 9 to 4
+CLIENT REQ TIME STAMP multicastEvent 1919
+Server_3--- clientReq type 0 ----Client_Client_2---Server_1
+POLL QUEUE CLIENT MESSAGE1498
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
+CLIENT REQ TIME STAMP multicastEvent 1919
+Server_4--- clientReq type 0 ----Client_Client_2---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+---EXECUTING TRANSFER----Client_Client_2---Server_1
+Transferred 10 from 6 to 12
+POLL QUEUE CLIENT MESSAGE1503
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+OPERATE TS -----1995
 Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1523
+receiveExecute REMOVE EVENT TS---1512
+Timestamps -----1512---1512
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 10 to 16
+CLIENT REQ TIME STAMP multicastEvent 1995
 Server_0--- clientReq type 0 ----Client_Client_2---Server_1
 Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1523
+CLIENT REQ TIME STAMP multicastEvent 1995
 Server_2--- clientReq type 0 ----Client_Client_2---Server_1
 Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1523
+CLIENT REQ TIME STAMP multicastEvent 1995
 Server_3--- clientReq type 0 ----Client_Client_2---Server_1
 Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1523
+CLIENT REQ TIME STAMP multicastEvent 1995
 Server_4--- clientReq type 0 ----Client_Client_2---Server_1
-OPERATE TS -----1605
+receiveExecute REMOVE EVENT TS---1514
+Timestamps -----1514---1514
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 11 to 4
+OPERATE TS -----2016
 Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1605
-Server_0--- clientReq type 0 ----Client_Client_2---Server_1
-OPERATE TS -----1607
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1607
-Server_0--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1607
-Server_2--- clientReq type 0 ----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1605
-Server_2--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1607
-Server_3--- clientReq type 0 ----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1605
-Server_3--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1607
-Server_4--- clientReq type 0 ----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1605
-Server_4--- clientReq type 0 ----Client_Client_2---Server_1
-OPERATE TS -----1671
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1671
+receiveExecute REMOVE EVENT TS---1516
+Timestamps -----1516---1516
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 12 to 7
+CLIENT REQ TIME STAMP multicastEvent 2016
 Server_0--- clientReq type 0 ----Client_Client_2---Server_1
 Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1671
+CLIENT REQ TIME STAMP multicastEvent 2016
 Server_2--- clientReq type 0 ----Client_Client_2---Server_1
 Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1671
+CLIENT REQ TIME STAMP multicastEvent 2016
 Server_3--- clientReq type 0 ----Client_Client_2---Server_1
 Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1671
+CLIENT REQ TIME STAMP multicastEvent 2016
 Server_4--- clientReq type 0 ----Client_Client_2---Server_1
-OPERATE TS -----1694
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1694
-Server_0--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1694
-Server_2--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1694
-Server_3--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
-OPERATE TS -----1725
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1694
-Server_4--- clientReq type 0 ----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1725
-Server_0--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1725
-Server_2--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1725
-Server_3--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1725
-Server_4--- clientReq type 0 ----Client_Client_2---Server_1
-OPERATE TS -----1757
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1757
-Server_0--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1757
-Server_2--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1757
-Server_3--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1757
-Server_4--- clientReq type 0 ----Client_Client_2---Server_1
-OPERATE TS -----1796
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1796
-Server_0--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1796
-Server_2--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1796
-Server_3--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1796
-OPERATE TS -----1822
-Server_4--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1822
-Server_0--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1822
-Server_2--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1822
-Server_3--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1822
-Server_4--- clientReq type 0 ----Client_Client_2---Server_1
-OPERATE TS -----1880
-Server_1MULTICASTING TO Server_0--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1880
-Server_0--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_2--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1880
-Server_2--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_3--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1880
-Server_3--- clientReq type 0 ----Client_Client_2---Server_1
-Server_1MULTICASTING TO Server_4--- sendMulticast----Client_Client_2---Server_1
-CLIENT REQ TIME STAMP multicastEvent 1880
-Server_4--- clientReq type 0 ----Client_Client_2---Server_1
+receiveExecute REMOVE EVENT TS---1529
+Timestamps -----1529---1529
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 2 to 6
 Received HaltServer_1
+---EXECUTING TRANSFER----Client_Client_2---Server_1
+Transferred 10 from 15 to 7
+POLL QUEUE CLIENT MESSAGE1542
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---1544
+Timestamps -----1544---1544
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 11 to 9
+receiveExecute REMOVE EVENT TS---1557
+Timestamps -----1557---1557
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 17 to 13
+receiveExecute REMOVE EVENT TS---1558
+Timestamps -----1558---1558
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 14 to 5
+receiveExecute REMOVE EVENT TS---1558
+Timestamps -----1558---1558
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 10 to 2
+receiveExecute REMOVE EVENT TS---1560
+Timestamps -----1560---1560
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 6 to 1
+receiveExecute REMOVE EVENT TS---1577
+Timestamps -----1577---1577
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 17 to 7
+receiveExecute REMOVE EVENT TS---1582
+Timestamps -----1582---1582
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 19 to 3
+receiveExecute REMOVE EVENT TS---1625
+Timestamps -----1625---1625
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 4 to 7
+---EXECUTING TRANSFER----Client_Client_2---Server_1
+Transferred 10 from 18 to 15
+POLL QUEUE CLIENT MESSAGE1626
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---1628
+Timestamps -----1628---1628
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 16 to 18
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---1634
+Timestamps -----1634---1634
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 14 to 12
+receiveExecute REMOVE EVENT TS---1646
+Timestamps -----1646---1646
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 7 to 11
+receiveExecute REMOVE EVENT TS---1652
+Timestamps -----1652---1652
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 8 to 17
+receiveExecute REMOVE EVENT TS---1667
+Timestamps -----1667---1661
+Timestamps -----1667---1697
+Timestamps -----1667---1667
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 17 to 16
+receiveExecute REMOVE EVENT TS---1661
+Timestamps -----1661---1661
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 19 to 8
+receiveExecute REMOVE EVENT TS---1704
+Timestamps -----1704---1697
+Timestamps -----1704---1707
+Timestamps -----1704---1704
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 12 to 14
+receiveExecute REMOVE EVENT TS---1697
+Timestamps -----1697---1697
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+---EXECUTING TRANSFER----Client_Client_2---Server_1
+Transferred 10 from 8 to 7
+Transferred 10 from 18 to 12
+POLL QUEUE CLIENT MESSAGE1707
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---1711
+Timestamps -----1711---1711
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 7 to 1
+receiveExecute REMOVE EVENT TS---1728
+Timestamps -----1728---1728
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 7 to 6
+receiveExecute REMOVE EVENT TS---1729
+Timestamps -----1729---1729
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 1 to 6
+receiveExecute REMOVE EVENT TS---1747
+Timestamps -----1747---1747
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 11 to 15
+receiveExecute REMOVE EVENT TS---1751
+Timestamps -----1751---1751
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 9 to 1
+receiveExecute REMOVE EVENT TS---1755
+Timestamps -----1755---1755
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 8 to 15
+receiveExecute REMOVE EVENT TS---1776
+Timestamps -----1776---1776
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 11 to 10
+receiveExecute REMOVE EVENT TS---1780
+Timestamps -----1780---1780
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 12 to 4
+receiveExecute REMOVE EVENT TS---1780
+Timestamps -----1780---1780
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 15 to 12
+---EXECUTING TRANSFER----Client_Client_2---Server_1
+Transferred 10 from 2 to 11
+POLL QUEUE CLIENT MESSAGE1795
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---1808
+Timestamps -----1808---1808
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 18 to 13
+receiveExecute REMOVE EVENT TS---1830
+Timestamps -----1830---1830
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 1 to 8
+receiveExecute REMOVE EVENT TS---1832
+Timestamps -----1832---1832
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 10 to 16
+receiveExecute REMOVE EVENT TS---1834
+Timestamps -----1834---1834
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+---EXECUTING TRANSFER----Client_Client_2---Server_1
+Transferred 10 from 16 to 15
+Transferred 10 from 4 to 6
+POLL QUEUE CLIENT MESSAGE1851
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+---EXECUTING TRANSFER----Client_Client_2---Server_1
+Transferred 10 from 13 to 3
+POLL QUEUE CLIENT MESSAGE1853
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+---EXECUTING TRANSFER----Client_Client_2---Server_1
+Transferred 10 from 3 to 9
+POLL QUEUE CLIENT MESSAGE1860
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---1866
+Timestamps -----1866---1866
+--- receiveExecute --- EXECUTING TRANSFER----Server_2---Server_1
+Transferred 10 from 1 to 19
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---1871
+Timestamps -----1871---1871
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+---EXECUTING TRANSFER----Client_Client_2---Server_1
+Transferred 10 from 3 to 9
+Transferred 10 from 17 to 19
+POLL QUEUE CLIENT MESSAGE1877
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---1913
+Timestamps -----1913---1913
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 14 to 10
+receiveExecute REMOVE EVENT TS---1914
+Timestamps -----1914---1914
+---EXECUTING TRANSFER----Client_Client_2---Server_1
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 8 to 19
+Transferred 10 from 9 to 15
+POLL QUEUE CLIENT MESSAGE1919
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+---EXECUTING TRANSFER----Client_Client_2---Server_1
+Transferred 10 from 5 to 19
+POLL QUEUE CLIENT MESSAGE1920
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---1955
+Timestamps -----1955---1955
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 11 to 12
+receiveExecute REMOVE EVENT TS---1976
+Timestamps -----1976---1976
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 16 to 13
+receiveExecute REMOVE EVENT TS---1977
+Timestamps -----1977---1977
+--- receiveExecute --- EXECUTING TRANSFER----Server_4---Server_1
+Transferred 10 from 8 to 18
+receiveExecute REMOVE EVENT TS---1984
+Timestamps -----1984---1984
+--- receiveExecute --- EXECUTING TRANSFER----Server_3---Server_1
+Transferred 10 from 10 to 5
+---EXECUTING TRANSFER----Client_Client_2---Server_1
+Transferred 10 from 11 to 10
+POLL QUEUE CLIENT MESSAGE1995
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+receiveExecute REMOVE EVENT TS---2001
+Timestamps -----2001---2001
+--- receiveExecute --- EXECUTING TRANSFER----Server_0---Server_1
+Transferred 10 from 13 to 9
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+---EXECUTING TRANSFER----Client_Client_2---Server_1
+Transferred 10 from 18 to 11
+POLL QUEUE CLIENT MESSAGE2016
+Server_1MULTICASTING TO Server_0--- sendMulticast----Server_1---Server_1
+finished pollingServer_1
+Server_0--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_2--- sendMulticast----Server_1---Server_1
+Server_2--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_3--- sendMulticast----Server_1---Server_1
+Server_3--- clientReq type 3 ----Server_1---Server_1
+Server_1MULTICASTING TO Server_4--- sendMulticast----Server_1---Server_1
+Server_4--- clientReq type 3 ----Server_1---Server_1
+Server_1: total= 20000
+REMOTE HAT DONE!-----READY TO EXIT

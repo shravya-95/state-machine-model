@@ -53,27 +53,6 @@ public class server extends Thread implements BankServer, BankReplica {
       }
     }
   }
-//  static class EventQueueComparator implements Comparable<Event>{
-//
-//    @Override
-//    public int compareTo(Event o1, Event o2) {
-//      if (o1.clientTimeStamp< o2.clientTimeStamp){
-//        return -1;
-//      }
-//      else if (o1.clientTimeStamp> o2.clientTimeStamp){
-//        return 1;
-//      }
-//      else{
-//        if (o1.serverReceivedClient< o2.serverReceivedClient){
-//          return -1;
-//        }
-//        else if (o1.serverReceivedClient> o2.serverReceivedClient){
-//          return 1;
-//        }
-//      }
-//      return 0;
-//    }
-//  }
 
 
   public int getNewUid(){
@@ -123,7 +102,7 @@ public class server extends Thread implements BankServer, BankReplica {
     }
   }
 
-  public void halt() throws RemoteException, SocketException {
+  public void halt() throws RemoteException {
     int uts = logicalClock.updateTime();
     //communicate here
     synchronized (lock){
@@ -142,7 +121,6 @@ public class server extends Thread implements BankServer, BankReplica {
       while (!eventQueue.isEmpty());
       getTotalBalance();
       System.out.println("ALL DONE!----- READY TO EXIT");
-      System.exit(0);
 
     }
     return;
@@ -223,7 +201,6 @@ public class server extends Thread implements BankServer, BankReplica {
     clientReq.setPhysicalClock();
 
 
-//    mockQ.add(clientReq.receiverId+","+clientReq.senderId+","+clientReq.clientTimeStamp+","+clientReq.serverReceivedClient);
     //here, multicast message
     sendMulticast(clientReq);
     eventQueue.add(clientReq);
