@@ -118,15 +118,16 @@ public class client extends Thread {
             bankClient.start();
         }
 
-        boolean haltResponse=sendHalt(clientList,prop);
+//        boolean haltResponse=
+        sendHalt(clientList,prop);
 
 
         //write to log file
-        writeToLog(oWriter,"halt: "+haltResponse);
+//        writeToLog(oWriter,"halt: "+haltResponse);
         oWriter.close();
     }
 
-    public static boolean sendHalt(List<client> clientList, Properties prop) throws RemoteException {
+    public static void sendHalt(List<client> clientList, Properties prop) throws RemoteException {
         //check if all client processes are completed
         for(int i = 0; i < clientList.size(); i++){
             try {
@@ -150,7 +151,9 @@ public class client extends Thread {
         } catch (NotBoundException e) {
             throw new RuntimeException("NotBoundException before HALT: "+e);
         }
-        return bankServer.halt();
+//        return
+        bankServer.halt();
+        return;
     }
     public static BufferedWriter startLogging(String clientId, String fileName){
         BufferedWriter oWriter = null;

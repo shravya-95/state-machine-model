@@ -42,7 +42,7 @@ public class server extends Thread implements BankServer, BankReplica {
     while(true){
       while (!eventQueue.isEmpty()){
 //      System.out.println("QUEUE CONTENT"+eventQueue.poll().timeStamp);
-        System.out.println("PEEKING PQ"+"--------"+eventQueue.peek().serverReceivedClient+"--------"+eventQueue.peek().clientTimeStamp);
+//        System.out.println("PEEKING PQ"+"--------"+eventQueue.peek().serverReceivedClient+"--------"+eventQueue.peek().clientTimeStamp);
         try {
           pollQueue();
         } catch (RemoteException e) {
@@ -126,7 +126,7 @@ public class server extends Thread implements BankServer, BankReplica {
     }
   }
 
-  public boolean halt() throws RemoteException {
+  public void halt() throws RemoteException {
     int uts = logicalClock.updateTime();
     //communicate here
     synchronized (lock){
@@ -145,10 +145,10 @@ public class server extends Thread implements BankServer, BankReplica {
       while (!eventQueue.isEmpty());
       getTotalBalance();
       System.out.println("ALL DONE!----- READY TO EXIT");
-//      System.exit(0);
+      System.exit(0);
 
     }
-    return true;
+    return;
   }
 
   public synchronized static void writeToLog(String fileName, String content) {
@@ -242,7 +242,7 @@ public class server extends Thread implements BankServer, BankReplica {
       Event currHead = eventQueue.peek();
 //      System.out.println(currHead.type+ "-------- sender ID"+currHead.senderId+"----- receiver ID"+ currHead.receiverId+"-----Client time stamp"+currHead.clientTimeStamp+"-------Server Received from Client"+currHead.serverReceivedClient);
 
-      if (currHead.senderId.contains("Client")){
+      if (currHead!=null && currHead.senderId.contains("Client")){
         String[] msg = currHead.content.split(",");
         System.out.println("---EXECUTING TRANSFER----"+currHead.senderId+"---"+currHead.receiverId);
         transfer(Integer.parseInt(msg[0]),Integer.parseInt(msg[1]),Integer.parseInt(msg[2]));
