@@ -1,6 +1,4 @@
-import java.net.DatagramPacket;
-import java.net.MulticastSocket;
-import java.net.UnknownHostException;
+import java.net.*;
 import java.rmi.NotBoundException;
 import java.rmi.server.UnicastRemoteObject;
 import java.rmi.RMISecurityManager;
@@ -9,7 +7,6 @@ import java.rmi.Naming;
 import java.rmi.registry.*;
 import java.time.LocalDateTime;
 import java.io.*;
-import java.net.InetAddress;
 import java.util.*;
 import java.util.List;
 import java.util.PriorityQueue;
@@ -126,7 +123,7 @@ public class server extends Thread implements BankServer, BankReplica {
     }
   }
 
-  public void halt() throws RemoteException {
+  public void halt() throws RemoteException, SocketException {
     int uts = logicalClock.updateTime();
     //communicate here
     synchronized (lock){

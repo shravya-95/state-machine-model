@@ -1,3 +1,4 @@
+import java.net.SocketException;
 import java.rmi.*;
 import java.util.*;
 import java.io.*;
@@ -152,7 +153,13 @@ public class client extends Thread {
             throw new RuntimeException("NotBoundException before HALT: "+e);
         }
 //        return
-        bankServer.halt();
+        try{
+            bankServer.halt();
+        }
+        catch (Exception e){
+            System.out.println("CLIENT EXITED GRACEFULLY!!!");
+
+        }
         return;
     }
     public static BufferedWriter startLogging(String clientId, String fileName){
