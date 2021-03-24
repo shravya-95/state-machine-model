@@ -206,6 +206,15 @@ public class server extends Thread implements BankServer, BankReplica {
     eventQueue.add(clientReq);
     //change below
 //    pollQueue();
+    String[] content = new String[6];
+    content[0]=serverId;
+    content[1]=clientReq.physicalClock.toString();
+    content[2]=String.valueOf(clientReq.timeStamp);
+    content[4]="Transfer";
+    content[5]=clientReq.content;
+
+    String logMsg = String.format("Server-ID: %s | “CLIENT-REQ” | Physical-clock-time: %s | Request-Timestamp: %s | Operation-name: %s | Parameters: %s \n", (Object[]) content);
+    writeToLog("severLogfile.txt",logMsg);
     return true ;
   }
 
@@ -244,12 +253,19 @@ public class server extends Thread implements BankServer, BankReplica {
 //    request.receiverId=serverId;
     logicalClock.updateTime(request.timeStamp);
     eventQueue.add(request);
-//    mockQ.add(request.receiverId+","+request.senderId+","+request.clientTimeStamp+","+request.serverReceivedClient);
+    String[] content = new String[6];
+    content[0]=serverId;
+    content[1]=LocalDateTime.now().toString();
+    content[2]=String.valueOf(logicalClock.getLocalTime());
+    content[4]="Transfer";
+    content[5]=request.content;
 
+    String logMsg = String.format("Server-ID: %s | “CLIENT-REQ” | Physical-clock-time: %s | Request-Timestamp: %s | Operation-name: %s | Parameters: %s \n", (Object[]) content);
+    writeToLog("severLogfile.txt",logMsg);
     return logicalClock.updateTime();
   }
   public void receiveExecute(Event removeEvent) throws RemoteException{
-
+    logicalClock.updateTime(removeEvent.timeStamp);
     System.out.println("receiveExecute REMOVE EVENT TS---"+removeEvent.clientTimeStamp);
     boolean result = eventQueue.remove(removeEvent);
 //    System.out.println("REMOVED EVENT"+result.serverReceivedClient+"--"+removeEvent.serverReceivedClient+"------------" + result.clientTimeStamp+"---"+removeEvent.clientTimeStamp);
@@ -259,7 +275,13 @@ public class server extends Thread implements BankServer, BankReplica {
     String[] msg = removeEvent.content.split(",");
     System.out.println("--- receiveExecute --- EXECUTING TRANSFER----"+removeEvent.senderId+"---"+serverId);
     transfer(Integer.parseInt(msg[0]),Integer.parseInt(msg[1]),Integer.parseInt(msg[2]));
+    String[] content = new String[6];
+    content[0]=serverId;
+    content[1]=LocalDateTime.now().toString();
+    content[2]=String.valueOf(logicalClock.getLocalTime());
 
+    String logMsg = String.format("Server-ID: %s | “REQ-PROCESSING” | Physical-clock-time: %s | Request-Timestamp: %s \n", (Object[]) content);
+    writeToLog("severLogfile.txt",logMsg);
 
   }
   public void receiveHalt(Event clientReq) throws RemoteException {
@@ -326,7 +348,7 @@ public class server extends Thread implements BankServer, BankReplica {
       content[1]= "UID: "+ uids[i];
       content[2]= "AccountBalance: "+ balance +", Total so far:"+total;
       logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
-      writeToLog("clientLogfile.txt",logMsg);
+//      writeToLog("clientLogfile.txt",logMsg);
     }
     System.out.println(serverId+": total= "+total);
     return total;
