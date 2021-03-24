@@ -1,4 +1,5 @@
 import java.rmi.*;
+import java.time.LocalDateTime;
 import java.util.*;
 import java.io.*;
 import java.util.List;
@@ -53,8 +54,6 @@ public class client extends Thread {
             }
 
             boolean status = false;
-            String logMsg = "";
-            String[] content = new String[3];
             int rnd1 = 1 + new Random().nextInt(19); // random number between 1 and 20
             int rnd2 = 1 + new Random().nextInt(19); // random number between 1 and 20
             if (rnd1==rnd2) {
@@ -62,17 +61,24 @@ public class client extends Thread {
             }
             try {
                 //t0 for experiment
+                String[] content = new String[6];
+                content[0]=clientId;
+                content[1]= server;
+                content[2]=LocalDateTime.now().toString();
+                content[4]="Transfer";
+                content[5]=rnd1+","+rnd2+", 10";
+
+                String logMsg = String.format("CLNT-ID: %s | SVR-ID: %s | REQ | Physical-clock-time: %s | Operation: %s | Operation-name: %s | Parameters: %s \n", (Object[]) content);
+                writeToLog("clientLogfile.txt",logMsg);
+
                 status = bankServer.operate(clientId,server, rnd1,rnd2,10);
+                //write client log file with current time stamp
+                System.out.println("CLIENT RECIEVED RESPONSE FROM "+server);
                 //t1 for experiment
             } catch (RemoteException e) {
                 throw new RuntimeException("RemoteException: "+e);
             }
-            //write to log file
-            content[0]="transfer";
-            content[1]="From:"+ rnd1 +", To:"+ rnd2 +", Amount:"+ 10;
-            content[2]= String.valueOf(status);
-            logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
-            writeToLog(oWriter,logMsg);
+
 
         }
 
