@@ -211,7 +211,7 @@ public class server extends Thread implements BankServer, BankReplica {
     content[5]=clientReq.content;
 
     String logMsg = String.format("Server-ID: %s | CLIENT-REQ | Physical-clock-time: %s | Request-Timestamp: %s | Operation-name: %s | Parameters: %s \n", (Object[]) content);
-    writeToLog("severLogfile.txt",logMsg);
+    writeToLog(serverId+"_log.txt",logMsg);
 
     return true ;
   }
@@ -237,7 +237,7 @@ public class server extends Thread implements BankServer, BankReplica {
         content[3]="Success";
 
         String logMsg = String.format("CLNT-ID: %s | SRV-ID: %s | RSP | Physical-clock-time: %s | RESPONSE_STATUS: %s \n", (Object[]) content);
-        writeToLog("severLogfile.txt",logMsg);
+        writeToLog(currHead.senderId+"_log.txt",logMsg);
 //      if (!result){
 //        System.out.println("UNABLE TO REMOVE"+serverId);
 //      }
@@ -268,7 +268,7 @@ public class server extends Thread implements BankServer, BankReplica {
     content[5]=request.content;
 
     String logMsg = String.format("Server-ID: %s | CLIENT-REQ | Physical-clock-time: %s | Request-Timestamp: %s | Operation-name: %s | Parameters: %s \n", (Object[]) content);
-    writeToLog("clientLogfile.txt",logMsg);
+    writeToLog(serverId+"_log.txt",logMsg);
     return logicalClock.updateTime();
   }
   public void receiveExecute(Event removeEvent) throws RemoteException{
@@ -288,7 +288,7 @@ public class server extends Thread implements BankServer, BankReplica {
     content[2]=String.valueOf(logicalClock.getLocalTime());
 
     String logMsg = String.format("Server-ID: %s | REQ-PROCESSING | Physical-clock-time: %s | Request-Timestamp: %s \n", (Object[]) content);
-    writeToLog("severLogfile.txt",logMsg);
+    writeToLog(serverId+"_log.txt",logMsg);
 
   }
   public void receiveHalt(Event clientReq) throws RemoteException {
@@ -367,7 +367,7 @@ public class server extends Thread implements BankServer, BankReplica {
    */
   public boolean transfer(int sourceUid, int targetUid, int amount){
     if(!accounts.containsKey(sourceUid)){
-      writeToLog("severLogfile.txt", "Accounts doesn't have key"+String.valueOf(sourceUid));
+      writeToLog(serverId+"_log.txt", "Accounts doesn't have key"+String.valueOf(sourceUid));
     }
     //insufficient balance
     if(accounts.get(sourceUid).getBalance()<amount){
@@ -465,11 +465,6 @@ public class server extends Thread implements BankServer, BankReplica {
 
       uids[i] = bankServer.createAccount();
 
-      content[0]="createAccount";
-      content[1]= "";
-      content[2]= String.valueOf(uids[i]);
-      logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
-      writeToLog("clientLogfile.txt",logMsg);
     }
     return uids;
   }
@@ -489,11 +484,7 @@ public class server extends Thread implements BankServer, BankReplica {
         String[] content = new String[3];
 
         boolean status = bankServer.deposit(uids[i], amount);
-        content[0]="deposit";
-        content[1]= "UID: "+ uids[i] +", "+"Amount: "+ amount;
-        content[2]= String.valueOf(status);
-        logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
-        writeToLog("clientLogfile.txt",logMsg);
+
       }
     }catch (IOException e){
       e.printStackTrace ();

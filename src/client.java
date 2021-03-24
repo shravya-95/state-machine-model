@@ -69,7 +69,7 @@ public class client extends Thread {
                 content[5]=rnd1+","+rnd2+", 10";
 
                 String logMsg = String.format("CLNT-ID: %s | SVR-ID: %s | REQ | Physical-clock-time: %s | Operation: %s | Operation-name: %s | Parameters: %s \n", (Object[]) content);
-                writeToLog("clientLogfile.txt",logMsg);
+                writeToLog(clientId+"_log.txt",logMsg);
 
                 status = bankServer.operate(clientId,server, rnd1,rnd2,10);
                 //write client log file with current time stamp
