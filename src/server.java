@@ -1,15 +1,12 @@
 import java.net.*;
 import java.rmi.NotBoundException;
 import java.rmi.server.UnicastRemoteObject;
-import java.rmi.RMISecurityManager;
 import java.rmi.RemoteException;
-import java.rmi.Naming;
 import java.rmi.registry.*;
 import java.time.LocalDateTime;
 import java.io.*;
 import java.util.*;
 import java.util.List;
-import java.util.PriorityQueue;
 import java.util.Properties;
 import java.util.concurrent.PriorityBlockingQueue;
 
@@ -33,13 +30,12 @@ public class server extends Thread implements BankServer, BankReplica {
 
   }
 
-
-
+    /**
+     * A separate thread responsible for polling the queue continuously
+     */
   public void run(){
     while(true){
       while (!eventQueue.isEmpty()){
-//      System.out.println("QUEUE CONTENT"+eventQueue.poll().timeStamp);
-//        System.out.println("PEEKING PQ"+"--------"+eventQueue.peek().serverReceivedClient+"--------"+eventQueue.peek().clientTimeStamp);
         try {
           pollQueue();
         } catch (RemoteException e) {
@@ -102,30 +98,30 @@ public class server extends Thread implements BankServer, BankReplica {
     }
   }
 
+    /**
+     * Halt method invoked by client through RMI to Server_0
+     * @throws RemoteException
+     */
   public void halt() throws RemoteException {
     int uts = logicalClock.updateTime();
-    //communicate here
     synchronized (lock){
       haltedClients++;
-      System.out.println("HALTED CLIENT"+haltedClients+"----Total clients"+numClients);
     }
     if (haltedClients==numClients){
-      System.out.println("numClients equal");
-      //send it to everyone
-
       Event haltEvent = new Event(2,serverId,"null",uts,uts,true,LocalDateTime.now(),"HALT!");
       sendMulticast(haltEvent);
-      //empty my queue
 
-      //TODO: RMI connection should be unbound and closed
       while (!eventQueue.isEmpty());
       getTotalBalance();
-      System.out.println("ALL DONE!----- READY TO EXIT");
-
     }
     return;
   }
 
+    /**
+     * Logging method
+     * @param fileName
+     * @param content
+     */
   public synchronized static void writeToLog(String fileName, String content) {
     try {
 
@@ -143,19 +139,23 @@ public class server extends Thread implements BankServer, BankReplica {
     }
   }
 
+    /**
+     * Creates an account
+     * @return uid of new account
+     */
   public int createAccount(){
     int uid = getNewUid();
     Account account = new Account(uid);
     accounts.put(uid, account);
-    String[] content = new String[3];
-    content[0]="createAccount";
-    content[1]="";
-    content[2]= String.valueOf(uid);
-    String logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
-    writeToLog("severLogfile.txt",logMsg);
     return uid;
   }
 
+    /**
+     * Deposits an amount to the specified account
+     * @param uid
+     * @param amount
+     * @return status of deposit
+     */
   public boolean deposit(int uid, int amount){
     Account account = accounts.get(uid);
     boolean status = true;
@@ -164,14 +164,14 @@ public class server extends Thread implements BankServer, BankReplica {
         status = false;
     }
     account.deposit(amount);
-    String[] content = new String[3];
-    content[0]="deposit";
-    content[1]= "UID: "+uid + "," + "Amount:" + amount;
-    content[2]= String.valueOf(status);
-    String logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
-    writeToLog("severLogfile.txt",logMsg);
     return status;
   }
+
+    /**
+     * Retrieve's account balance
+     * @param uid
+     * @return balance
+     */
   public int getBalance(int uid){
       Account account = accounts.get(uid);
       if (account==null){
@@ -179,29 +179,28 @@ public class server extends Thread implements BankServer, BankReplica {
         return -1;
       }
       int balance = account.getBalance();
-      String[] content = new String[3];
-      content[0]="getBalance";
-      content[1]="UID: "+uid;
-      content[2]= String.valueOf(balance);
-      String logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
-      writeToLog("severLogfile.txt",logMsg);
       return balance;
   }
 
-  /**
-   * Request sent by client to initiate transfer
-   */
+    /**
+     * Request sent by client to initiate transfer
+     * @param clientId
+     * @param serverId
+     * @param sourceUid
+     * @param targetUid
+     * @param amount
+     * @throws RemoteException
+     */
   public boolean operate(String clientId,String serverId, int sourceUid, int targetUid, int amount) throws RemoteException {
     Event clientReq = new Event(0,clientId,serverId,sourceUid+","+targetUid+","+amount);
     int currServerTs = logicalClock.updateTime();
     clientReq.setTimeStamp(currServerTs);
     clientReq.clientTimeStamp=currServerTs;
     clientReq.serverReceivedClient=Integer.parseInt(serverId.substring(7));
-    System.out.println("OPERATE TS -----"+currServerTs);
     clientReq.setPhysicalClock();
 
 
-    //here, multicast message
+    //multicasts request to other servers
     sendMulticast(clientReq);
     eventQueue.add(clientReq);
     String[] content = new String[6];
@@ -213,25 +212,23 @@ public class server extends Thread implements BankServer, BankReplica {
 
     String logMsg = String.format("Server-ID: %s | CLIENT-REQ | Physical-clock-time: %s | Request-Timestamp: %s | Operation-name: %s | Parameters: %s \n", (Object[]) content);
     writeToLog("severLogfile.txt",logMsg);
-    //change below
-//    while(!(eventQueue.peek()==clientReq));
-//    pollQueue();
 
     return true ;
   }
 
+    /**
+     * Polls queue if the message was sent by client
+     * @return
+     * @throws RemoteException
+     */
   private boolean pollQueue() throws RemoteException {
     if (!eventQueue.isEmpty()){
 
-//      System.out.print(serverId+"pollQueue");
       Event currHead = eventQueue.peek();
-//      System.out.println(currHead.type+ "-------- sender ID"+currHead.senderId+"----- receiver ID"+ currHead.receiverId+"-----Client time stamp"+currHead.clientTimeStamp+"-------Server Received from Client"+currHead.serverReceivedClient);
 
       if (currHead!=null && currHead.senderId.contains("Client")){
         String[] msg = currHead.content.split(",");
-        System.out.println("---EXECUTING TRANSFER----"+currHead.senderId+"---"+currHead.receiverId);
         transfer(Integer.parseInt(msg[0]),Integer.parseInt(msg[1]),Integer.parseInt(msg[2]));
-        System.out.println("POLL QUEUE CLIENT MESSAGE" + currHead.clientTimeStamp);
         eventQueue.poll();
         String[] content = new String[7];
         content[0]=currHead.senderId;
@@ -374,12 +371,6 @@ public class server extends Thread implements BankServer, BankReplica {
     }
     //insufficient balance
     if(accounts.get(sourceUid).getBalance()<amount){
-        String[] content = new String[3];
-        content[0]="transfer";
-        content[1]="From:"+ sourceUid +", To:"+ targetUid +", Amount:"+ amount;
-        content[2]= "False";
-        String logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
-        writeToLog("severLogfile.txt",logMsg);
       return false;
     }
     //transfer
@@ -390,18 +381,14 @@ public class server extends Thread implements BankServer, BankReplica {
       System.out.printf(msg,amount,sourceUid,targetUid);
       accounts.notifyAll();
     }
-
-
-    //logging
-    String[] content = new String[3];
-    content[0]="transfer";
-    content[1]="From:"+ sourceUid +", To:"+ targetUid +", Amount:"+ amount;
-    content[2]= "True";
-    String logMsg = String.format("Operation: %s | Inputs: %s | Result: %s \n", (Object[]) content);
-    writeToLog("severLogfile.txt",logMsg);
     return true;
   }
 
+    /**
+     * Loads config
+     * @param configFileName
+     * @return
+     */
   public static Properties loadConfig(String configFileName){
     Properties prop = new Properties();
     InputStream inputStream;
@@ -426,15 +413,15 @@ public class server extends Thread implements BankServer, BankReplica {
       System.setSecurityManager(new SecurityManager());
     }
 
+    // initialisation
     serverId = "Server_"+args[0];
     numClients=Integer.parseInt(args[2]);
-    logicalClock = new LogicalClock(serverId);
-    eventQueue = new PriorityBlockingQueue<Event>();
-
     String configFileName = args[1];
     prop = loadConfig(configFileName);
-
+    logicalClock = new LogicalClock(serverId);
+    eventQueue = new PriorityBlockingQueue<Event>();
     server bankServer  = new server( );
+
     System.setProperty("java.rmi.server.hostname",  InetAddress.getLocalHost().getHostName());
     BankServer bankServerStub  =  (BankServer) UnicastRemoteObject.exportObject(bankServer, Integer.parseInt(prop.getProperty(serverId+".port")));
     Registry localRegistry = LocateRegistry.getRegistry(Integer.parseInt(prop.getProperty(serverId+".rmiregistry")));
@@ -445,20 +432,22 @@ public class server extends Thread implements BankServer, BankReplica {
     System.out.println("Server initialization is complete");
 
     for(int i=0;i<5;i++){
-//    for(int i=0;i<5;i++){
-//      BankReplica bankReplicaStub  =  (BankReplica) UnicastRemoteObject.exportObject(bankServer, Integer.parseInt(prop.getProperty("Server_"+i+".port")));
       BankReplica bankReplicaStub  =  (BankReplica) bankServerStub;
-      Registry localRegistry1 = LocateRegistry.getRegistry(Integer.parseInt(prop.getProperty(serverId+".rmiregistry")));
+//      Registry localRegistry1 = LocateRegistry.getRegistry(Integer.parseInt(prop.getProperty(serverId+".rmiregistry")));
       localRegistry.bind ("Replica_"+i, bankReplicaStub);
     }
     bankServer.start();
   }
 
+    /**
+     * initialising accounts
+     * @param bankServer
+     * @throws RemoteException
+     */
   private static void serverInitialize(BankServer bankServer) throws RemoteException {
     int[] uid_array = createAccounts(20, bankServer);
     deposit(uid_array, 1000, 20, bankServer);
     uids = uid_array;
-
   }
 
   /**
@@ -485,6 +474,14 @@ public class server extends Thread implements BankServer, BankReplica {
     return uids;
   }
 
+    /**
+     * Deposit amount
+     * @param uids
+     * @param amount
+     * @param numAccounts
+     * @param bankServer
+     * @throws RemoteException
+     */
   private static void deposit(int[] uids, int amount, int numAccounts, BankServer bankServer) throws RemoteException {
     try {
       for (int i = 1; i <= numAccounts; i++) {
