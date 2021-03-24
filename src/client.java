@@ -145,13 +145,9 @@ public class client extends Thread {
         } catch (NotBoundException e) {
             throw new RuntimeException("NotBoundException before HALT: "+e);
         }
-        try{
-            bankServer.halt();
-        }
-        catch (Exception e){
-            System.out.println("CLIENT EXITED GRACEFULLY!!!");
 
-        }
+            bankServer.halt();
+
         return;
     }
 
