@@ -231,6 +231,14 @@ public class server extends Thread implements BankServer, BankReplica {
         transfer(Integer.parseInt(msg[0]),Integer.parseInt(msg[1]),Integer.parseInt(msg[2]));
         System.out.println("POLL QUEUE CLIENT MESSAGE" + currHead.clientTimeStamp);
         eventQueue.poll();
+        String[] content = new String[7];
+        content[0]=currHead.senderId;
+        content[1]=serverId;
+        content[2]=LocalDateTime.now().toString();
+        content[3]="Success";
+
+        String logMsg = String.format("CLNT-ID: %s | SRV-ID: %s | “RSP” | Physical-clock-time: %s | RESPONSE_STATUS: %s \n", (Object[]) content);
+        writeToLog("severLogfile.txt",logMsg);
 //      if (!result){
 //        System.out.println("UNABLE TO REMOVE"+serverId);
 //      }
